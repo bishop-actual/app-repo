@@ -21,6 +21,15 @@
       "screenshotURLs": [],
       "versions": [
         {
+          "version": "1.0.18",
+          "buildVersion": "18",
+          "date": "2026-11-15T20:40:16Z",
+          "localizedDescription": "Detail page: cast, Available on, poster spacing; service folder filters\n\n- Cast & crew: a cancelled first load (the film's TMDB id arriving after\n  the page opened) counted as done, so the row never filled in. It now\n  asks again, and searches by the clean title.\n- Available on (as the TV): every service TMDB lists for the title here,\n  with its logo; one tapped opens everything that service carries, Movies\n  or Series, sorted Popular / Release date / Top rated / Alphabetical.\n- Films lose the sources pill (series never had one); Choose source stays\n  on the Play button's long press.\n- The poster sits one margin below the back button.\n- Service folders (Netflix…): All / Movies / Series, sort with direction,\n  and a search.\n- Genre tiles keep their artwork inside the tile, so the name shows.",
+          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build18/weavr-ios-1.0-build18.ipa",
+          "size": 22075221,
+          "minOSVersion": "18.0"
+        },
+        {
           "version": "1.0.17",
           "buildVersion": "17",
           "date": "2026-11-15T15:35:56Z",
