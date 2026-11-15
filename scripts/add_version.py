@@ -20,6 +20,7 @@ import plistlib
 import re
 import sys
 import zipfile
+from zoneinfo import ZoneInfo
 
 # Which app entry (by "name" in apps.json) each platform's builds go in. Used
 # when the IPA's bundle id is not in apps.json yet; that entry's
@@ -34,9 +35,11 @@ KEEP_VERSIONS = 15
 # nothing to someone reading "What's new" in Feather.
 TRAILER = re.compile(r"^(Co-Authored-By|Claude-Session|Signed-off-by):.*$", re.I | re.M)
 
-# "15 Nov · " at the start of an app's subtitle: the date of its newest build,
-# so Feather's app list shows it beside the version.
-DATE_PREFIX = re.compile(r"^\d{1,2} [A-Z][a-z]{2} · ")
+# "15 Nov 16:25 · " at the start of an app's subtitle: when its newest build
+# was published, so Feather's app list shows it beside the version. UK time,
+# so it follows BST in summer.
+DATE_PREFIX = re.compile(r"^\d{1,2} [A-Z][a-z]{2}( \d{2}:\d{2})? · ")
+LOCAL_TZ = ZoneInfo("Europe/London")
 
 
 def clean_notes(text):
@@ -52,7 +55,8 @@ def tidy(app):
     versions = app.get("versions", [])
     if versions and versions[0].get("date"):
         d = dt.datetime.strptime(versions[0]["date"], "%Y-%m-%dT%H:%M:%SZ")
-        app["subtitle"] = f"{d.day} {d:%b} · {base}"
+        d = d.replace(tzinfo=dt.timezone.utc).astimezone(LOCAL_TZ)
+        app["subtitle"] = f"{d.day} {d:%b %H:%M} · {base}"
     else:
         app["subtitle"] = base
 
