@@ -21,6 +21,15 @@
       "screenshotURLs": [],
       "versions": [
         {
+          "version": "1.0.11",
+          "buildVersion": "11",
+          "date": "2026-11-15T08:34:17Z",
+          "localizedDescription": "Use Persistence's own remove\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01FbuxjzrQBNcYnUbmWCi89v",
+          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build11/weavr-ios-1.0-build11.ipa",
+          "size": 49775448,
+          "minOSVersion": "18.0"
+        },
+        {
           "version": "1.0",
           "buildVersion": "9",
           "date": "2026-11-15T05:45:58Z",
