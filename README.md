@@ -55,7 +55,8 @@ General → Workflow permissions doesn't need changing: Publish asks for
 
 ```
 apps.json                  The source
-icons/weavr.png            Source and app icon
+icons/weavr.png            Source and app icon. After replacing it, change the
+                           ?v= on its URLs in apps.json, or Feather keeps the old one
 scripts/add_version.py     Adds an IPA to apps.json (runs offline)
 .github/workflows/publish.yml
 ```
