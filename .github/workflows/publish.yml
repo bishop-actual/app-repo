@@ -1,0 +1,86 @@
+name: Publish
+run-name: Publish ${{ github.event.release.tag_name || inputs.ipa_url }}
+
+# Adds IPAs to apps.json, the source Feather reads.
+#
+# Two ways in:
+#  - A release is published on this repo with .ipa assets attached. The Weavr
+#    iOS and AppleTV workflows do this after each build; you can also make a
+#    release by hand on GitHub and drop an IPA on it. The release notes become
+#    the "What's new" text in Feather.
+#  - Run this workflow by hand with the URL of an IPA hosted anywhere (a Google
+#    Drive direct link, say). It is downloaded, re-hosted on a release here,
+#    and added the same way.
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      ipa_url:
+        description: Direct download URL of the IPA
+        required: true
+      notes:
+        description: Release notes shown in Feather
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+# One update to apps.json at a time, so an iOS and an AppleTV build finishing
+# together don't overwrite each other.
+concurrency:
+  group: source
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+
+      - name: Fetch IPAs
+        id: fetch
+        env:
+          IPA_URL: ${{ inputs.ipa_url }}
+          TAG: ${{ github.event.release.tag_name }}
+          NOTES: ${{ inputs.notes }}
+        run: |
+          mkdir -p ipas
+          if [ "${{ github.event_name }}" = "release" ]; then
+            gh release download "$TAG" --pattern '*.ipa' --dir ipas
+            gh release view "$TAG" --json body --jq .body > notes.txt
+          else
+            name="$(basename "${IPA_URL%%\?*}")"
+            case "$name" in *.ipa) ;; *) name="weavr-$(date +%Y%m%d-%H%M%S).ipa" ;; esac
+            curl -fL --retry 3 -o "ipas/$name" "$IPA_URL"
+            TAG="upload-${{ github.run_number }}"
+            printf '%s' "$NOTES" > notes.txt
+            gh release create "$TAG" "ipas/$name" --title "${name%.ipa}" --notes-file notes.txt
+          fi
+          ls -l ipas
+          [ -n "$(ls ipas/*.ipa 2>/dev/null)" ] || { echo "No .ipa on this release"; exit 1; }
+          echo "tag=$TAG" >> "$GITHUB_OUTPUT"
+
+      - name: Update apps.json
+        run: |
+          base="https://github.com/${{ github.repository }}/releases/download/${{ steps.fetch.outputs.tag }}"
+          for ipa in ipas/*.ipa; do
+            name="$(basename "$ipa")"
+            python3 scripts/add_version.py --ipa "$ipa" --url "$base/$name" --notes "$(cat notes.txt)"
+          done
+          python3 -m json.tool apps.json > /dev/null
+
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add apps.json
+          git diff --cached --quiet && { echo "apps.json unchanged"; exit 0; }
+          git commit -m "Publish ${{ steps.fetch.outputs.tag }}"
+          git push origin HEAD:${{ github.event.repository.default_branch }}
