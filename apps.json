@@ -10,10 +10,10 @@
   ],
   "apps": [
     {
-      "name": "Weavr",
+      "name": "Weavr iOS",
       "bundleIdentifier": "com.weavr.app",
       "developerName": "bishop-actual",
-      "subtitle": "Multi-source IPTV with automatic failover",
+      "subtitle": "15 Nov · Multi-source IPTV with automatic failover",
       "localizedDescription": "Weavr merges your M3U and Xtream sources into one library, removes duplicate channels and films across providers, and fails over to another source when a stream stalls. Includes a TV guide, films and series, continue watching, Picture in Picture, AirPlay, and WeavrLink, a remote for your Weavr TVs.",
       "iconURL": "https://raw.githubusercontent.com/bishop-actual/app-repo/main/icons/weavr.png?v=e9989785",
       "tintColor": "#57A7B3",
@@ -24,7 +24,7 @@
           "version": "1.0.17",
           "buildVersion": "17",
           "date": "2026-11-15T15:35:56Z",
-          "localizedDescription": "Fix the VLCKit fetch on macOS bash; fail the step if it's missing\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01FbuxjzrQBNcYnUbmWCi89v",
+          "localizedDescription": "Fix the VLCKit fetch on macOS bash; fail the step if it's missing",
           "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build17/weavr-ios-1.0-build17.ipa",
           "size": 22018976,
           "minOSVersion": "18.0"
@@ -51,7 +51,7 @@
           "version": "1.0.11",
           "buildVersion": "11",
           "date": "2026-11-15T08:34:17Z",
-          "localizedDescription": "Use Persistence's own remove\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01FbuxjzrQBNcYnUbmWCi89v",
+          "localizedDescription": "Use Persistence's own remove",
           "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build11/weavr-ios-1.0-build11.ipa",
           "size": 49775448,
           "minOSVersion": "18.0"
@@ -71,7 +71,7 @@
       "name": "Weavr tvOS",
       "bundleIdentifier": "com.weavr.app.tv",
       "developerName": "bishop-actual",
-      "subtitle": "Weavr on Apple TV",
+      "subtitle": "15 Nov · Weavr on Apple TV",
       "localizedDescription": "Weavr for Apple TV: your merged IPTV library, TV guide, films and series with automatic failover between sources.",
       "iconURL": "https://raw.githubusercontent.com/bishop-actual/app-repo/main/icons/weavr.png?v=e9989785",
       "tintColor": "#57A7B3",
@@ -82,7 +82,7 @@
           "version": "1.0.4",
           "buildVersion": "4",
           "date": "2026-11-15T15:35:41Z",
-          "localizedDescription": "Fix the VLCKit fetch on macOS bash; fail the step if it's missing\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01FbuxjzrQBNcYnUbmWCi89v",
+          "localizedDescription": "Fix the VLCKit fetch on macOS bash; fail the step if it's missing",
           "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build4/weavr-appletv-1.0-build4.ipa",
           "size": 21419599,
           "minOSVersion": "18.0"

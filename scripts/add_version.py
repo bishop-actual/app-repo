@@ -25,10 +25,36 @@ import zipfile
 # when the IPA's bundle id is not in apps.json yet; that entry's
 # bundleIdentifier is then updated to the real one, since Feather matches
 # updates by bundle id.
-PLATFORM_APP = {"ios": "Weavr", "tvos": "Weavr tvOS"}
+PLATFORM_APP = {"ios": "Weavr iOS", "tvos": "Weavr tvOS"}
 
 # Older versions are kept so a bad build can be rolled back from Feather.
 KEEP_VERSIONS = 15
+
+# Commit trailers that end up in notes taken from a commit message. They mean
+# nothing to someone reading "What's new" in Feather.
+TRAILER = re.compile(r"^(Co-Authored-By|Claude-Session|Signed-off-by):.*$", re.I | re.M)
+
+# "15 Nov · " at the start of an app's subtitle: the date of its newest build,
+# so Feather's app list shows it beside the version.
+DATE_PREFIX = re.compile(r"^\d{1,2} [A-Z][a-z]{2} · ")
+
+
+def clean_notes(text):
+    return TRAILER.sub("", text).strip()
+
+
+def tidy(app):
+    """Strip trailers from every version's notes and date the subtitle."""
+    for v in app.get("versions", []):
+        if "localizedDescription" in v:
+            v["localizedDescription"] = clean_notes(v["localizedDescription"])
+    base = DATE_PREFIX.sub("", app.get("subtitle", ""))
+    versions = app.get("versions", [])
+    if versions and versions[0].get("date"):
+        d = dt.datetime.strptime(versions[0]["date"], "%Y-%m-%dT%H:%M:%SZ")
+        app["subtitle"] = f"{d.day} {d:%b} · {base}"
+    else:
+        app["subtitle"] = base
 
 
 def read_info_plist(ipa_path):
@@ -86,7 +112,7 @@ def main():
         "version": version,
         "buildVersion": build,
         "date": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-        "localizedDescription": args.notes.strip() or f"Weavr {version} (build {build})",
+        "localizedDescription": clean_notes(args.notes) or f"Weavr {version} (build {build})",
         "downloadURL": args.url,
         "size": os.path.getsize(args.ipa),
     }
@@ -98,6 +124,8 @@ def main():
         if not (v.get("version") == version and v.get("buildVersion") == build)
     ]
     app["versions"] = ([entry] + versions)[:KEEP_VERSIONS]
+    for a in source["apps"]:
+        tidy(a)
 
     with open(args.source, "w", encoding="utf-8") as f:
         json.dump(source, f, indent=2, ensure_ascii=False)
