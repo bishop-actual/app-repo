@@ -37,6 +37,16 @@ the right app entry. If a build's bundle id isn't in `apps.json` yet, the entry
 for its platform takes it over: Feather matches updates by bundle id.
 The last 15 versions of each app are kept so you can roll back.
 
+## Android builds
+
+The Android TV app's builds (bishop-actual/weavr-android-tv, the **Build
+Android APK** workflow with "Publish" ticked) are attached to releases here
+too, named `weavr-android-<version>-build<n>`, so each one has a lasting
+direct download link — handy for installing on a TV. Feather can't use an APK,
+so the Publish workflow skips these releases and they never appear in
+`apps.json`. That workflow needs the same `APP_REPO_TOKEN` secret, set on the
+Android repo.
+
 ## One-time setup
 
 **In weavr-apple-mobile**, add a repository secret named `APP_REPO_TOKEN`

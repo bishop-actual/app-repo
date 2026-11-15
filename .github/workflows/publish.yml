@@ -36,6 +36,10 @@ concurrency:
 
 jobs:
   publish:
+    # The Android builds have releases here too (weavr-android-…), for their
+    # download links; Feather can't install an APK, so they stay out of
+    # apps.json — skipped, rather than failing for want of an .ipa.
+    if: ${{ !startsWith(github.event.release.tag_name || '', 'weavr-android-') }}
     runs-on: ubuntu-latest
     env:
       GH_TOKEN: ${{ github.token }}
