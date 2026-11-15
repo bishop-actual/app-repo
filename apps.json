@@ -21,6 +21,15 @@
       "screenshotURLs": [],
       "versions": [
         {
+          "version": "1.0.12",
+          "buildVersion": "12",
+          "date": "2026-11-15T11:18:44Z",
+          "localizedDescription": "Fixes: Silo no longer reloads its whole library on launch, and refreshing or adding one source only reads that source. Sport: nothing followed until ticked; a ticked team shows just its games. Start-up can't get stuck on a broken saved library. New Settings › Log. Emby/Jellyfin/Plex libraries can't loop. Restore uses the system file picker. Coloured swipe buttons on Sources.",
+          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build12/weavr-ios-1.0-build12.ipa",
+          "size": 49780011,
+          "minOSVersion": "18.0"
+        },
+        {
           "version": "1.0.11",
           "buildVersion": "11",
           "date": "2026-11-15T08:34:17Z",
