@@ -21,6 +21,15 @@
       "screenshotURLs": [],
       "versions": [
         {
+          "version": "1.0.17",
+          "buildVersion": "17",
+          "date": "2026-11-15T15:35:56Z",
+          "localizedDescription": "Fix the VLCKit fetch on macOS bash; fail the step if it's missing\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01FbuxjzrQBNcYnUbmWCi89v",
+          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build17/weavr-ios-1.0-build17.ipa",
+          "size": 22018976,
+          "minOSVersion": "18.0"
+        },
+        {
           "version": "1.0.15",
           "buildVersion": "15",
           "date": "2026-11-15T14:29:29Z",
