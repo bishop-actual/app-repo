@@ -68,7 +68,17 @@
       "tintColor": "#57A7B3",
       "category": "entertainment",
       "screenshotURLs": [],
-      "versions": []
+      "versions": [
+        {
+          "version": "1.0.2",
+          "buildVersion": "2",
+          "date": "2026-11-15T14:34:04Z",
+          "localizedDescription": "First Apple TV build in a while: Sport and Grid tabs, live preview on Live TV, WeavrNet, cast & crew, Sport shelf on Home, OLED theme, Settings › Log, and the shared fixes from iOS.",
+          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build2/weavr-appletv-1.0-build2.ipa",
+          "size": 18548621,
+          "minOSVersion": "18.0"
+        }
+      ]
     }
   ],
   "news": []
