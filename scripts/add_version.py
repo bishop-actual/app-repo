@@ -35,10 +35,10 @@ KEEP_VERSIONS = 15
 # nothing to someone reading "What's new" in Feather.
 TRAILER = re.compile(r"^(Co-Authored-By|Claude-Session|Signed-off-by):.*$", re.I | re.M)
 
-# "15 Nov 16:25 · " at the start of an app's subtitle: when its newest build
-# was published, so Feather's app list shows it beside the version. UK time,
-# so it follows BST in summer.
-DATE_PREFIX = re.compile(r"^\d{1,2} [A-Z][a-z]{2}( \d{2}:\d{2})? · ")
+# "15 Nov 16:25 GMT · " at the start of an app's subtitle: when its newest
+# build was published, so Feather's app list shows it beside the version. UK
+# time, so it reads BST in summer.
+DATE_PREFIX = re.compile(r"^\d{1,2} [A-Z][a-z]{2}( \d{2}:\d{2}( [A-Z]{2,4})?)? · ")
 LOCAL_TZ = ZoneInfo("Europe/London")
 
 
@@ -56,7 +56,7 @@ def tidy(app):
     if versions and versions[0].get("date"):
         d = dt.datetime.strptime(versions[0]["date"], "%Y-%m-%dT%H:%M:%SZ")
         d = d.replace(tzinfo=dt.timezone.utc).astimezone(LOCAL_TZ)
-        app["subtitle"] = f"{d.day} {d:%b %H:%M} · {base}"
+        app["subtitle"] = f"{d.day} {d:%b %H:%M %Z} · {base}"
     else:
         app["subtitle"] = base
 
