@@ -13,13 +13,22 @@
       "name": "Weavr iOS",
       "bundleIdentifier": "com.weavr.app",
       "developerName": "bishop-actual",
-      "subtitle": "15 Nov 20:40 · Multi-source IPTV with automatic failover",
+      "subtitle": "16 Nov 06:43 · Multi-source IPTV with automatic failover",
       "localizedDescription": "Weavr merges your M3U and Xtream sources into one library, removes duplicate channels and films across providers, and fails over to another source when a stream stalls. Includes a TV guide, films and series, continue watching, Picture in Picture, AirPlay, and WeavrLink, a remote for your Weavr TVs.",
       "iconURL": "https://raw.githubusercontent.com/bishop-actual/app-repo/main/icons/weavr.png?v=e9989785",
       "tintColor": "#57A7B3",
       "category": "entertainment",
       "screenshotURLs": [],
       "versions": [
+        {
+          "version": "1.0.20",
+          "buildVersion": "20",
+          "date": "2026-11-16T06:43:03Z",
+          "localizedDescription": "Genre folders drawn as on the TV\n\nA still (a poster, on a poster-shaped shelf) from the genre's newest\ntitle, in the genre's colour washing up from the name's corner; the icon\nin a ring above the name (beside it on a wide folder); with no picture,\nthe icon large and faint behind for texture. iOS and Apple TV.",
+          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build20/weavr-ios-1.0-build20.ipa",
+          "size": 22283088,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "1.0.18",
           "buildVersion": "18",
