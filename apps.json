@@ -13,13 +13,22 @@
       "name": "Weavr iOS",
       "bundleIdentifier": "com.weavr.app",
       "developerName": "bishop-actual",
-      "subtitle": "17 Nov 15:15 GMT · Multi-source IPTV with automatic failover",
+      "subtitle": "17 Nov 18:14 GMT · Multi-source IPTV with automatic failover",
       "localizedDescription": "Weavr merges your M3U and Xtream sources into one library, removes duplicate channels and films across providers, and fails over to another source when a stream stalls. Includes a TV guide, films and series, continue watching, Picture in Picture, AirPlay, and WeavrLink, a remote for your Weavr TVs.",
       "iconURL": "https://raw.githubusercontent.com/bishop-actual/app-repo/main/icons/weavr.png?v=e9989785",
       "tintColor": "#57A7B3",
       "category": "entertainment",
       "screenshotURLs": [],
       "versions": [
+        {
+          "version": "1.0.34",
+          "buildVersion": "34",
+          "date": "2026-11-17T18:14:08Z",
+          "localizedDescription": "Big libraries: Silo titles made page by page (no raw JSON held for the whole list); films and series saved and read in stamped pieces, index last, at utility priority; Home's shelves built behind the splash",
+          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build34/weavr-ios-1.0-build34.ipa",
+          "size": 22488560,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "1.0.33",
           "buildVersion": "33",
@@ -144,15 +153,6 @@
           "localizedDescription": "Fixes: Silo no longer reloads its whole library on launch, and refreshing or adding one source only reads that source. Sport: nothing followed until ticked; a ticked team shows just its games. Start-up can't get stuck on a broken saved library. New Settings › Log. Emby/Jellyfin/Plex libraries can't loop. Restore uses the system file picker. Coloured swipe buttons on Sources.",
           "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build12/weavr-ios-1.0-build12.ipa",
           "size": 49780011,
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "1.0.11",
-          "buildVersion": "11",
-          "date": "2026-11-15T08:34:17Z",
-          "localizedDescription": "Use Persistence's own remove",
-          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build11/weavr-ios-1.0-build11.ipa",
-          "size": 49775448,
           "minOSVersion": "18.0"
         }
       ]
