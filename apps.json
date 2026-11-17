@@ -125,13 +125,22 @@
       "name": "Weavr tvOS",
       "bundleIdentifier": "com.weavr.app.tv",
       "developerName": "bishop-actual",
-      "subtitle": "16 Nov 06:27 GMT · Weavr on Apple TV",
+      "subtitle": "17 Nov 08:29 GMT · Weavr on Apple TV",
       "localizedDescription": "Weavr for Apple TV: your merged IPTV library, TV guide, films and series with automatic failover between sources.",
       "iconURL": "https://raw.githubusercontent.com/bishop-actual/app-repo/main/icons/weavr.png?v=e9989785",
       "tintColor": "#57A7B3",
       "category": "entertainment",
       "screenshotURLs": [],
       "versions": [
+        {
+          "version": "1.0.6",
+          "buildVersion": "6",
+          "date": "2026-11-17T08:29:08Z",
+          "localizedDescription": "Qualities fill in faster: each source's copies read side by side with the others', 7 s a header at most",
+          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build6/weavr-appletv-1.0-build6.ipa",
+          "size": 21503373,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "1.0.5",
           "buildVersion": "5",
