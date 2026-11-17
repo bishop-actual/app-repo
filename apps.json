@@ -161,13 +161,22 @@
       "name": "Weavr tvOS",
       "bundleIdentifier": "com.weavr.app.tv",
       "developerName": "bishop-actual",
-      "subtitle": "17 Nov 18:49 GMT · Weavr on Apple TV",
+      "subtitle": "17 Nov 20:50 GMT · Weavr on Apple TV",
       "localizedDescription": "Weavr for Apple TV: your merged IPTV library, TV guide, films and series with automatic failover between sources.",
       "iconURL": "https://raw.githubusercontent.com/bishop-actual/app-repo/main/icons/weavr.png?v=e9989785",
       "tintColor": "#57A7B3",
       "category": "entertainment",
       "screenshotURLs": [],
       "versions": [
+        {
+          "version": "1.0.15",
+          "buildVersion": "15",
+          "date": "2026-11-17T20:50:23Z",
+          "localizedDescription": "Saved library kept: the films-and-series index was being deleted with old pieces after every save (so every launch fetched every source again); a missing piece keeps the rest; settings subpages on the newer inline title call so the tabs' inline-large doesn't carry over",
+          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build15/weavr-appletv-1.0-build15.ipa",
+          "size": 21738653,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "1.0.14",
           "buildVersion": "14",
