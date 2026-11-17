@@ -161,13 +161,22 @@
       "name": "Weavr tvOS",
       "bundleIdentifier": "com.weavr.app.tv",
       "developerName": "bishop-actual",
-      "subtitle": "17 Nov 18:13 GMT · Weavr on Apple TV",
+      "subtitle": "17 Nov 18:49 GMT · Weavr on Apple TV",
       "localizedDescription": "Weavr for Apple TV: your merged IPTV library, TV guide, films and series with automatic failover between sources.",
       "iconURL": "https://raw.githubusercontent.com/bishop-actual/app-repo/main/icons/weavr.png?v=e9989785",
       "tintColor": "#57A7B3",
       "category": "entertainment",
       "screenshotURLs": [],
       "versions": [
+        {
+          "version": "1.0.14",
+          "buildVersion": "14",
+          "date": "2026-11-17T18:49:39Z",
+          "localizedDescription": "Books from Silo, browsed live: a page at a time as it's scrolled or searched, an ebook fetched only when opened and kept on the phone, audiobooks streamed through a Silo session with their files as chapters; On this phone shelf; Settings › Books to let kept books go",
+          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build14/weavr-appletv-1.0-build14.ipa",
+          "size": 21649036,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "1.0.13",
           "buildVersion": "13",
