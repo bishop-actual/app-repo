@@ -13,13 +13,22 @@
       "name": "Weavr iOS",
       "bundleIdentifier": "com.weavr.app",
       "developerName": "bishop-actual",
-      "subtitle": "17 Nov 14:08 GMT · Multi-source IPTV with automatic failover",
+      "subtitle": "17 Nov 15:15 GMT · Multi-source IPTV with automatic failover",
       "localizedDescription": "Weavr merges your M3U and Xtream sources into one library, removes duplicate channels and films across providers, and fails over to another source when a stream stalls. Includes a TV guide, films and series, continue watching, Picture in Picture, AirPlay, and WeavrLink, a remote for your Weavr TVs.",
       "iconURL": "https://raw.githubusercontent.com/bishop-actual/app-repo/main/icons/weavr.png?v=e9989785",
       "tintColor": "#57A7B3",
       "category": "entertainment",
       "screenshotURLs": [],
       "versions": [
+        {
+          "version": "1.0.33",
+          "buildVersion": "33",
+          "date": "2026-11-17T15:15:35Z",
+          "localizedDescription": "Player: languages picked as on the TV — audio asked for as VLC opens, tracks looked at again as they turn up, foreign-only grace for late forced tracks, OpenSubtitles fetched automatically with a key (foreign parts only when asked), language codes in any form",
+          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build33/weavr-ios-1.0-build33.ipa",
+          "size": 22462749,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "1.0.32",
           "buildVersion": "32",
@@ -144,15 +153,6 @@
           "localizedDescription": "Use Persistence's own remove",
           "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build11/weavr-ios-1.0-build11.ipa",
           "size": 49775448,
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "1.0",
-          "buildVersion": "9",
-          "date": "2026-11-15T05:45:58Z",
-          "localizedDescription": "Merge remote-tracking branch 'origin/claude/ios-tvos-ipa-repo-2skja7' into dev",
-          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build9/weavr-ios-1.0-build9.ipa",
-          "size": 49741985,
           "minOSVersion": "18.0"
         }
       ]
