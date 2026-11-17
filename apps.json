@@ -13,13 +13,22 @@
       "name": "Weavr iOS",
       "bundleIdentifier": "com.weavr.app",
       "developerName": "bishop-actual",
-      "subtitle": "17 Nov 20:27 GMT · Multi-source IPTV with automatic failover",
+      "subtitle": "17 Nov 20:50 GMT · Multi-source IPTV with automatic failover",
       "localizedDescription": "Weavr merges your M3U and Xtream sources into one library, removes duplicate channels and films across providers, and fails over to another source when a stream stalls. Includes a TV guide, films and series, continue watching, Picture in Picture, AirPlay, and WeavrLink, a remote for your Weavr TVs.",
       "iconURL": "https://raw.githubusercontent.com/bishop-actual/app-repo/main/icons/weavr.png?v=e9989785",
       "tintColor": "#57A7B3",
       "category": "entertainment",
       "screenshotURLs": [],
       "versions": [
+        {
+          "version": "1.0.41",
+          "buildVersion": "41",
+          "date": "2026-11-17T20:50:33Z",
+          "localizedDescription": "Saved library kept: the films-and-series index was being deleted with old pieces after every save (so every launch fetched every source again); a missing piece keeps the rest; settings subpages on the newer inline title call so the tabs' inline-large doesn't carry over",
+          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build41/weavr-ios-1.0-build41.ipa",
+          "size": 22772685,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "1.0.40",
           "buildVersion": "40",
@@ -144,15 +153,6 @@
           "localizedDescription": "Detail page: cast, Available on, poster spacing; service folder filters\n\n- Cast & crew: a cancelled first load (the film's TMDB id arriving after\n  the page opened) counted as done, so the row never filled in. It now\n  asks again, and searches by the clean title.\n- Available on (as the TV): every service TMDB lists for the title here,\n  with its logo; one tapped opens everything that service carries, Movies\n  or Series, sorted Popular / Release date / Top rated / Alphabetical.\n- Films lose the sources pill (series never had one); Choose source stays\n  on the Play button's long press.\n- The poster sits one margin below the back button.\n- Service folders (Netflix…): All / Movies / Series, sort with direction,\n  and a search.\n- Genre tiles keep their artwork inside the tile, so the name shows.",
           "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build18/weavr-ios-1.0-build18.ipa",
           "size": 22075221,
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "1.0.17",
-          "buildVersion": "17",
-          "date": "2026-11-15T15:35:56Z",
-          "localizedDescription": "Fix the VLCKit fetch on macOS bash; fail the step if it's missing",
-          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build17/weavr-ios-1.0-build17.ipa",
-          "size": 22018976,
           "minOSVersion": "18.0"
         }
       ]
