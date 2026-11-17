@@ -1,0 +1,52 @@
+name: Stats
+run-name: Stats
+
+# Hourly: records each release file's download total in stats/history.csv and
+# rewrites STATS.md. GitHub keeps only running totals, so this history is what
+# makes "last 24 hours", "last 7 days" and "while it was the newest build"
+# possible. Commits only when a total changed.
+
+on:
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# Its own group: in Publish's, a waiting stats run could replace a waiting
+# publish (GitHub keeps one waiting run per group). If Publish pushes first,
+# the commit step rebases and tries again.
+concurrency:
+  group: stats
+  cancel-in-progress: false
+
+jobs:
+  stats:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+
+      - name: Count downloads
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/stats.py
+
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add stats STATS.md
+          # Only the "Updated" time changed: nothing worth a commit.
+          if git diff --cached --quiet -- stats/history.csv; then
+            echo "No new downloads"; exit 0
+          fi
+          git commit -m "Stats $(date -u +%Y-%m-%dT%H:%MZ) [skip ci]"
+          for i in 1 2 3 4; do
+            git push origin HEAD:${{ github.event.repository.default_branch }} && exit 0
+            sleep $((i * 5))
+            git pull --rebase -q origin ${{ github.event.repository.default_branch }}
+          done
+          exit 1

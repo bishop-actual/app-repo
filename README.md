@@ -51,6 +51,13 @@ so the Publish workflow skips these releases and they never appear in
 `apps.json`. That workflow needs the same `APP_REPO_TOKEN` secret, set on the
 Android repo.
 
+## Download stats
+
+**[STATS.md](STATS.md)** shows downloads per build, updated hourly: the last
+24 hours, the last 7 days, all time, and how many each build got while it was
+the newest of its platform. The Stats workflow keeps the hourly totals in
+`stats/history.csv`, since GitHub only keeps a running total per file.
+
 ## One-time setup
 
 **In weavr-apple-mobile**, add a repository secret named `APP_REPO_TOKEN`
