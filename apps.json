@@ -13,13 +13,22 @@
       "name": "Weavr iOS",
       "bundleIdentifier": "com.weavr.app",
       "developerName": "bishop-actual",
-      "subtitle": "17 Nov 18:14 GMT · Multi-source IPTV with automatic failover",
+      "subtitle": "17 Nov 19:15 GMT · Multi-source IPTV with automatic failover",
       "localizedDescription": "Weavr merges your M3U and Xtream sources into one library, removes duplicate channels and films across providers, and fails over to another source when a stream stalls. Includes a TV guide, films and series, continue watching, Picture in Picture, AirPlay, and WeavrLink, a remote for your Weavr TVs.",
       "iconURL": "https://raw.githubusercontent.com/bishop-actual/app-repo/main/icons/weavr.png?v=e9989785",
       "tintColor": "#57A7B3",
       "category": "entertainment",
       "screenshotURLs": [],
       "versions": [
+        {
+          "version": "1.0.38",
+          "buildVersion": "38",
+          "date": "2026-11-17T19:15:45Z",
+          "localizedDescription": "iOS build fix: the book sheet's file wasn't to be both unwrapped and cleared under one name (compiler crash)",
+          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build38/weavr-ios-1.0-build38.ipa",
+          "size": 22579384,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "1.0.34",
           "buildVersion": "34",
@@ -144,15 +153,6 @@
           "localizedDescription": "Guide: room by the channels, and a preview on tapping a channel. Audiobooks in your language. Duo keeps your place when folding/unfolding. PiP: live channels try their HLS feed first. TV page search filters live. Home: Top of Home setting and a Sport row. Radio music videos open full screen. Cast & crew with photos. Qualities checked on opening a page. Tidier category names.",
           "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build15/weavr-ios-1.0-build15.ipa",
           "size": 49874433,
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "1.0.12",
-          "buildVersion": "12",
-          "date": "2026-11-15T11:18:44Z",
-          "localizedDescription": "Fixes: Silo no longer reloads its whole library on launch, and refreshing or adding one source only reads that source. Sport: nothing followed until ticked; a ticked team shows just its games. Start-up can't get stuck on a broken saved library. New Settings › Log. Emby/Jellyfin/Plex libraries can't loop. Restore uses the system file picker. Coloured swipe buttons on Sources.",
-          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build12/weavr-ios-1.0-build12.ipa",
-          "size": 49780011,
           "minOSVersion": "18.0"
         }
       ]
