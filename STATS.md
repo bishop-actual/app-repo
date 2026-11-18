@@ -1,6 +1,6 @@
 # Download stats
 
-Updated 18 Nov 00:40 GMT, every hour. Counts are GitHub's downloads of each release file: a reinstall or an update in Feather counts again, and there is no per-device or per-person breakdown.
+Updated 18 Nov 01:20 GMT, every hour. Counts are GitHub's downloads of each release file: a reinstall or an update in Feather counts again, and there is no per-device or per-person breakdown.
 
 ## Overview
 
@@ -8,7 +8,7 @@ Updated 18 Nov 00:40 GMT, every hour. Counts are GitHub's downloads of each rele
 |---|---|---|--:|--:|--:|
 | iOS | 1.0.41 | 17 Nov 20:50 GMT | 30 | 73 | 73 |
 | tvOS | 1.0.15 | 17 Nov 20:50 GMT | 20 | 28 | 28 |
-| Android | 1.0.468 | 17 Nov 14:44 GMT | -2 | 1 | 10 |
+| Android | 1.0.468 | 17 Nov 14:44 GMT | -1 | 2 | 11 |
 
 ## Last 24 hours
 
@@ -78,7 +78,7 @@ Newest first. **Newest for** is how long it was the newest build of its platform
 
 | Build | Published | Newest for | While newest | Per day | All time |
 |---|---|---|--:|--:|--:|
-| 1.0.41 | 17 Nov 20:50 GMT | 4h (now) | 3 | – | 3 |
+| 1.0.41 | 17 Nov 20:50 GMT | 5h (now) | 3 | – | 3 |
 | 1.0.40 | 17 Nov 20:26 GMT | 23m | 3* | – | 3 |
 | 1.0.38 | 17 Nov 19:15 GMT | 1h | 3 | – | 4 |
 | 1.0.34 | 17 Nov 18:13 GMT | 1h | 0 | – | 5 |
@@ -87,23 +87,23 @@ Newest first. **Newest for** is how long it was the newest build of its platform
 | 1.0.29 | 17 Nov 13:27 GMT | 40m | 2* | – | 2 |
 | 1.0.28 | 17 Nov 09:33 GMT | 4h | 3 | – | 3 |
 | 1.0.27 | 17 Nov 08:29 GMT | 1h | 2 | – | 2 |
-| 1.0.26 | 16 Nov 12:00 GMT | 20h | 5* | 3.3 | 5 |
+| 1.0.26 | 16 Nov 12:00 GMT | 20h | 5* | 3.2 | 5 |
 | 1.0.23 | 16 Nov 08:23 GMT | 4h | 3* | 1.8 | 3 |
 | 1.0.22 | 16 Nov 07:08 GMT | 1h | 3* | 1.7 | 3 |
-| 1.0.21 | 16 Nov 07:04 GMT | 3m | 2* | 1.2 | 2 |
+| 1.0.21 | 16 Nov 07:04 GMT | 3m | 2* | 1.1 | 2 |
 | 1.0.20 | 16 Nov 06:42 GMT | 21m | 3* | 1.7 | 3 |
-| 1.0.18 | 15 Nov 20:40 GMT | 10h | 6* | 2.8 | 6 |
-| 1.0.17 | 15 Nov 15:35 GMT | 5h | 3* | 1.3 | 3 |
+| 1.0.18 | 15 Nov 20:40 GMT | 10h | 6* | 2.7 | 6 |
+| 1.0.17 | 15 Nov 15:35 GMT | 5h | 3* | 1.2 | 3 |
 | 1.0.15 | 15 Nov 14:29 GMT | 1h | 2* | 0.8 | 2 |
-| 1.0.12 | 15 Nov 11:18 GMT | 3h | 4* | 1.6 | 4 |
+| 1.0.12 | 15 Nov 11:18 GMT | 3h | 4* | 1.5 | 4 |
 | 1.0.11 | 15 Nov 08:34 GMT | 3h | 4* | 1.5 | 4 |
-| 1.0 | 15 Nov 05:45 GMT | 3h | 8* | 2.9 | 8 |
+| 1.0 | 15 Nov 05:45 GMT | 3h | 8* | 2.8 | 8 |
 
 ### tvOS
 
 | Build | Published | Newest for | While newest | Per day | All time |
 |---|---|---|--:|--:|--:|
-| 1.0.15 | 17 Nov 20:50 GMT | 4h (now) | 3 | – | 3 |
+| 1.0.15 | 17 Nov 20:50 GMT | 5h (now) | 3 | – | 3 |
 | 1.0.14 | 17 Nov 18:49 GMT | 2h | 4 | – | 4 |
 | 1.0.13 | 17 Nov 18:13 GMT | 35m | 0 | – | 2 |
 | 1.0.12 | 17 Nov 15:15 GMT | 3h | 2 | – | 2 |
@@ -112,15 +112,15 @@ Newest first. **Newest for** is how long it was the newest build of its platform
 | 1.0.7 | 17 Nov 09:33 GMT | 4h | 3 | – | 3 |
 | 1.0.6 | 17 Nov 08:29 GMT | 1h | 2 | – | 2 |
 | 1.0.5 | 16 Nov 06:27 GMT | 26h | 3* | 1.7 | 3 |
-| 1.0.4 | 15 Nov 15:35 GMT | 15h | 3* | 1.3 | 3 |
+| 1.0.4 | 15 Nov 15:35 GMT | 15h | 3* | 1.2 | 3 |
 | 1.0.2 | 15 Nov 14:33 GMT | 1h | 2* | 0.8 | 2 |
 
 ### Android
 
 | Build | Published | Newest for | While newest | Per day | All time |
 |---|---|---|--:|--:|--:|
-| 1.0.468 | 17 Nov 14:44 GMT | 10h (now) | -2 | – | -2 |
-| 1.0.467 | 16 Nov 07:15 GMT | 31h | 2* | 1.2 | 2 |
+| 1.0.468 | 17 Nov 14:44 GMT | 11h (now) | -1 | – | -1 |
+| 1.0.467 | 16 Nov 07:15 GMT | 31h | 2* | 1.1 | 2 |
 | 1.0.466 | 15 Nov 19:57 GMT | 11h | 0* | 0.0 | 0 |
 | 1.0.465 | 15 Nov 16:24 GMT | 4h | 1* | 0.4 | 1 |
 
