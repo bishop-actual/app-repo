@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-18T05:20:19Z",
+  "updated": "2026-11-18T10:20:26Z",
   "builds": [
     {
       "platform": "iOS",
@@ -13,7 +13,7 @@
       "24h": 0,
       "7d": 8,
       "newest_for": 10096.0,
-      "per_day": 2.6824904626442247,
+      "per_day": 2.5072729778945,
       "published": "2026-11-15T05:45:48Z",
       "superseded": "2026-11-15T08:34:04Z"
     },
@@ -29,7 +29,7 @@
       "24h": 0,
       "7d": 4,
       "newest_for": 9873.0,
-      "per_day": 1.3959406240533172,
+      "per_day": 1.3012930093153903,
       "published": "2026-11-15T08:34:04Z",
       "superseded": "2026-11-15T11:18:37Z"
     },
@@ -45,7 +45,7 @@
       "24h": 0,
       "7d": 4,
       "newest_for": 11445.0,
-      "per_day": 1.453921296413156,
+      "per_day": 1.3515363166724674,
       "published": "2026-11-15T11:18:37Z",
       "superseded": "2026-11-15T14:29:22Z"
     },
@@ -61,7 +61,7 @@
       "24h": 0,
       "7d": 2,
       "newest_for": 3987.0,
-      "per_day": 0.7637332767604981,
+      "per_day": 0.7074313038351947,
       "published": "2026-11-15T14:29:22Z",
       "superseded": "2026-11-15T15:35:49Z"
     },
@@ -77,7 +77,7 @@
       "24h": 0,
       "7d": 2,
       "newest_for": 3705.0,
-      "per_day": 0.7646356033452807,
+      "per_day": 0.7082054287552715,
       "published": "2026-11-15T14:33:49Z",
       "superseded": "2026-11-15T15:35:34Z"
     },
@@ -93,7 +93,7 @@
       "24h": 0,
       "7d": 3,
       "newest_for": 53505.0,
-      "per_day": 1.1660705850597206,
+      "per_day": 1.0786875967572787,
       "published": "2026-11-15T15:35:34Z",
       "superseded": "2026-11-16T06:27:19Z"
     },
@@ -109,7 +109,7 @@
       "24h": 0,
       "7d": 3,
       "newest_for": 18258.0,
-      "per_day": 1.1661492779052505,
+      "per_day": 1.0787549370102008,
       "published": "2026-11-15T15:35:49Z",
       "superseded": "2026-11-15T20:40:07Z"
     },
@@ -126,7 +126,7 @@
       "7d": 1,
       "via_latest": 0,
       "newest_for": 12778.0,
-      "per_day": 0.3939377359522898,
+      "per_day": 0.36404852294896156,
       "published": "2026-11-15T16:24:55Z",
       "superseded": "2026-11-15T19:57:53Z"
     },
@@ -159,7 +159,7 @@
       "24h": 0,
       "7d": 6,
       "newest_for": 36168.0,
-      "per_day": 2.541026998411858,
+      "per_day": 2.334935298330323,
       "published": "2026-11-15T20:40:07Z",
       "superseded": "2026-11-16T06:42:55Z"
     },
@@ -175,7 +175,7 @@
       "24h": 0,
       "7d": 3,
       "newest_for": 93702.0,
-      "per_day": 1.5357269818698898,
+      "per_day": 1.3876768725874928,
       "published": "2026-11-16T06:27:19Z",
       "superseded": "2026-11-17T08:29:01Z"
     },
@@ -191,7 +191,7 @@
       "24h": 0,
       "7d": 3,
       "newest_for": 1285.0,
-      "per_day": 1.5442911274755131,
+      "per_day": 1.394665619232611,
       "published": "2026-11-16T06:42:55Z",
       "superseded": "2026-11-16T07:04:20Z"
     },
@@ -207,7 +207,7 @@
       "24h": 0,
       "7d": 2,
       "newest_for": 222.0,
-      "per_day": 1.0374702057529164,
+      "per_day": 0.9362504469945709,
       "published": "2026-11-16T07:04:20Z",
       "superseded": "2026-11-16T07:08:02Z"
     },
@@ -223,7 +223,7 @@
       "24h": 0,
       "7d": 3,
       "newest_for": 4498.0,
-      "per_day": 1.5582822823544973,
+      "per_day": 1.4060669183700039,
       "published": "2026-11-16T07:08:02Z",
       "superseded": "2026-11-16T08:23:00Z"
     },
@@ -235,12 +235,12 @@
       "file": "weavr-android-1.0-build467.apk",
       "total": 2,
       "while_newest": 2,
-      "approx": true,
+      "approx": false,
       "24h": 0,
       "7d": 2,
       "via_latest": 0,
       "newest_for": 113295.0,
-      "per_day": 1.0417859877373108,
+      "per_day": 0.9397637538341056,
       "published": "2026-11-16T07:15:50Z",
       "superseded": "2026-11-17T14:44:05Z"
     },
@@ -256,7 +256,7 @@
       "24h": 0,
       "7d": 3,
       "newest_for": 13053.0,
-      "per_day": 1.6015917053367854,
+      "per_day": 1.4412330549470103,
       "published": "2026-11-16T08:23:00Z",
       "superseded": "2026-11-16T12:00:33Z"
     },
@@ -272,7 +272,7 @@
       "24h": 0,
       "7d": 5,
       "newest_for": 73715.0,
-      "per_day": 2.9034989851195676,
+      "per_day": 2.5900367521418763,
       "published": "2026-11-16T12:00:33Z",
       "superseded": "2026-11-17T08:29:08Z"
     },
@@ -285,10 +285,10 @@
       "total": 2,
       "while_newest": 2,
       "approx": false,
-      "24h": 2,
+      "24h": 0,
       "7d": 2,
       "newest_for": 3870.0,
-      "per_day": null,
+      "per_day": 1.856367835848955,
       "published": "2026-11-17T08:29:01Z",
       "superseded": "2026-11-17T09:33:31Z"
     },
@@ -301,10 +301,10 @@
       "total": 2,
       "while_newest": 2,
       "approx": false,
-      "24h": 2,
+      "24h": 0,
       "7d": 2,
       "newest_for": 3870.0,
-      "per_day": null,
+      "per_day": 1.8565074453684005,
       "published": "2026-11-17T08:29:08Z",
       "superseded": "2026-11-17T09:33:38Z"
     },
@@ -316,11 +316,11 @@
       "file": "weavr-appletv-1.0-build7.ipa",
       "total": 3,
       "while_newest": 3,
-      "approx": false,
-      "24h": 3,
+      "approx": true,
+      "24h": 1,
       "7d": 3,
       "newest_for": 14038.0,
-      "per_day": null,
+      "per_day": 2.905341030095836,
       "published": "2026-11-17T09:33:31Z",
       "superseded": "2026-11-17T13:27:29Z"
     },
@@ -332,11 +332,11 @@
       "file": "weavr-ios-1.0-build28.ipa",
       "total": 3,
       "while_newest": 3,
-      "approx": false,
-      "24h": 3,
+      "approx": true,
+      "24h": 1,
       "7d": 3,
       "newest_for": 14050.0,
-      "per_day": null,
+      "per_day": 2.9055690072639226,
       "published": "2026-11-17T09:33:38Z",
       "superseded": "2026-11-17T13:27:48Z"
     },
@@ -416,7 +416,7 @@
       "24h": 0,
       "7d": 0,
       "via_latest": -6,
-      "newest_for": 52574.0,
+      "newest_for": 70581.0,
       "per_day": null,
       "published": "2026-11-17T14:44:05Z",
       "superseded": null
@@ -608,10 +608,10 @@
       "approx": false,
       "24h": 6,
       "7d": 6,
-      "newest_for": 6617.0,
+      "newest_for": 21690.0,
       "per_day": null,
       "published": "2026-11-18T03:30:02Z",
-      "superseded": null
+      "superseded": "2026-11-18T09:31:32Z"
     },
     {
       "platform": "tvOS",
@@ -624,9 +624,73 @@
       "approx": false,
       "24h": 4,
       "7d": 4,
-      "newest_for": 6605.0,
+      "newest_for": 21663.0,
       "per_day": null,
       "published": "2026-11-18T03:30:14Z",
+      "superseded": "2026-11-18T09:31:17Z"
+    },
+    {
+      "platform": "tvOS",
+      "version": "1.0.19",
+      "build": 19,
+      "tag": "weavr-appletv-1.0-build19",
+      "file": "weavr-appletv-1.0-build19.ipa",
+      "total": 2,
+      "while_newest": 2,
+      "approx": true,
+      "24h": 2,
+      "7d": 2,
+      "newest_for": 1152.0,
+      "per_day": null,
+      "published": "2026-11-18T09:31:17Z",
+      "superseded": "2026-11-18T09:50:29Z"
+    },
+    {
+      "platform": "iOS",
+      "version": "1.0.45",
+      "build": 45,
+      "tag": "weavr-ios-1.0-build45",
+      "file": "weavr-ios-1.0-build45.ipa",
+      "total": 2,
+      "while_newest": 2,
+      "approx": true,
+      "24h": 2,
+      "7d": 2,
+      "newest_for": 1168.0,
+      "per_day": null,
+      "published": "2026-11-18T09:31:32Z",
+      "superseded": "2026-11-18T09:51:00Z"
+    },
+    {
+      "platform": "tvOS",
+      "version": "1.0.20",
+      "build": 20,
+      "tag": "weavr-appletv-1.0-build20",
+      "file": "weavr-appletv-1.0-build20.ipa",
+      "total": 2,
+      "while_newest": 2,
+      "approx": false,
+      "24h": 2,
+      "7d": 2,
+      "newest_for": 1797.0,
+      "per_day": null,
+      "published": "2026-11-18T09:50:29Z",
+      "superseded": null
+    },
+    {
+      "platform": "iOS",
+      "version": "1.0.46",
+      "build": 46,
+      "tag": "weavr-ios-1.0-build46",
+      "file": "weavr-ios-1.0-build46.ipa",
+      "total": 3,
+      "while_newest": 3,
+      "approx": false,
+      "24h": 3,
+      "7d": 3,
+      "newest_for": 1766.0,
+      "per_day": null,
+      "published": "2026-11-18T09:51:00Z",
       "superseded": null
     }
   ]
