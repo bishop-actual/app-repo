@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-18T18:21:07Z",
+  "updated": "2026-11-18T19:19:55Z",
   "builds": [
     {
       "platform": "iOS",
@@ -13,7 +13,7 @@
       "24h": 0,
       "7d": 8,
       "newest_for": 10096.0,
-      "per_day": 2.2698091087912413,
+      "per_day": 2.2438134440523685,
       "published": "2026-11-15T05:45:48Z",
       "superseded": "2026-11-15T08:34:04Z"
     },
@@ -29,7 +29,7 @@
       "24h": 0,
       "7d": 4,
       "newest_for": 9873.0,
-      "per_day": 1.173821338686176,
+      "per_day": 1.159922269097939,
       "published": "2026-11-15T08:34:04Z",
       "superseded": "2026-11-15T11:18:37Z"
     },
@@ -45,7 +45,7 @@
       "24h": 0,
       "7d": 4,
       "newest_for": 11445.0,
-      "per_day": 1.2145492883500264,
+      "per_day": 1.1996750879970008,
       "published": "2026-11-15T11:18:37Z",
       "superseded": "2026-11-15T14:29:22Z"
     },
@@ -61,7 +61,7 @@
       "24h": 0,
       "7d": 2,
       "newest_for": 3987.0,
-      "per_day": 0.6327236777063766,
+      "per_day": 0.6246543254058626,
       "published": "2026-11-15T14:29:22Z",
       "superseded": "2026-11-15T15:35:49Z"
     },
@@ -77,7 +77,7 @@
       "24h": 0,
       "7d": 2,
       "newest_for": 3705.0,
-      "per_day": 0.6333428627977041,
+      "per_day": 0.6252578102950435,
       "published": "2026-11-15T14:33:49Z",
       "superseded": "2026-11-15T15:35:34Z"
     },
@@ -93,7 +93,7 @@
       "24h": 0,
       "7d": 3,
       "newest_for": 53505.0,
-      "per_day": 0.9630925973403485,
+      "per_day": 0.9506310033338101,
       "published": "2026-11-15T15:35:34Z",
       "superseded": "2026-11-16T06:27:19Z"
     },
@@ -109,7 +109,7 @@
       "24h": 0,
       "7d": 3,
       "newest_for": 18258.0,
-      "per_day": 0.9631462778409471,
+      "per_day": 0.9506833036244801,
       "published": "2026-11-15T15:35:49Z",
       "superseded": "2026-11-15T20:40:07Z"
     },
@@ -126,7 +126,7 @@
       "7d": 1,
       "via_latest": 0,
       "newest_for": 12778.0,
-      "per_day": 0.3246021369640683,
+      "per_day": 0.3203559510567297,
       "published": "2026-11-15T16:24:55Z",
       "superseded": "2026-11-15T19:57:53Z"
     },
@@ -159,7 +159,7 @@
       "24h": 0,
       "7d": 6,
       "newest_for": 36168.0,
-      "per_day": 2.066491270031093,
+      "per_day": 2.0378319732062833,
       "published": "2026-11-15T20:40:07Z",
       "superseded": "2026-11-16T06:42:55Z"
     },
@@ -175,7 +175,7 @@
       "24h": 0,
       "7d": 3,
       "newest_for": 93702.0,
-      "per_day": 1.2020702320663363,
+      "per_day": 1.1827191589552648,
       "published": "2026-11-16T06:27:19Z",
       "superseded": "2026-11-17T08:29:01Z"
     },
@@ -191,7 +191,7 @@
       "24h": 0,
       "7d": 3,
       "newest_for": 1285.0,
-      "per_day": 1.2073109384606786,
+      "per_day": 1.1877921363761341,
       "published": "2026-11-16T06:42:55Z",
       "superseded": "2026-11-16T07:04:20Z"
     },
@@ -207,7 +207,7 @@
       "24h": 0,
       "7d": 2,
       "newest_for": 222.0,
-      "per_day": 0.8097203934266448,
+      "per_day": 0.7965519625694332,
       "published": "2026-11-16T07:04:20Z",
       "superseded": "2026-11-16T07:08:02Z"
     },
@@ -223,7 +223,7 @@
       "24h": 0,
       "7d": 3,
       "newest_for": 4498.0,
-      "per_day": 1.2158453924994723,
+      "per_day": 1.1960519212045424,
       "published": "2026-11-16T07:08:02Z",
       "superseded": "2026-11-16T08:23:00Z"
     },
@@ -240,7 +240,7 @@
       "7d": 2,
       "via_latest": 0,
       "newest_for": 113295.0,
-      "per_day": 0.8123469210265283,
+      "per_day": 0.7990936206617494,
       "published": "2026-11-16T07:15:50Z",
       "superseded": "2026-11-17T14:44:05Z"
     },
@@ -256,7 +256,7 @@
       "24h": 0,
       "7d": 3,
       "newest_for": 13053.0,
-      "per_day": 1.24205149338483,
+      "per_day": 1.2214028226091462,
       "published": "2026-11-16T08:23:00Z",
       "superseded": "2026-11-16T12:00:33Z"
     },
@@ -272,7 +272,7 @@
       "24h": 0,
       "7d": 5,
       "newest_for": 73715.0,
-      "per_day": 2.2082051177198236,
+      "per_day": 2.1690884807342767,
       "published": "2026-11-16T12:00:33Z",
       "superseded": "2026-11-17T08:29:08Z"
     },
@@ -288,7 +288,7 @@
       "24h": 0,
       "7d": 2,
       "newest_for": 3870.0,
-      "per_day": 1.4172530879385856,
+      "per_day": 1.3773972930317089,
       "published": "2026-11-17T08:29:01Z",
       "superseded": "2026-11-17T09:33:31Z"
     },
@@ -304,7 +304,7 @@
       "24h": 0,
       "7d": 2,
       "newest_for": 3870.0,
-      "per_day": 1.4173344597642699,
+      "per_day": 1.377474152430907,
       "published": "2026-11-17T08:29:08Z",
       "superseded": "2026-11-17T09:33:38Z"
     },
@@ -320,7 +320,7 @@
       "24h": 0,
       "7d": 3,
       "newest_for": 14038.0,
-      "per_day": 2.195568204919699,
+      "per_day": 2.1318594551914725,
       "published": "2026-11-17T09:33:31Z",
       "superseded": "2026-11-17T13:27:29Z"
     },
@@ -336,7 +336,7 @@
       "24h": 0,
       "7d": 3,
       "newest_for": 14050.0,
-      "per_day": 2.1956983964286017,
+      "per_day": 2.131982200580702,
       "published": "2026-11-17T09:33:38Z",
       "superseded": "2026-11-17T13:27:48Z"
     },
@@ -352,7 +352,7 @@
       "24h": 0,
       "7d": 2,
       "newest_for": 2475.0,
-      "per_day": 1.6612509373377684,
+      "per_day": 1.6067543190820672,
       "published": "2026-11-17T13:27:29Z",
       "superseded": "2026-11-17T14:08:44Z"
     },
@@ -368,7 +368,7 @@
       "24h": 0,
       "7d": 2,
       "newest_for": 2455.0,
-      "per_day": 1.6615544380234424,
+      "per_day": 1.6070382322579446,
       "published": "2026-11-17T13:27:48Z",
       "superseded": "2026-11-17T14:08:43Z"
     },
@@ -384,7 +384,7 @@
       "24h": 0,
       "7d": 4,
       "newest_for": 4001.0,
-      "per_day": 3.4034507208697704,
+      "per_day": 3.2891731384193696,
       "published": "2026-11-17T14:08:43Z",
       "superseded": "2026-11-17T15:15:24Z"
     },
@@ -400,7 +400,7 @@
       "24h": 0,
       "7d": 2,
       "newest_for": 4018.0,
-      "per_day": 1.7017421191022524,
+      "per_day": 1.6446022213550837,
       "published": "2026-11-17T14:08:44Z",
       "superseded": "2026-11-17T15:15:42Z"
     },
@@ -430,10 +430,10 @@
       "total": 4,
       "while_newest": 3,
       "approx": false,
-      "24h": 1,
+      "24h": 0,
       "7d": 4,
       "newest_for": 10715.0,
-      "per_day": 3.5430528074797785,
+      "per_day": 3.419378456728438,
       "published": "2026-11-17T15:15:24Z",
       "superseded": "2026-11-17T18:13:59Z"
     },
@@ -449,7 +449,7 @@
       "24h": 0,
       "7d": 2,
       "newest_for": 10673.0,
-      "per_day": 1.7718533709305304,
+      "per_day": 1.7099937656477293,
       "published": "2026-11-17T15:15:42Z",
       "superseded": "2026-11-17T18:13:35Z"
     },
@@ -461,11 +461,11 @@
       "file": "weavr-appletv-1.0-build13.ipa",
       "total": 2,
       "while_newest": 0,
-      "approx": true,
+      "approx": false,
       "24h": 2,
       "7d": 2,
       "newest_for": 2155.0,
-      "per_day": 1.9895914889697415,
+      "per_day": 1.911927417570259,
       "published": "2026-11-17T18:13:35Z",
       "superseded": "2026-11-17T18:49:30Z"
     },
@@ -477,11 +477,11 @@
       "file": "weavr-ios-1.0-build34.ipa",
       "total": 5,
       "while_newest": 0,
-      "approx": true,
+      "approx": false,
       "24h": 5,
       "7d": 5,
       "newest_for": 3698.0,
-      "per_day": 4.975353572580273,
+      "per_day": 4.781088140245252,
       "published": "2026-11-17T18:13:59Z",
       "superseded": "2026-11-17T19:15:37Z"
     },
@@ -493,11 +493,11 @@
       "file": "weavr-appletv-1.0-build14.ipa",
       "total": 4,
       "while_newest": 4,
-      "approx": false,
-      "24h": 4,
+      "approx": true,
+      "24h": 1,
       "7d": 4,
       "newest_for": 7243.0,
-      "per_day": null,
+      "per_day": 3.9172570133182205,
       "published": "2026-11-17T18:49:30Z",
       "superseded": "2026-11-17T20:50:13Z"
     },
@@ -509,11 +509,11 @@
       "file": "weavr-ios-1.0-build38.ipa",
       "total": 4,
       "while_newest": 3,
-      "approx": false,
+      "approx": true,
       "24h": 4,
       "7d": 4,
       "newest_for": 4277.0,
-      "per_day": null,
+      "per_day": 3.988091116803988,
       "published": "2026-11-17T19:15:37Z",
       "superseded": "2026-11-17T20:26:54Z"
     },
@@ -705,7 +705,7 @@
       "24h": -2,
       "7d": -2,
       "via_latest": -3,
-      "newest_for": 22730.0,
+      "newest_for": 26258.0,
       "per_day": null,
       "published": "2026-11-18T12:02:17Z",
       "superseded": null
@@ -721,10 +721,10 @@
       "approx": false,
       "24h": 3,
       "7d": 3,
-      "newest_for": 5465.0,
+      "newest_for": 7466.0,
       "per_day": null,
       "published": "2026-11-18T16:50:02Z",
-      "superseded": null
+      "superseded": "2026-11-18T18:54:28Z"
     },
     {
       "platform": "iOS",
@@ -737,9 +737,41 @@
       "approx": false,
       "24h": 5,
       "7d": 5,
-      "newest_for": 5444.0,
+      "newest_for": 7503.0,
       "per_day": null,
       "published": "2026-11-18T16:50:23Z",
+      "superseded": "2026-11-18T18:55:26Z"
+    },
+    {
+      "platform": "tvOS",
+      "version": "1.0.23",
+      "build": 23,
+      "tag": "weavr-appletv-1.0-build23",
+      "file": "weavr-appletv-1.0-build23.ipa",
+      "total": 2,
+      "while_newest": 2,
+      "approx": false,
+      "24h": 2,
+      "7d": 2,
+      "newest_for": 1527.0,
+      "per_day": null,
+      "published": "2026-11-18T18:54:28Z",
+      "superseded": null
+    },
+    {
+      "platform": "iOS",
+      "version": "1.0.49",
+      "build": 49,
+      "tag": "weavr-ios-1.0-build49",
+      "file": "weavr-ios-1.0-build49.ipa",
+      "total": 2,
+      "while_newest": 2,
+      "approx": false,
+      "24h": 2,
+      "7d": 2,
+      "newest_for": 1469.0,
+      "per_day": null,
+      "published": "2026-11-18T18:55:26Z",
       "superseded": null
     }
   ]
