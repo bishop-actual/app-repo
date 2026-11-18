@@ -13,13 +13,22 @@
       "name": "Weavr iOS",
       "bundleIdentifier": "com.weavr.app",
       "developerName": "bishop-actual",
-      "subtitle": "18 Nov 09:31 GMT · Multi-source IPTV with automatic failover",
+      "subtitle": "18 Nov 09:51 GMT · Multi-source IPTV with automatic failover",
       "localizedDescription": "Weavr merges your M3U and Xtream sources into one library, removes duplicate channels and films across providers, and fails over to another source when a stream stalls. Includes a TV guide, films and series, continue watching, Picture in Picture, AirPlay, and WeavrLink, a remote for your Weavr TVs.",
       "iconURL": "https://raw.githubusercontent.com/bishop-actual/app-repo/main/icons/weavr.png?v=e9989785",
       "tintColor": "#57A7B3",
       "category": "entertainment",
       "screenshotURLs": [],
       "versions": [
+        {
+          "version": "1.0.46",
+          "buildVersion": "46",
+          "date": "2026-11-18T09:51:19Z",
+          "localizedDescription": "Player: VLC for everything by default (every format, Picture in Picture, background audio), Silo included through the relay; Apple's player only when chosen in Settings › Playback › Player",
+          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build46/weavr-ios-1.0-build46.ipa",
+          "size": 22913826,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "1.0.45",
           "buildVersion": "45",
@@ -144,15 +153,6 @@
           "localizedDescription": "Sources: refresh one part (channels, films, series, books) or everything\n\nIn a source's page, each switched-on part under Load has a ↻ that fetches\njust that part again, leaving the rest as it is (films and series can now\nbe fetched apart). \"Refresh everything from …\" fetches the whole source,\nbooks included, as does the Sources list's swipe-left Refresh.",
           "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build23/weavr-ios-1.0-build23.ipa",
           "size": 22336883,
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "1.0.22",
-          "buildVersion": "22",
-          "date": "2026-11-16T07:08:09Z",
-          "localizedDescription": "Books tab only while a source has ebooks or audiobooks; LibriVox back in Radio otherwise",
-          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build22/weavr-ios-1.0-build22.ipa",
-          "size": 22325878,
           "minOSVersion": "18.0"
         }
       ]
