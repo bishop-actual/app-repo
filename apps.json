@@ -161,13 +161,22 @@
       "name": "Weavr tvOS",
       "bundleIdentifier": "com.weavr.app.tv",
       "developerName": "bishop-actual",
-      "subtitle": "18 Nov 16:50 GMT · Weavr on Apple TV",
+      "subtitle": "18 Nov 18:54 GMT · Weavr on Apple TV",
       "localizedDescription": "Weavr for Apple TV: your merged IPTV library, TV guide, films and series with automatic failover between sources.",
       "iconURL": "https://raw.githubusercontent.com/bishop-actual/app-repo/main/icons/weavr.png?v=e9989785",
       "tintColor": "#57A7B3",
       "category": "entertainment",
       "screenshotURLs": [],
       "versions": [
+        {
+          "version": "1.0.23",
+          "buildVersion": "23",
+          "date": "2026-11-18T18:54:59Z",
+          "localizedDescription": "Books: Silo asked for the order as its own app asks it (a field and a direction: published date newest or oldest, title, author, added), so Newest published means newest across the whole library, not of the pages read so far; a genre or search keeps reading on through the library while the end of the list is in view (it stopped after a run of pages with nothing new and spun), showing how far it's got",
+          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build23/weavr-appletv-1.0-build23.ipa",
+          "size": 21971471,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "1.0.22",
           "buildVersion": "22",
@@ -292,15 +301,6 @@
           "localizedDescription": "Books: read EPUB, PDF and CBZ in the app\n\n- EPUB: unpacked once (ZIPFoundation), read from its package's spine a\n  chapter at a time in a web view coloured to the app's theme, with the\n  contents list, previous/next, text size, and your place kept (chapter\n  and how far down). Links between chapters move the place; links out\n  open in Safari.\n- PDF: PDFKit, your page kept.\n- CBZ: its pictures a page at a time, swipe and pinch to zoom.\n- Other kinds (MOBI, AZW…) still offer Open in….",
           "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build5/weavr-appletv-1.0-build5.ipa",
           "size": 21431583,
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "1.0.4",
-          "buildVersion": "4",
-          "date": "2026-11-15T15:35:41Z",
-          "localizedDescription": "Fix the VLCKit fetch on macOS bash; fail the step if it's missing",
-          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build4/weavr-appletv-1.0-build4.ipa",
-          "size": 21419599,
           "minOSVersion": "18.0"
         }
       ]
