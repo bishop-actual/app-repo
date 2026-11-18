@@ -13,13 +13,22 @@
       "name": "Weavr iOS",
       "bundleIdentifier": "com.weavr.app",
       "developerName": "bishop-actual",
-      "subtitle": "18 Nov 03:30 GMT · Multi-source IPTV with automatic failover",
+      "subtitle": "18 Nov 09:31 GMT · Multi-source IPTV with automatic failover",
       "localizedDescription": "Weavr merges your M3U and Xtream sources into one library, removes duplicate channels and films across providers, and fails over to another source when a stream stalls. Includes a TV guide, films and series, continue watching, Picture in Picture, AirPlay, and WeavrLink, a remote for your Weavr TVs.",
       "iconURL": "https://raw.githubusercontent.com/bishop-actual/app-repo/main/icons/weavr.png?v=e9989785",
       "tintColor": "#57A7B3",
       "category": "entertainment",
       "screenshotURLs": [],
       "versions": [
+        {
+          "version": "1.0.45",
+          "buildVersion": "45",
+          "date": "2026-11-18T09:31:49Z",
+          "localizedDescription": "Build fix: published year worked out in steps",
+          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build45/weavr-ios-1.0-build45.ipa",
+          "size": 22913593,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "1.0.43",
           "buildVersion": "43",
@@ -144,15 +153,6 @@
           "localizedDescription": "Books tab only while a source has ebooks or audiobooks; LibriVox back in Radio otherwise",
           "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build22/weavr-ios-1.0-build22.ipa",
           "size": 22325878,
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "1.0.21",
-          "buildVersion": "21",
-          "date": "2026-11-16T07:04:28Z",
-          "localizedDescription": "Media filter beside the bubble; server ebooks and audiobooks in imports\n\n- Media's filter is a bare button left of the standard bubble (search,\n  WeavrLink, profile), which keeps just those three on every page. Guide\n  and Sport keep their own bubble on TV.\n- Jellyfin, Emby and Silo audiobooks (a file, or a folder of files as its\n  chapters) join their ebooks. Adding such a server on iPhone or iPad\n  looks for both as steps of the import, and counts them in its totals\n  (\"… · 12 ebooks · 40 audiobooks\"), there and in Sources. Each source\n  has Ebooks and Audiobooks switches; off, Weavr doesn't look and drops\n  what it had. The Books tab switches between Ebooks and Audiobooks;\n  audiobooks play in the audiobook player, your place kept.",
-          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build21/weavr-ios-1.0-build21.ipa",
-          "size": 22319357,
           "minOSVersion": "18.0"
         }
       ]
