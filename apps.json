@@ -161,13 +161,22 @@
       "name": "Weavr tvOS",
       "bundleIdentifier": "com.weavr.app.tv",
       "developerName": "bishop-actual",
-      "subtitle": "17 Nov 20:50 GMT · Weavr on Apple TV",
+      "subtitle": "18 Nov 03:20 GMT · Weavr on Apple TV",
       "localizedDescription": "Weavr for Apple TV: your merged IPTV library, TV guide, films and series with automatic failover between sources.",
       "iconURL": "https://raw.githubusercontent.com/bishop-actual/app-repo/main/icons/weavr.png?v=e9989785",
       "tintColor": "#57A7B3",
       "category": "entertainment",
       "screenshotURLs": [],
       "versions": [
+        {
+          "version": "1.0.16",
+          "buildVersion": "16",
+          "date": "2026-11-18T03:20:26Z",
+          "localizedDescription": "Sport cards: the teams' own colours across the card (home one end, away the other), the sport's colour where there are no teams, and a stripe of the sport's colour down the side — Home and the Sport page alike",
+          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build16/weavr-appletv-1.0-build16.ipa",
+          "size": 21765978,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "1.0.15",
           "buildVersion": "15",
