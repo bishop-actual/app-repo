@@ -1,14 +1,14 @@
 # Download stats
 
-Updated 18 Nov 03:22 GMT, every hour. Counts are GitHub's downloads of each release file: a reinstall or an update in Feather counts again, and there is no per-device or per-person breakdown.
+Updated 18 Nov 04:22 GMT, every hour. Counts are GitHub's downloads of each release file: a reinstall or an update in Feather counts again, and there is no per-device or per-person breakdown.
 
 ## Overview
 
 | Platform | Newest build | Published | Last 24h | Last 7 days | All time |
 |---|---|---|--:|--:|--:|
-| iOS | 1.0.42 | 18 Nov 03:20 GMT | 32 | 75 | 75 |
-| tvOS | 1.0.16 | 18 Nov 03:20 GMT | 21 | 29 | 29 |
-| Android | 1.0.468 | 17 Nov 14:44 GMT | -1 | 2 | 11 |
+| iOS | 1.0.43 | 18 Nov 03:30 GMT | 39 | 82 | 82 |
+| tvOS | 1.0.17 | 18 Nov 03:30 GMT | 26 | 34 | 34 |
+| Android | 1.0.468 | 17 Nov 14:44 GMT | 0 | 3 | 12 |
 
 ## Last 24 hours
 
@@ -16,6 +16,7 @@ Updated 18 Nov 03:22 GMT, every hour. Counts are GitHub's downloads of each rele
 |---|---|--:|
 | iOS 1.0.34 | 17 Nov 18:13 GMT | 5 |
 | iOS 1.0.41 | 17 Nov 20:50 GMT | 5 |
+| iOS 1.0.43 | 18 Nov 03:30 GMT | 5 |
 | iOS 1.0.32 | 17 Nov 14:08 GMT | 4 |
 | iOS 1.0.33 | 17 Nov 15:15 GMT | 4 |
 | tvOS 1.0.14 | 17 Nov 18:49 GMT | 4 |
@@ -24,6 +25,7 @@ Updated 18 Nov 03:22 GMT, every hour. Counts are GitHub's downloads of each rele
 | tvOS 1.0.7 | 17 Nov 09:33 GMT | 3 |
 | iOS 1.0.28 | 17 Nov 09:33 GMT | 3 |
 | iOS 1.0.40 | 17 Nov 20:26 GMT | 3* |
+| tvOS 1.0.17 | 18 Nov 03:30 GMT | 3 |
 | tvOS 1.0.6 | 17 Nov 08:29 GMT | 2 |
 | iOS 1.0.27 | 17 Nov 08:29 GMT | 2 |
 | tvOS 1.0.8 | 17 Nov 13:27 GMT | 2* |
@@ -31,6 +33,8 @@ Updated 18 Nov 03:22 GMT, every hour. Counts are GitHub's downloads of each rele
 | tvOS 1.0.11 | 17 Nov 14:08 GMT | 2 |
 | tvOS 1.0.12 | 17 Nov 15:15 GMT | 2 |
 | tvOS 1.0.13 | 17 Nov 18:13 GMT | 2 |
+| tvOS 1.0.16 | 18 Nov 03:20 GMT | 2 |
+| iOS 1.0.42 | 18 Nov 03:20 GMT | 2 |
 
 ## Last 7 days
 
@@ -41,6 +45,7 @@ Updated 18 Nov 03:22 GMT, every hour. Counts are GitHub's downloads of each rele
 | iOS 1.0.26 | 16 Nov 12:00 GMT | 5* |
 | iOS 1.0.34 | 17 Nov 18:13 GMT | 5 |
 | iOS 1.0.41 | 17 Nov 20:50 GMT | 5 |
+| iOS 1.0.43 | 18 Nov 03:30 GMT | 5 |
 | iOS 1.0.11 | 15 Nov 08:34 GMT | 4* |
 | iOS 1.0.12 | 15 Nov 11:18 GMT | 4* |
 | iOS 1.0.32 | 17 Nov 14:08 GMT | 4 |
@@ -57,6 +62,7 @@ Updated 18 Nov 03:22 GMT, every hour. Counts are GitHub's downloads of each rele
 | tvOS 1.0.7 | 17 Nov 09:33 GMT | 3 |
 | iOS 1.0.28 | 17 Nov 09:33 GMT | 3 |
 | iOS 1.0.40 | 17 Nov 20:26 GMT | 3* |
+| tvOS 1.0.17 | 18 Nov 03:30 GMT | 3 |
 | iOS 1.0.15 | 15 Nov 14:29 GMT | 2* |
 | tvOS 1.0.2 | 15 Nov 14:33 GMT | 2* |
 | iOS 1.0.21 | 16 Nov 07:04 GMT | 2* |
@@ -68,6 +74,8 @@ Updated 18 Nov 03:22 GMT, every hour. Counts are GitHub's downloads of each rele
 | tvOS 1.0.11 | 17 Nov 14:08 GMT | 2 |
 | tvOS 1.0.12 | 17 Nov 15:15 GMT | 2 |
 | tvOS 1.0.13 | 17 Nov 18:13 GMT | 2 |
+| tvOS 1.0.16 | 18 Nov 03:20 GMT | 2 |
+| iOS 1.0.42 | 18 Nov 03:20 GMT | 2 |
 | Android 1.0.465 | 15 Nov 16:24 GMT | 1* |
 
 ## Every build
@@ -78,7 +86,8 @@ Newest first. **Newest for** is how long it was the newest build of its platform
 
 | Build | Published | Newest for | While newest | Per day | All time |
 |---|---|---|--:|--:|--:|
-| 1.0.42 | 18 Nov 03:20 GMT | 2m (now) | 0 | – | 0 |
+| 1.0.43 | 18 Nov 03:30 GMT | 52m (now) | 5 | – | 5 |
+| 1.0.42 | 18 Nov 03:20 GMT | 9m | 0 | – | 2 |
 | 1.0.41 | 17 Nov 20:50 GMT | 7h | 3 | – | 5 |
 | 1.0.40 | 17 Nov 20:26 GMT | 23m | 3* | – | 3 |
 | 1.0.38 | 17 Nov 19:15 GMT | 1h | 3 | – | 4 |
@@ -89,7 +98,7 @@ Newest first. **Newest for** is how long it was the newest build of its platform
 | 1.0.28 | 17 Nov 09:33 GMT | 4h | 3 | – | 3 |
 | 1.0.27 | 17 Nov 08:29 GMT | 1h | 2 | – | 2 |
 | 1.0.26 | 16 Nov 12:00 GMT | 20h | 5* | 3.0 | 5 |
-| 1.0.23 | 16 Nov 08:23 GMT | 4h | 3* | 1.7 | 3 |
+| 1.0.23 | 16 Nov 08:23 GMT | 4h | 3* | 1.6 | 3 |
 | 1.0.22 | 16 Nov 07:08 GMT | 1h | 3* | 1.6 | 3 |
 | 1.0.21 | 16 Nov 07:04 GMT | 3m | 2* | 1.1 | 2 |
 | 1.0.20 | 16 Nov 06:42 GMT | 21m | 3* | 1.6 | 3 |
@@ -98,13 +107,14 @@ Newest first. **Newest for** is how long it was the newest build of its platform
 | 1.0.15 | 15 Nov 14:29 GMT | 1h | 2* | 0.8 | 2 |
 | 1.0.12 | 15 Nov 11:18 GMT | 3h | 4* | 1.5 | 4 |
 | 1.0.11 | 15 Nov 08:34 GMT | 3h | 4* | 1.4 | 4 |
-| 1.0 | 15 Nov 05:45 GMT | 3h | 8* | 2.8 | 8 |
+| 1.0 | 15 Nov 05:45 GMT | 3h | 8* | 2.7 | 8 |
 
 ### tvOS
 
 | Build | Published | Newest for | While newest | Per day | All time |
 |---|---|---|--:|--:|--:|
-| 1.0.16 | 18 Nov 03:20 GMT | 2m (now) | 0 | – | 0 |
+| 1.0.17 | 18 Nov 03:30 GMT | 51m (now) | 3 | – | 3 |
+| 1.0.16 | 18 Nov 03:20 GMT | 9m | 0 | – | 2 |
 | 1.0.15 | 17 Nov 20:50 GMT | 7h | 3 | – | 4 |
 | 1.0.14 | 17 Nov 18:49 GMT | 2h | 4 | – | 4 |
 | 1.0.13 | 17 Nov 18:13 GMT | 35m | 0 | – | 2 |
@@ -121,7 +131,7 @@ Newest first. **Newest for** is how long it was the newest build of its platform
 
 | Build | Published | Newest for | While newest | Per day | All time |
 |---|---|---|--:|--:|--:|
-| 1.0.468 | 17 Nov 14:44 GMT | 13h (now) | -1 | – | -1 |
+| 1.0.468 | 17 Nov 14:44 GMT | 14h (now) | 0 | – | 0 |
 | 1.0.467 | 16 Nov 07:15 GMT | 31h | 2* | 1.1 | 2 |
 | 1.0.466 | 15 Nov 19:57 GMT | 11h | 0* | 0.0 | 0 |
 | 1.0.465 | 15 Nov 16:24 GMT | 4h | 1* | 0.4 | 1 |
