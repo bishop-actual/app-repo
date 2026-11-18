@@ -161,13 +161,22 @@
       "name": "Weavr tvOS",
       "bundleIdentifier": "com.weavr.app.tv",
       "developerName": "bishop-actual",
-      "subtitle": "18 Nov 20:13 GMT · Weavr on Apple TV",
+      "subtitle": "18 Nov 20:29 GMT · Weavr on Apple TV",
       "localizedDescription": "Weavr for Apple TV: your merged IPTV library, TV guide, films and series with automatic failover between sources.",
       "iconURL": "https://raw.githubusercontent.com/bishop-actual/app-repo/main/icons/weavr.png?v=e9989785",
       "tintColor": "#57A7B3",
       "category": "entertainment",
       "screenshotURLs": [],
       "versions": [
+        {
+          "version": "1.0.26",
+          "buildVersion": "26",
+          "date": "2026-11-18T20:29:43Z",
+          "localizedDescription": "Shelf page: each folder's name on one line and its five icons beneath; the sort sorts A to Z, or Z to A when they already are (it seemed to do nothing on a shelf already in order)",
+          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build26/weavr-appletv-1.0-build26.ipa",
+          "size": 21989642,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "1.0.25",
           "buildVersion": "25",
@@ -292,15 +301,6 @@
           "localizedDescription": "Books: refreshing or adding one source looks at that source's books only, never every server",
           "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build8/weavr-appletv-1.0-build8.ipa",
           "size": 21526638,
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "1.0.7",
-          "buildVersion": "7",
-          "date": "2026-11-17T09:33:46Z",
-          "localizedDescription": "Faster Xtream imports, timed in the log\n\n- A panel's lists are read in one pass: rows stay as decoded and a field\n  is converted only when used, rather than first building a whole second\n  copy of a 100,000-row list.\n- A source's channels (then its guide) and its films and series load at\n  the same time, each downloading while the other is read and merged; the\n  same for due refreshes.\n- Settings › Log times each step: each list's size, download and reading,\n  each merge, and the whole refresh — so the slow part can be seen.",
-          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build7/weavr-appletv-1.0-build7.ipa",
-          "size": 21520288,
           "minOSVersion": "18.0"
         }
       ]
