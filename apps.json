@@ -13,13 +13,22 @@
       "name": "Weavr iOS",
       "bundleIdentifier": "com.weavr.app",
       "developerName": "bishop-actual",
-      "subtitle": "18 Nov 09:51 GMT · Multi-source IPTV with automatic failover",
+      "subtitle": "18 Nov 16:50 GMT · Multi-source IPTV with automatic failover",
       "localizedDescription": "Weavr merges your M3U and Xtream sources into one library, removes duplicate channels and films across providers, and fails over to another source when a stream stalls. Includes a TV guide, films and series, continue watching, Picture in Picture, AirPlay, and WeavrLink, a remote for your Weavr TVs.",
       "iconURL": "https://raw.githubusercontent.com/bishop-actual/app-repo/main/icons/weavr.png?v=e9989785",
       "tintColor": "#57A7B3",
       "category": "entertainment",
       "screenshotURLs": [],
       "versions": [
+        {
+          "version": "1.0.48",
+          "buildVersion": "48",
+          "date": "2026-11-18T16:50:33Z",
+          "localizedDescription": "Build fix: the collection picker's type renamed (SiloPick was taken by the Silo profile picker); VLC's sound mix set by its value",
+          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build48/weavr-ios-1.0-build48.ipa",
+          "size": 23041975,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "1.0.46",
           "buildVersion": "46",
@@ -144,15 +153,6 @@
           "localizedDescription": "Fix build: no lazy chain over non-escaping closures in Home's newest row",
           "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build26/weavr-ios-1.0-build26.ipa",
           "size": 22346960,
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "1.0.23",
-          "buildVersion": "23",
-          "date": "2026-11-16T08:23:10Z",
-          "localizedDescription": "Sources: refresh one part (channels, films, series, books) or everything\n\nIn a source's page, each switched-on part under Load has a ↻ that fetches\njust that part again, leaving the rest as it is (films and series can now\nbe fetched apart). \"Refresh everything from …\" fetches the whole source,\nbooks included, as does the Sources list's swipe-left Refresh.",
-          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build23/weavr-ios-1.0-build23.ipa",
-          "size": 22336883,
           "minOSVersion": "18.0"
         }
       ]
