@@ -161,13 +161,22 @@
       "name": "Weavr tvOS",
       "bundleIdentifier": "com.weavr.app.tv",
       "developerName": "bishop-actual",
-      "subtitle": "18 Nov 18:54 GMT · Weavr on Apple TV",
+      "subtitle": "18 Nov 19:52 GMT · Weavr on Apple TV",
       "localizedDescription": "Weavr for Apple TV: your merged IPTV library, TV guide, films and series with automatic failover between sources.",
       "iconURL": "https://raw.githubusercontent.com/bishop-actual/app-repo/main/icons/weavr.png?v=e9989785",
       "tintColor": "#57A7B3",
       "category": "entertainment",
       "screenshotURLs": [],
       "versions": [
+        {
+          "version": "1.0.24",
+          "buildVersion": "24",
+          "date": "2026-11-18T19:52:47Z",
+          "localizedDescription": "Books: title A–Z asks Silo nothing extra (no order), exactly as before sorting was asked of it",
+          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build24/weavr-appletv-1.0-build24.ipa",
+          "size": 21981542,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "1.0.23",
           "buildVersion": "23",
@@ -292,15 +301,6 @@
           "localizedDescription": "Qualities fill in faster: each source's copies read side by side with the others', 7 s a header at most",
           "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build6/weavr-appletv-1.0-build6.ipa",
           "size": 21503373,
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "1.0.5",
-          "buildVersion": "5",
-          "date": "2026-11-16T06:27:27Z",
-          "localizedDescription": "Books: read EPUB, PDF and CBZ in the app\n\n- EPUB: unpacked once (ZIPFoundation), read from its package's spine a\n  chapter at a time in a web view coloured to the app's theme, with the\n  contents list, previous/next, text size, and your place kept (chapter\n  and how far down). Links between chapters move the place; links out\n  open in Safari.\n- PDF: PDFKit, your page kept.\n- CBZ: its pictures a page at a time, swipe and pinch to zoom.\n- Other kinds (MOBI, AZW…) still offer Open in….",
-          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build5/weavr-appletv-1.0-build5.ipa",
-          "size": 21431583,
           "minOSVersion": "18.0"
         }
       ]
