@@ -13,13 +13,22 @@
       "name": "Weavr iOS",
       "bundleIdentifier": "com.weavr.app",
       "developerName": "bishop-actual",
-      "subtitle": "18 Nov 03:20 GMT · Multi-source IPTV with automatic failover",
+      "subtitle": "18 Nov 03:30 GMT · Multi-source IPTV with automatic failover",
       "localizedDescription": "Weavr merges your M3U and Xtream sources into one library, removes duplicate channels and films across providers, and fails over to another source when a stream stalls. Includes a TV guide, films and series, continue watching, Picture in Picture, AirPlay, and WeavrLink, a remote for your Weavr TVs.",
       "iconURL": "https://raw.githubusercontent.com/bishop-actual/app-repo/main/icons/weavr.png?v=e9989785",
       "tintColor": "#57A7B3",
       "category": "entertainment",
       "screenshotURLs": [],
       "versions": [
+        {
+          "version": "1.0.43",
+          "buildVersion": "43",
+          "date": "2026-11-18T03:30:12Z",
+          "localizedDescription": "Sport: Nations Championship, MotoGP, Super League, RFL Championship and NRL from TheSportsDB (as on the TV: next and last fifteen per league, teams to follow); 'Every competition' removed",
+          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build43/weavr-ios-1.0-build43.ipa",
+          "size": 22838601,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "1.0.42",
           "buildVersion": "42",
@@ -144,15 +153,6 @@
           "localizedDescription": "Media filter beside the bubble; server ebooks and audiobooks in imports\n\n- Media's filter is a bare button left of the standard bubble (search,\n  WeavrLink, profile), which keeps just those three on every page. Guide\n  and Sport keep their own bubble on TV.\n- Jellyfin, Emby and Silo audiobooks (a file, or a folder of files as its\n  chapters) join their ebooks. Adding such a server on iPhone or iPad\n  looks for both as steps of the import, and counts them in its totals\n  (\"… · 12 ebooks · 40 audiobooks\"), there and in Sources. Each source\n  has Ebooks and Audiobooks switches; off, Weavr doesn't look and drops\n  what it had. The Books tab switches between Ebooks and Audiobooks;\n  audiobooks play in the audiobook player, your place kept.",
           "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build21/weavr-ios-1.0-build21.ipa",
           "size": 22319357,
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "1.0.20",
-          "buildVersion": "20",
-          "date": "2026-11-16T06:43:03Z",
-          "localizedDescription": "Genre folders drawn as on the TV\n\nA still (a poster, on a poster-shaped shelf) from the genre's newest\ntitle, in the genre's colour washing up from the name's corner; the icon\nin a ring above the name (beside it on a wide folder); with no picture,\nthe icon large and faint behind for texture. iOS and Apple TV.",
-          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build20/weavr-ios-1.0-build20.ipa",
-          "size": 22283088,
           "minOSVersion": "18.0"
         }
       ]
