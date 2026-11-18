@@ -13,13 +13,22 @@
       "name": "Weavr iOS",
       "bundleIdentifier": "com.weavr.app",
       "developerName": "bishop-actual",
-      "subtitle": "18 Nov 16:50 GMT · Multi-source IPTV with automatic failover",
+      "subtitle": "18 Nov 18:55 GMT · Multi-source IPTV with automatic failover",
       "localizedDescription": "Weavr merges your M3U and Xtream sources into one library, removes duplicate channels and films across providers, and fails over to another source when a stream stalls. Includes a TV guide, films and series, continue watching, Picture in Picture, AirPlay, and WeavrLink, a remote for your Weavr TVs.",
       "iconURL": "https://raw.githubusercontent.com/bishop-actual/app-repo/main/icons/weavr.png?v=e9989785",
       "tintColor": "#57A7B3",
       "category": "entertainment",
       "screenshotURLs": [],
       "versions": [
+        {
+          "version": "1.0.49",
+          "buildVersion": "49",
+          "date": "2026-11-18T18:55:35Z",
+          "localizedDescription": "Books: Silo asked for the order as its own app asks it (a field and a direction: published date newest or oldest, title, author, added), so Newest published means newest across the whole library, not of the pages read so far; a genre or search keeps reading on through the library while the end of the list is in view (it stopped after a run of pages with nothing new and spun), showing how far it's got",
+          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build49/weavr-ios-1.0-build49.ipa",
+          "size": 23071899,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "1.0.48",
           "buildVersion": "48",
@@ -144,15 +153,6 @@
           "localizedDescription": "Qualities fill in faster: each source's copies read side by side with the others', 7 s a header at most",
           "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build27/weavr-ios-1.0-build27.ipa",
           "size": 22376520,
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "1.0.26",
-          "buildVersion": "26",
-          "date": "2026-11-16T12:00:44Z",
-          "localizedDescription": "Fix build: no lazy chain over non-escaping closures in Home's newest row",
-          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build26/weavr-ios-1.0-build26.ipa",
-          "size": 22346960,
           "minOSVersion": "18.0"
         }
       ]
