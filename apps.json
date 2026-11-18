@@ -161,13 +161,22 @@
       "name": "Weavr tvOS",
       "bundleIdentifier": "com.weavr.app.tv",
       "developerName": "bishop-actual",
-      "subtitle": "18 Nov 09:31 GMT · Weavr on Apple TV",
+      "subtitle": "18 Nov 09:50 GMT · Weavr on Apple TV",
       "localizedDescription": "Weavr for Apple TV: your merged IPTV library, TV guide, films and series with automatic failover between sources.",
       "iconURL": "https://raw.githubusercontent.com/bishop-actual/app-repo/main/icons/weavr.png?v=e9989785",
       "tintColor": "#57A7B3",
       "category": "entertainment",
       "screenshotURLs": [],
       "versions": [
+        {
+          "version": "1.0.20",
+          "buildVersion": "20",
+          "date": "2026-11-18T09:50:38Z",
+          "localizedDescription": "Player: VLC for everything by default (every format, Picture in Picture, background audio), Silo included through the relay; Apple's player only when chosen in Settings › Playback › Player",
+          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build20/weavr-appletv-1.0-build20.ipa",
+          "size": 21833038,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "1.0.19",
           "buildVersion": "19",
