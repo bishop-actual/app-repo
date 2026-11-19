@@ -161,13 +161,22 @@
       "name": "Weavr tvOS",
       "bundleIdentifier": "com.weavr.app.tv",
       "developerName": "bishop-actual",
-      "subtitle": "19 Nov 06:03 GMT · Weavr on Apple TV",
+      "subtitle": "19 Nov 15:58 GMT · Weavr on Apple TV",
       "localizedDescription": "Weavr for Apple TV: your merged IPTV library, TV guide, films and series with automatic failover between sources.",
       "iconURL": "https://raw.githubusercontent.com/bishop-actual/app-repo/main/icons/weavr.png?v=e9989785",
       "tintColor": "#57A7B3",
       "category": "entertainment",
       "screenshotURLs": [],
       "versions": [
+        {
+          "version": "1.0.28",
+          "buildVersion": "28",
+          "date": "2026-11-19T15:58:22Z",
+          "localizedDescription": "Sport cards: one size for every card, nearer square (200 × 172 on the phone, 400 × 340 on the TV) — both teams always shown, one above the other, and a race or tournament the same size, with the sport's icon beside its name; league and time at the top, venue and channels at the foot",
+          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build28/weavr-appletv-1.0-build28.ipa",
+          "size": 21994350,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "1.0.27",
           "buildVersion": "27",
@@ -292,15 +301,6 @@
           "localizedDescription": "Player: languages picked as on the TV — audio asked for as VLC opens, tracks looked at again as they turn up, foreign-only grace for late forced tracks, OpenSubtitles fetched automatically with a key (foreign parts only when asked), language codes in any form",
           "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build12/weavr-appletv-1.0-build12.ipa",
           "size": 21583884,
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "1.0.11",
-          "buildVersion": "11",
-          "date": "2026-11-17T14:09:12Z",
-          "localizedDescription": "Fix build: declare the clip reader's private methods",
-          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build11/weavr-appletv-1.0-build11.ipa",
-          "size": 21573222,
           "minOSVersion": "18.0"
         }
       ]
