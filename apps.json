@@ -161,13 +161,22 @@
       "name": "Weavr tvOS",
       "bundleIdentifier": "com.weavr.app.tv",
       "developerName": "bishop-actual",
-      "subtitle": "18 Nov 20:29 GMT · Weavr on Apple TV",
+      "subtitle": "19 Nov 06:03 GMT · Weavr on Apple TV",
       "localizedDescription": "Weavr for Apple TV: your merged IPTV library, TV guide, films and series with automatic failover between sources.",
       "iconURL": "https://raw.githubusercontent.com/bishop-actual/app-repo/main/icons/weavr.png?v=e9989785",
       "tintColor": "#57A7B3",
       "category": "entertainment",
       "screenshotURLs": [],
       "versions": [
+        {
+          "version": "1.0.27",
+          "buildVersion": "27",
+          "date": "2026-11-19T06:03:19Z",
+          "localizedDescription": "Apple TV memory: at launch, films and series are read before channels and the guide, not at the same time (a big Silo read while 15,000 channels merged and the library saved ended the app for its memory); no whole-library save in the middle of a refresh (the refresh saves at its end); Silo read four stretches at a time on the TV, not twelve. A source read whole with none of a kind is remembered, not taken for missing and read again every launch. The log notes how far through a server's library a read is, with the memory in use, and says which kinds were missing",
+          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build27/weavr-appletv-1.0-build27.ipa",
+          "size": 21991950,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "1.0.26",
           "buildVersion": "26",
@@ -292,15 +301,6 @@
           "localizedDescription": "Fix build: declare the clip reader's private methods",
           "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build11/weavr-appletv-1.0-build11.ipa",
           "size": 21573222,
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "1.0.8",
-          "buildVersion": "8",
-          "date": "2026-11-17T13:27:38Z",
-          "localizedDescription": "Books: refreshing or adding one source looks at that source's books only, never every server",
-          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build8/weavr-appletv-1.0-build8.ipa",
-          "size": 21526638,
           "minOSVersion": "18.0"
         }
       ]
