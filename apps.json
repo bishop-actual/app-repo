@@ -161,13 +161,22 @@
       "name": "Weavr tvOS",
       "bundleIdentifier": "com.weavr.app.tv",
       "developerName": "bishop-actual",
-      "subtitle": "19 Nov 17:54 GMT · Weavr on Apple TV",
+      "subtitle": "19 Nov 18:52 GMT · Weavr on Apple TV",
       "localizedDescription": "Weavr for Apple TV: your merged IPTV library, TV guide, films and series with automatic failover between sources.",
       "iconURL": "https://raw.githubusercontent.com/bishop-actual/app-repo/main/icons/weavr.png?v=e9989785",
       "tintColor": "#57A7B3",
       "category": "entertainment",
       "screenshotURLs": [],
       "versions": [
+        {
+          "version": "1.0.30",
+          "buildVersion": "30",
+          "date": "2026-11-19T18:52:44Z",
+          "localizedDescription": "Very big servers on the Apple TV: each kind (films, then series) kept on disk the moment it's read, a few thousand titles to a file, never as one document (160,000 films made one bigger than the TV could hold, and it died writing it); a refresh cut short reads only what it hadn't kept; Silo's stretches let go as they're joined, and each source's titles once they're in the merge, so a big server isn't held twice",
+          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build30/weavr-appletv-1.0-build30.ipa",
+          "size": 22011254,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "1.0.29",
           "buildVersion": "29",
@@ -292,15 +301,6 @@
           "localizedDescription": "Books from Silo, browsed live: a page at a time as it's scrolled or searched, an ebook fetched only when opened and kept on the phone, audiobooks streamed through a Silo session with their files as chapters; On this phone shelf; Settings › Books to let kept books go",
           "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build14/weavr-appletv-1.0-build14.ipa",
           "size": 21649036,
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "1.0.13",
-          "buildVersion": "13",
-          "date": "2026-11-17T18:13:49Z",
-          "localizedDescription": "Big libraries: Silo titles made page by page (no raw JSON held for the whole list); films and series saved and read in stamped pieces, index last, at utility priority; Home's shelves built behind the splash",
-          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build13/weavr-appletv-1.0-build13.ipa",
-          "size": 21611010,
           "minOSVersion": "18.0"
         }
       ]
