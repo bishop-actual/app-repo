@@ -161,13 +161,22 @@
       "name": "Weavr tvOS",
       "bundleIdentifier": "com.weavr.app.tv",
       "developerName": "bishop-actual",
-      "subtitle": "19 Nov 15:58 GMT · Weavr on Apple TV",
+      "subtitle": "19 Nov 17:54 GMT · Weavr on Apple TV",
       "localizedDescription": "Weavr for Apple TV: your merged IPTV library, TV guide, films and series with automatic failover between sources.",
       "iconURL": "https://raw.githubusercontent.com/bishop-actual/app-repo/main/icons/weavr.png?v=e9989785",
       "tintColor": "#57A7B3",
       "category": "entertainment",
       "screenshotURLs": [],
       "versions": [
+        {
+          "version": "1.0.29",
+          "buildVersion": "29",
+          "date": "2026-11-19T17:54:19Z",
+          "localizedDescription": "Sport: teams can be picked from any competition, not just the built-in ones — the extra competitions followed whole are listed under Teams, and More competitions… lists every one ESPN carries (searchable); a team ticked remembers its competition, so that competition's games are fetched; ticking teams no longer stops leagues followed whole from being fetched",
+          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build29/weavr-appletv-1.0-build29.ipa",
+          "size": 22010621,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "1.0.28",
           "buildVersion": "28",
@@ -292,15 +301,6 @@
           "localizedDescription": "Big libraries: Silo titles made page by page (no raw JSON held for the whole list); films and series saved and read in stamped pieces, index last, at utility priority; Home's shelves built behind the splash",
           "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build13/weavr-appletv-1.0-build13.ipa",
           "size": 21611010,
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "1.0.12",
-          "buildVersion": "12",
-          "date": "2026-11-17T15:15:52Z",
-          "localizedDescription": "Player: languages picked as on the TV — audio asked for as VLC opens, tracks looked at again as they turn up, foreign-only grace for late forced tracks, OpenSubtitles fetched automatically with a key (foreign parts only when asked), language codes in any form",
-          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build12/weavr-appletv-1.0-build12.ipa",
-          "size": 21583884,
           "minOSVersion": "18.0"
         }
       ]
