@@ -13,13 +13,22 @@
       "name": "Weavr iOS",
       "bundleIdentifier": "com.weavr.app",
       "developerName": "bishop-actual",
-      "subtitle": "19 Nov 15:58 GMT · Multi-source IPTV with automatic failover",
+      "subtitle": "19 Nov 17:54 GMT · Multi-source IPTV with automatic failover",
       "localizedDescription": "Weavr merges your M3U and Xtream sources into one library, removes duplicate channels and films across providers, and fails over to another source when a stream stalls. Includes a TV guide, films and series, continue watching, Picture in Picture, AirPlay, and WeavrLink, a remote for your Weavr TVs.",
       "iconURL": "https://raw.githubusercontent.com/bishop-actual/app-repo/main/icons/weavr.png?v=e9989785",
       "tintColor": "#57A7B3",
       "category": "entertainment",
       "screenshotURLs": [],
       "versions": [
+        {
+          "version": "1.0.55",
+          "buildVersion": "55",
+          "date": "2026-11-19T17:54:33Z",
+          "localizedDescription": "Sport: teams can be picked from any competition, not just the built-in ones — the extra competitions followed whole are listed under Teams, and More competitions… lists every one ESPN carries (searchable); a team ticked remembers its competition, so that competition's games are fetched; ticking teams no longer stops leagues followed whole from being fetched",
+          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build55/weavr-ios-1.0-build55.ipa",
+          "size": 23121965,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "1.0.54",
           "buildVersion": "54",
@@ -144,15 +153,6 @@
           "localizedDescription": "iOS build fix: the book sheet's file wasn't to be both unwrapped and cleared under one name (compiler crash)",
           "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build38/weavr-ios-1.0-build38.ipa",
           "size": 22579384,
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "1.0.34",
-          "buildVersion": "34",
-          "date": "2026-11-17T18:14:08Z",
-          "localizedDescription": "Big libraries: Silo titles made page by page (no raw JSON held for the whole list); films and series saved and read in stamped pieces, index last, at utility priority; Home's shelves built behind the splash",
-          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build34/weavr-ios-1.0-build34.ipa",
-          "size": 22488560,
           "minOSVersion": "18.0"
         }
       ]
