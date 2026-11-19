@@ -13,13 +13,22 @@
       "name": "Weavr iOS",
       "bundleIdentifier": "com.weavr.app",
       "developerName": "bishop-actual",
-      "subtitle": "18 Nov 20:29 GMT · Multi-source IPTV with automatic failover",
+      "subtitle": "19 Nov 08:42 GMT · Multi-source IPTV with automatic failover",
       "localizedDescription": "Weavr merges your M3U and Xtream sources into one library, removes duplicate channels and films across providers, and fails over to another source when a stream stalls. Includes a TV guide, films and series, continue watching, Picture in Picture, AirPlay, and WeavrLink, a remote for your Weavr TVs.",
       "iconURL": "https://raw.githubusercontent.com/bishop-actual/app-repo/main/icons/weavr.png?v=e9989785",
       "tintColor": "#57A7B3",
       "category": "entertainment",
       "screenshotURLs": [],
       "versions": [
+        {
+          "version": "1.0.53",
+          "buildVersion": "53",
+          "date": "2026-11-19T08:42:24Z",
+          "localizedDescription": "Duo: the side menu's gap at the foot the same as the strip's gap above its clock",
+          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build53/weavr-ios-1.0-build53.ipa",
+          "size": 23103696,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "1.0.52",
           "buildVersion": "52",
@@ -144,15 +153,6 @@
           "localizedDescription": "Player: languages picked as on the TV — audio asked for as VLC opens, tracks looked at again as they turn up, foreign-only grace for late forced tracks, OpenSubtitles fetched automatically with a key (foreign parts only when asked), language codes in any form",
           "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build33/weavr-ios-1.0-build33.ipa",
           "size": 22462749,
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "1.0.32",
-          "buildVersion": "32",
-          "date": "2026-11-17T14:08:54Z",
-          "localizedDescription": "Fix build: declare the clip reader's private methods",
-          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build32/weavr-ios-1.0-build32.ipa",
-          "size": 22455403,
           "minOSVersion": "18.0"
         }
       ]
