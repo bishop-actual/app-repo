@@ -13,13 +13,22 @@
       "name": "Weavr iOS",
       "bundleIdentifier": "com.weavr.app",
       "developerName": "bishop-actual",
-      "subtitle": "19 Nov 17:54 GMT · Multi-source IPTV with automatic failover",
+      "subtitle": "19 Nov 18:49 GMT · Multi-source IPTV with automatic failover",
       "localizedDescription": "Weavr merges your M3U and Xtream sources into one library, removes duplicate channels and films across providers, and fails over to another source when a stream stalls. Includes a TV guide, films and series, continue watching, Picture in Picture, AirPlay, and WeavrLink, a remote for your Weavr TVs.",
       "iconURL": "https://raw.githubusercontent.com/bishop-actual/app-repo/main/icons/weavr.png?v=e9989785",
       "tintColor": "#57A7B3",
       "category": "entertainment",
       "screenshotURLs": [],
       "versions": [
+        {
+          "version": "1.0.56",
+          "buildVersion": "56",
+          "date": "2026-11-19T18:49:56Z",
+          "localizedDescription": "Very big servers on the Apple TV: each kind (films, then series) kept on disk the moment it's read, a few thousand titles to a file, never as one document (160,000 films made one bigger than the TV could hold, and it died writing it); a refresh cut short reads only what it hadn't kept; Silo's stretches let go as they're joined, and each source's titles once they're in the merge, so a big server isn't held twice",
+          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build56/weavr-ios-1.0-build56.ipa",
+          "size": 23123279,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "1.0.55",
           "buildVersion": "55",
@@ -144,15 +153,6 @@
           "localizedDescription": "Build fix: OPDS author read before it's set",
           "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build40/weavr-ios-1.0-build40.ipa",
           "size": 22772825,
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "1.0.38",
-          "buildVersion": "38",
-          "date": "2026-11-17T19:15:45Z",
-          "localizedDescription": "iOS build fix: the book sheet's file wasn't to be both unwrapped and cleared under one name (compiler crash)",
-          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build38/weavr-ios-1.0-build38.ipa",
-          "size": 22579384,
           "minOSVersion": "18.0"
         }
       ]
