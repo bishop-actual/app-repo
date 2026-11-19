@@ -1,6 +1,6 @@
 # Download stats
 
-Updated 18 Nov 23:19 GMT, every hour. Counts are GitHub's downloads of each release file: a reinstall or an update in Feather counts again, and there is no per-device or per-person breakdown.
+Updated 19 Nov 00:40 GMT, every hour. Counts are GitHub's downloads of each release file: a reinstall or an update in Feather counts again, and there is no per-device or per-person breakdown.
 
 ## Overview
 
@@ -8,7 +8,7 @@ Updated 18 Nov 23:19 GMT, every hour. Counts are GitHub's downloads of each rele
 |---|---|---|--:|--:|--:|
 | iOS | 1.0.52 | 18 Nov 20:29 GMT | 37 | 110 | 110 |
 | tvOS | 1.0.26 | 18 Nov 20:29 GMT | 30 | 58 | 58 |
-| Android | 1.0.469 | 18 Nov 12:02 GMT | 7 | 2 | 11 |
+| Android | 1.0.469 | 18 Nov 12:02 GMT | 8 | 3 | 12 |
 
 ## Last 24 hours
 
@@ -100,7 +100,7 @@ Newest first. **Newest for** is how long it was the newest build of its platform
 
 | Build | Published | Newest for | While newest | Per day | All time |
 |---|---|---|--:|--:|--:|
-| 1.0.52 | 18 Nov 20:29 GMT | 3h (now) | 3 | – | 3 |
+| 1.0.52 | 18 Nov 20:29 GMT | 4h (now) | 3 | – | 3 |
 | 1.0.51 | 18 Nov 20:13 GMT | 16m | 0 | – | 4 |
 | 1.0.50 | 18 Nov 19:52 GMT | 20m | 3* | – | 3 |
 | 1.0.49 | 18 Nov 18:55 GMT | 57m | 2 | – | 4 |
@@ -109,14 +109,14 @@ Newest first. **Newest for** is how long it was the newest build of its platform
 | 1.0.45 | 18 Nov 09:31 GMT | 19m | 2* | – | 2 |
 | 1.0.43 | 18 Nov 03:30 GMT | 6h | 6 | – | 6 |
 | 1.0.42 | 18 Nov 03:20 GMT | 9m | 0 | – | 2 |
-| 1.0.41 | 17 Nov 20:50 GMT | 7h | 3 | 4.5 | 5 |
-| 1.0.40 | 17 Nov 20:26 GMT | 23m | 3* | 2.7 | 3 |
-| 1.0.38 | 17 Nov 19:15 GMT | 1h | 3 | 3.4 | 4 |
-| 1.0.34 | 17 Nov 18:13 GMT | 1h | 0 | 4.1 | 5 |
-| 1.0.33 | 17 Nov 15:15 GMT | 3h | 3 | 3.0 | 4 |
-| 1.0.32 | 17 Nov 14:08 GMT | 1h | 1 | 2.9 | 4 |
+| 1.0.41 | 17 Nov 20:50 GMT | 7h | 3 | 4.3 | 5 |
+| 1.0.40 | 17 Nov 20:26 GMT | 23m | 3* | 2.6 | 3 |
+| 1.0.38 | 17 Nov 19:15 GMT | 1h | 3 | 3.3 | 4 |
+| 1.0.34 | 17 Nov 18:13 GMT | 1h | 0 | 3.9 | 5 |
+| 1.0.33 | 17 Nov 15:15 GMT | 3h | 3 | 2.9 | 4 |
+| 1.0.32 | 17 Nov 14:08 GMT | 1h | 1 | 2.8 | 4 |
 | 1.0.29 | 17 Nov 13:27 GMT | 40m | 2* | 1.4 | 2 |
-| 1.0.28 | 17 Nov 09:33 GMT | 4h | 3 | 1.9 | 3 |
+| 1.0.28 | 17 Nov 09:33 GMT | 4h | 3 | 1.8 | 3 |
 | 1.0.27 | 17 Nov 08:29 GMT | 1h | 2 | 1.2 | 2 |
 | 1.0.26 | 16 Nov 12:00 GMT | 20h | 5* | 2.0 | 5 |
 | 1.0.23 | 16 Nov 08:23 GMT | 4h | 3* | 1.1 | 3 |
@@ -134,7 +134,7 @@ Newest first. **Newest for** is how long it was the newest build of its platform
 
 | Build | Published | Newest for | While newest | Per day | All time |
 |---|---|---|--:|--:|--:|
-| 1.0.26 | 18 Nov 20:29 GMT | 3h (now) | 4 | – | 4 |
+| 1.0.26 | 18 Nov 20:29 GMT | 4h (now) | 4 | – | 4 |
 | 1.0.25 | 18 Nov 20:13 GMT | 16m | 0 | – | 4 |
 | 1.0.24 | 18 Nov 19:52 GMT | 20m | 2* | – | 2 |
 | 1.0.23 | 18 Nov 18:54 GMT | 58m | 2 | – | 3 |
@@ -143,13 +143,13 @@ Newest first. **Newest for** is how long it was the newest build of its platform
 | 1.0.19 | 18 Nov 09:31 GMT | 19m | 2* | – | 2 |
 | 1.0.17 | 18 Nov 03:30 GMT | 6h | 4 | – | 4 |
 | 1.0.16 | 18 Nov 03:20 GMT | 9m | 0 | – | 2 |
-| 1.0.15 | 17 Nov 20:50 GMT | 7h | 3 | 3.6 | 4 |
-| 1.0.14 | 17 Nov 18:49 GMT | 2h | 4 | 3.4 | 4 |
+| 1.0.15 | 17 Nov 20:50 GMT | 7h | 3 | 3.4 | 4 |
+| 1.0.14 | 17 Nov 18:49 GMT | 2h | 4 | 3.2 | 4 |
 | 1.0.13 | 17 Nov 18:13 GMT | 35m | 0 | 1.6 | 2 |
-| 1.0.12 | 17 Nov 15:15 GMT | 3h | 2 | 1.5 | 2 |
+| 1.0.12 | 17 Nov 15:15 GMT | 3h | 2 | 1.4 | 2 |
 | 1.0.11 | 17 Nov 14:08 GMT | 1h | 1 | 1.4 | 2 |
 | 1.0.8 | 17 Nov 13:27 GMT | 41m | 2* | 1.4 | 2 |
-| 1.0.7 | 17 Nov 09:33 GMT | 4h | 3 | 1.9 | 3 |
+| 1.0.7 | 17 Nov 09:33 GMT | 4h | 3 | 1.8 | 3 |
 | 1.0.6 | 17 Nov 08:29 GMT | 1h | 2 | 1.2 | 2 |
 | 1.0.5 | 16 Nov 06:27 GMT | 26h | 3* | 1.1 | 3 |
 | 1.0.4 | 15 Nov 15:35 GMT | 15h | 3* | 0.9 | 3 |
@@ -159,7 +159,7 @@ Newest first. **Newest for** is how long it was the newest build of its platform
 
 | Build | Published | Newest for | While newest | Per day | All time |
 |---|---|---|--:|--:|--:|
-| 1.0.469 | 18 Nov 12:02 GMT | 11h (now) | -1 | – | -1 |
+| 1.0.469 | 18 Nov 12:02 GMT | 13h (now) | 0 | – | 0 |
 | 1.0.468 | 17 Nov 14:44 GMT | 21h | 0 | 0.0 | 0 |
 | 1.0.467 | 16 Nov 07:15 GMT | 31h | 2 | 0.7 | 2 |
 | 1.0.466 | 15 Nov 19:57 GMT | 11h | 0* | 0.0 | 0 |
