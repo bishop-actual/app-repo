@@ -13,13 +13,22 @@
       "name": "Weavr iOS",
       "bundleIdentifier": "com.weavr.app",
       "developerName": "bishop-actual",
-      "subtitle": "19 Nov 18:49 GMT · Multi-source IPTV with automatic failover",
+      "subtitle": "20 Nov 07:26 GMT · Multi-source IPTV with automatic failover",
       "localizedDescription": "Weavr merges your M3U and Xtream sources into one library, removes duplicate channels and films across providers, and fails over to another source when a stream stalls. Includes a TV guide, films and series, continue watching, Picture in Picture, AirPlay, and WeavrLink, a remote for your Weavr TVs.",
       "iconURL": "https://raw.githubusercontent.com/bishop-actual/app-repo/main/icons/weavr.png?v=e9989785",
       "tintColor": "#57A7B3",
       "category": "entertainment",
       "screenshotURLs": [],
       "versions": [
+        {
+          "version": "1.0.57",
+          "buildVersion": "57",
+          "date": "2026-11-20T07:26:54Z",
+          "localizedDescription": "Server imports: Jellyfin and Emby read page by page, and failed pages tried again\n\n- Jellyfin and Emby: each page of films or series is made into titles as\n  it arrives, rather than the server's raw answer for the whole library\n  being held until the end (too much for an Apple TV with a big library).\n  Progress shows as it reads, as Silo's does.\n- Jellyfin, Emby and Silo: a page that fails is tried twice more before\n  the read gives up, so one slow answer among hundreds doesn't lose it.\n- The log says why a page failed: the HTTP code or network error, and\n  which of Jellyfin's routes it was on.",
+          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build57/weavr-ios-1.0-build57.ipa",
+          "size": 23132483,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "1.0.56",
           "buildVersion": "56",
@@ -144,15 +153,6 @@
           "localizedDescription": "Saved library kept: the films-and-series index was being deleted with old pieces after every save (so every launch fetched every source again); a missing piece keeps the rest; settings subpages on the newer inline title call so the tabs' inline-large doesn't carry over",
           "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build41/weavr-ios-1.0-build41.ipa",
           "size": 22772685,
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "1.0.40",
-          "buildVersion": "40",
-          "date": "2026-11-17T20:27:03Z",
-          "localizedDescription": "Build fix: OPDS author read before it's set",
-          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build40/weavr-ios-1.0-build40.ipa",
-          "size": 22772825,
           "minOSVersion": "18.0"
         }
       ]
