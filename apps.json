@@ -13,13 +13,22 @@
       "name": "Weavr iOS",
       "bundleIdentifier": "com.weavr.app",
       "developerName": "bishop-actual",
-      "subtitle": "21 Nov 19:05 GMT · Multi-source IPTV with automatic failover",
+      "subtitle": "21 Nov 20:16 GMT · Multi-source IPTV with automatic failover",
       "localizedDescription": "Weavr merges your M3U and Xtream sources into one library, removes duplicate channels and films across providers, and fails over to another source when a stream stalls. Includes a TV guide, films and series, continue watching, Picture in Picture, AirPlay, and WeavrLink, a remote for your Weavr TVs.",
       "iconURL": "https://raw.githubusercontent.com/bishop-actual/app-repo/main/icons/weavr.png?v=e9989785",
       "tintColor": "#57A7B3",
       "category": "entertainment",
       "screenshotURLs": [],
       "versions": [
+        {
+          "version": "1.0.68",
+          "buildVersion": "68",
+          "date": "2026-11-21T20:16:34Z",
+          "localizedDescription": "Silo's big reads complete instead of failing for good; a short read keeps what it brought\n\nSilo's series read kept \"not coming back whole\", so its stored list was\nnever replaced: 95,989 shows stored against Silo's 84,904 now, the extra\nbeing shows Silo has since removed or moved to new ids (VisionQuest's\nseries-tvdb-426606 answering 404).\n- A stretch of the list that hasn't met the next stretch's first title\n  where expected (Silo's list changes as it's read, and its seek needn't\n  land exactly) reads on, up to three times its length, rather than\n  failing the whole read after two extra pages.\n- A read that still doesn't come back whole keeps what it brought that\n  isn't stored (new titles, moved ids) and takes nothing away; the\n  library's made again for them. It was all thrown away.\n- The count shown while reading is what's kept, every stretch's first page\n  included: a whole read now reaches Silo's total rather than ending\n  about 2,000 short.",
+          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build68/weavr-ios-1.0-build68.ipa",
+          "size": 23363144,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "1.0.67",
           "buildVersion": "67",
@@ -144,15 +153,6 @@
           "localizedDescription": "Sport cards: one size for every card, nearer square (200 × 172 on the phone, 400 × 340 on the TV) — both teams always shown, one above the other, and a race or tournament the same size, with the sport's icon beside its name; league and time at the top, venue and channels at the foot",
           "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build54/weavr-ios-1.0-build54.ipa",
           "size": 23105413,
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "1.0.53",
-          "buildVersion": "53",
-          "date": "2026-11-19T08:42:24Z",
-          "localizedDescription": "Duo: the side menu's gap at the foot the same as the strip's gap above its clock",
-          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build53/weavr-ios-1.0-build53.ipa",
-          "size": 23103696,
           "minOSVersion": "18.0"
         }
       ]
