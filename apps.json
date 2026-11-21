@@ -161,13 +161,22 @@
       "name": "Weavr tvOS",
       "bundleIdentifier": "com.weavr.app.tv",
       "developerName": "bishop-actual",
-      "subtitle": "21 Nov 11:20 GMT · Weavr on Apple TV",
+      "subtitle": "21 Nov 13:26 GMT · Weavr on Apple TV",
       "localizedDescription": "Weavr for Apple TV: your merged IPTV library, TV guide, films and series with automatic failover between sources.",
       "iconURL": "https://raw.githubusercontent.com/bishop-actual/app-repo/main/icons/weavr.png?v=e9989785",
       "tintColor": "#57A7B3",
       "category": "entertainment",
       "screenshotURLs": [],
       "versions": [
+        {
+          "version": "1.0.37",
+          "buildVersion": "37",
+          "date": "2026-11-21T13:26:15Z",
+          "localizedDescription": "Silo: VLC takes over the same session, never two at once; why it failed, logged\n\nWhen Apple's player turned down Silo's original, a second Silo session was\nasked for VLC while the first was still being closed in the background;\nSilo can refuse that (one stream at a time), and the title moved on to the\nnext source.\n- Silo's original file: VLC plays the same session, no second one.\n- Silo's copy for Apple's player (Dolby Vision): that session is closed,\n  and waited for, before the original's asked for.\n- The log says why Silo wouldn't start, and when VLC couldn't play it\n  either, before the next source is tried.",
+          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build37/weavr-appletv-1.0-build37.ipa",
+          "size": 22178311,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "1.0.36",
           "buildVersion": "36",
@@ -292,15 +301,6 @@
           "localizedDescription": "Books: Silo asked for the order as its own app asks it (a field and a direction: published date newest or oldest, title, author, added), so Newest published means newest across the whole library, not of the pages read so far; a genre or search keeps reading on through the library while the end of the list is in view (it stopped after a run of pages with nothing new and spun), showing how far it's got",
           "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build23/weavr-appletv-1.0-build23.ipa",
           "size": 21971471,
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "1.0.22",
-          "buildVersion": "22",
-          "date": "2026-11-18T16:50:11Z",
-          "localizedDescription": "Build fix: the collection picker's type renamed (SiloPick was taken by the Silo profile picker); VLC's sound mix set by its value",
-          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build22/weavr-appletv-1.0-build22.ipa",
-          "size": 21945764,
           "minOSVersion": "18.0"
         }
       ]
