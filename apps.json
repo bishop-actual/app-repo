@@ -161,13 +161,22 @@
       "name": "Weavr tvOS",
       "bundleIdentifier": "com.weavr.app.tv",
       "developerName": "bishop-actual",
-      "subtitle": "21 Nov 13:26 GMT · Weavr on Apple TV",
+      "subtitle": "21 Nov 15:04 GMT · Weavr on Apple TV",
       "localizedDescription": "Weavr for Apple TV: your merged IPTV library, TV guide, films and series with automatic failover between sources.",
       "iconURL": "https://raw.githubusercontent.com/bishop-actual/app-repo/main/icons/weavr.png?v=e9989785",
       "tintColor": "#57A7B3",
       "category": "entertainment",
       "screenshotURLs": [],
       "versions": [
+        {
+          "version": "1.0.38",
+          "buildVersion": "38",
+          "date": "2026-11-21T15:04:10Z",
+          "localizedDescription": "Merging a big library no longer runs the phone out of memory\n\nThe merge (and bringing the old saved library in, and taking a source\nout) runs as one long job, and each title read from the library file is\nparsed with JSONSerialization, which leaves its objects for an\nautorelease pool to free. Nothing drained one until the whole job ended,\nso every title parsed and written stayed in memory: with a big Xtream\nlist and Silo, iOS ended the app part way through \"Merging films and\nseries\".\n- Each merge batch, each saved piece brought in, each title of a source\n  taken out, and each write of raw or merged titles now lets go of what\n  it parsed and encoded as soon as it's done.\n- Each merge batch notes how far it's got and the memory in use, so a\n  run cut short says where in the log.",
+          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build38/weavr-appletv-1.0-build38.ipa",
+          "size": 22223809,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "1.0.37",
           "buildVersion": "37",
@@ -292,15 +301,6 @@
           "localizedDescription": "Books: title A–Z asks Silo nothing extra (no order), exactly as before sorting was asked of it",
           "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build24/weavr-appletv-1.0-build24.ipa",
           "size": 21981542,
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "1.0.23",
-          "buildVersion": "23",
-          "date": "2026-11-18T18:54:59Z",
-          "localizedDescription": "Books: Silo asked for the order as its own app asks it (a field and a direction: published date newest or oldest, title, author, added), so Newest published means newest across the whole library, not of the pages read so far; a genre or search keeps reading on through the library while the end of the list is in view (it stopped after a run of pages with nothing new and spun), showing how far it's got",
-          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build23/weavr-appletv-1.0-build23.ipa",
-          "size": 21971471,
           "minOSVersion": "18.0"
         }
       ]
