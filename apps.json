@@ -161,13 +161,22 @@
       "name": "Weavr tvOS",
       "bundleIdentifier": "com.weavr.app.tv",
       "developerName": "bishop-actual",
-      "subtitle": "21 Nov 06:31 GMT · Weavr on Apple TV",
+      "subtitle": "21 Nov 09:22 GMT · Weavr on Apple TV",
       "localizedDescription": "Weavr for Apple TV: your merged IPTV library, TV guide, films and series with automatic failover between sources.",
       "iconURL": "https://raw.githubusercontent.com/bishop-actual/app-repo/main/icons/weavr.png?v=e9989785",
       "tintColor": "#57A7B3",
       "category": "entertainment",
       "screenshotURLs": [],
       "versions": [
+        {
+          "version": "1.0.35",
+          "buildVersion": "35",
+          "date": "2026-11-21T09:22:11Z",
+          "localizedDescription": "Quick Library and Watched buttons, sport ready with Home, faster expired pictures, centred splash text\n\n- Library and Watched: a toggle re-marks only that title's rows (its\n  index entries and what's kept of it), not the whole 190,000-title\n  index with everything read cleared; and a title page reading from the\n  library file now redraws when the library changes, so the button shows\n  its new state at once.\n- Home's Sport row is the app's own, fetched behind the splash (\"Getting\n  today's sport\", up to 6 seconds) so it's there when Home opens; the row\n  doesn't fetch it again.\n- A Silo picture whose signature is known to have run out (its exp\n  passed) has its title asked for afresh straight away, without the\n  doomed request first; a couple more pictures load at once.\n- The splash's line wraps, centred, when it's long.",
+          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build35/weavr-appletv-1.0-build35.ipa",
+          "size": 22166614,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "1.0.34",
           "buildVersion": "34",
@@ -292,15 +301,6 @@
           "localizedDescription": "Player: VLC for everything by default (every format, Picture in Picture, background audio), Silo included through the relay; Apple's player only when chosen in Settings › Playback › Player",
           "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build20/weavr-appletv-1.0-build20.ipa",
           "size": 21833038,
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "1.0.19",
-          "buildVersion": "19",
-          "date": "2026-11-18T09:31:27Z",
-          "localizedDescription": "Build fix: published year worked out in steps",
-          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build19/weavr-appletv-1.0-build19.ipa",
-          "size": 21833288,
           "minOSVersion": "18.0"
         }
       ]
