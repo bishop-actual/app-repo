@@ -161,13 +161,22 @@
       "name": "Weavr tvOS",
       "bundleIdentifier": "com.weavr.app.tv",
       "developerName": "bishop-actual",
-      "subtitle": "21 Nov 19:05 GMT · Weavr on Apple TV",
+      "subtitle": "21 Nov 20:16 GMT · Weavr on Apple TV",
       "localizedDescription": "Weavr for Apple TV: your merged IPTV library, TV guide, films and series with automatic failover between sources.",
       "iconURL": "https://raw.githubusercontent.com/bishop-actual/app-repo/main/icons/weavr.png?v=e9989785",
       "tintColor": "#57A7B3",
       "category": "entertainment",
       "screenshotURLs": [],
       "versions": [
+        {
+          "version": "1.0.42",
+          "buildVersion": "42",
+          "date": "2026-11-21T20:16:47Z",
+          "localizedDescription": "Silo's big reads complete instead of failing for good; a short read keeps what it brought\n\nSilo's series read kept \"not coming back whole\", so its stored list was\nnever replaced: 95,989 shows stored against Silo's 84,904 now, the extra\nbeing shows Silo has since removed or moved to new ids (VisionQuest's\nseries-tvdb-426606 answering 404).\n- A stretch of the list that hasn't met the next stretch's first title\n  where expected (Silo's list changes as it's read, and its seek needn't\n  land exactly) reads on, up to three times its length, rather than\n  failing the whole read after two extra pages.\n- A read that still doesn't come back whole keeps what it brought that\n  isn't stored (new titles, moved ids) and takes nothing away; the\n  library's made again for them. It was all thrown away.\n- The count shown while reading is what's kept, every stretch's first page\n  included: a whole read now reaches Silo's total rather than ending\n  about 2,000 short.",
+          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build42/weavr-appletv-1.0-build42.ipa",
+          "size": 22291328,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "1.0.41",
           "buildVersion": "41",
@@ -292,15 +301,6 @@
           "localizedDescription": "Sport cards: one size for every card, nearer square (200 × 172 on the phone, 400 × 340 on the TV) — both teams always shown, one above the other, and a race or tournament the same size, with the sport's icon beside its name; league and time at the top, venue and channels at the foot",
           "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build28/weavr-appletv-1.0-build28.ipa",
           "size": 21994350,
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "1.0.27",
-          "buildVersion": "27",
-          "date": "2026-11-19T06:03:19Z",
-          "localizedDescription": "Apple TV memory: at launch, films and series are read before channels and the guide, not at the same time (a big Silo read while 15,000 channels merged and the library saved ended the app for its memory); no whole-library save in the middle of a refresh (the refresh saves at its end); Silo read four stretches at a time on the TV, not twelve. A source read whole with none of a kind is remembered, not taken for missing and read again every launch. The log notes how far through a server's library a read is, with the memory in use, and says which kinds were missing",
-          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build27/weavr-appletv-1.0-build27.ipa",
-          "size": 21991950,
           "minOSVersion": "18.0"
         }
       ]
