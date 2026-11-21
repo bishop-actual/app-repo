@@ -13,13 +13,22 @@
       "name": "Weavr iOS",
       "bundleIdentifier": "com.weavr.app",
       "developerName": "bishop-actual",
-      "subtitle": "20 Nov 15:18 GMT · Multi-source IPTV with automatic failover",
+      "subtitle": "21 Nov 04:58 GMT · Multi-source IPTV with automatic failover",
       "localizedDescription": "Weavr merges your M3U and Xtream sources into one library, removes duplicate channels and films across providers, and fails over to another source when a stream stalls. Includes a TV guide, films and series, continue watching, Picture in Picture, AirPlay, and WeavrLink, a remote for your Weavr TVs.",
       "iconURL": "https://raw.githubusercontent.com/bishop-actual/app-repo/main/icons/weavr.png?v=e9989785",
       "tintColor": "#57A7B3",
       "category": "entertainment",
       "screenshotURLs": [],
       "versions": [
+        {
+          "version": "1.0.59",
+          "buildVersion": "59",
+          "date": "2026-11-21T04:58:43Z",
+          "localizedDescription": "Silo pictures that outlive their signature, Duo fixes, launch splash, sport cards, chips on TV\n\n- Silo's picture addresses are signed and run out (daily, some every 15\n  minutes; an expired one answers 404). Pictures are now kept by their\n  identity without the signature, so one seen once is found under any\n  later signature; an expired one with no copy has its title asked for\n  afresh from Silo, its row given the new addresses, and loads.\n- Collection covers come from Silo's collection list as it is now, not\n  the signed address kept in the shelf. The shelf page has Refresh covers.\n- Visible pictures are tried again after 2 and 8 seconds; an expired\n  signature doesn't count against the server.\n- Duo: no second search at the foot of the strip (the page's own top row\n  has it); the side menu and headers follow the window as it folds and\n  unfolds, so the menu no longer drops to the bottom after unfolding.\n- The splash waits for the library to be read and, when it has to be\n  fetched (nothing saved, or due), for that too.\n- Shelf page: A to Z sorts by name without case or accents, the whole\n  row tappable.\n- Sport cards: team colours run darker over black, so a crest in its own\n  colour stands out.\n- Apple TV: filter chips (the log's among them) ringed and lifted when\n  chosen, not swamped by the TV's white highlight.",
+          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build59/weavr-ios-1.0-build59.ipa",
+          "size": 23233427,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "1.0.58",
           "buildVersion": "58",
@@ -144,15 +153,6 @@
           "localizedDescription": "Sport: Nations Championship, MotoGP, Super League, RFL Championship and NRL from TheSportsDB (as on the TV: next and last fifteen per league, teams to follow); 'Every competition' removed",
           "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build43/weavr-ios-1.0-build43.ipa",
           "size": 22838601,
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "1.0.42",
-          "buildVersion": "42",
-          "date": "2026-11-18T03:20:42Z",
-          "localizedDescription": "Sport cards: the teams' own colours across the card (home one end, away the other), the sport's colour where there are no teams, and a stripe of the sport's colour down the side — Home and the Sport page alike",
-          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build42/weavr-ios-1.0-build42.ipa",
-          "size": 22829830,
           "minOSVersion": "18.0"
         }
       ]
