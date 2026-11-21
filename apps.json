@@ -161,13 +161,22 @@
       "name": "Weavr tvOS",
       "bundleIdentifier": "com.weavr.app.tv",
       "developerName": "bishop-actual",
-      "subtitle": "21 Nov 17:25 GMT · Weavr on Apple TV",
+      "subtitle": "21 Nov 19:05 GMT · Weavr on Apple TV",
       "localizedDescription": "Weavr for Apple TV: your merged IPTV library, TV guide, films and series with automatic failover between sources.",
       "iconURL": "https://raw.githubusercontent.com/bishop-actual/app-repo/main/icons/weavr.png?v=e9989785",
       "tintColor": "#57A7B3",
       "category": "entertainment",
       "screenshotURLs": [],
       "versions": [
+        {
+          "version": "1.0.41",
+          "buildVersion": "41",
+          "date": "2026-11-21T19:05:09Z",
+          "localizedDescription": "Fetch missing and Merge again, from a source's page\n\n- A media server's films and series: how many it says it has, kept as\n  it's read, beside how many are stored (\"Silo has 12,400: 600 missing\").\n- Fetch missing: the server read again with every title it gives kept and\n  added to what's stored (none taken away, one already there passed over),\n  so a big read that stops part way still brings in what it got; the\n  library is made again if anything came. No \"couldn't reach\" or resting\n  for a top-up.\n- Merge again, when most of what a source has stored isn't in the library:\n  the library made from what's stored, nothing asked of the sources.",
+          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build41/weavr-appletv-1.0-build41.ipa",
+          "size": 22267996,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "1.0.40",
           "buildVersion": "40",
@@ -292,15 +301,6 @@
           "localizedDescription": "Apple TV memory: at launch, films and series are read before channels and the guide, not at the same time (a big Silo read while 15,000 channels merged and the library saved ended the app for its memory); no whole-library save in the middle of a refresh (the refresh saves at its end); Silo read four stretches at a time on the TV, not twelve. A source read whole with none of a kind is remembered, not taken for missing and read again every launch. The log notes how far through a server's library a read is, with the memory in use, and says which kinds were missing",
           "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build27/weavr-appletv-1.0-build27.ipa",
           "size": 21991950,
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "1.0.26",
-          "buildVersion": "26",
-          "date": "2026-11-18T20:29:43Z",
-          "localizedDescription": "Shelf page: each folder's name on one line and its five icons beneath; the sort sorts A to Z, or Z to A when they already are (it seemed to do nothing on a shelf already in order)",
-          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build26/weavr-appletv-1.0-build26.ipa",
-          "size": 21989642,
           "minOSVersion": "18.0"
         }
       ]
