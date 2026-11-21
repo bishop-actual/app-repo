@@ -13,13 +13,22 @@
       "name": "Weavr iOS",
       "bundleIdentifier": "com.weavr.app",
       "developerName": "bishop-actual",
-      "subtitle": "21 Nov 17:26 GMT · Multi-source IPTV with automatic failover",
+      "subtitle": "21 Nov 19:05 GMT · Multi-source IPTV with automatic failover",
       "localizedDescription": "Weavr merges your M3U and Xtream sources into one library, removes duplicate channels and films across providers, and fails over to another source when a stream stalls. Includes a TV guide, films and series, continue watching, Picture in Picture, AirPlay, and WeavrLink, a remote for your Weavr TVs.",
       "iconURL": "https://raw.githubusercontent.com/bishop-actual/app-repo/main/icons/weavr.png?v=e9989785",
       "tintColor": "#57A7B3",
       "category": "entertainment",
       "screenshotURLs": [],
       "versions": [
+        {
+          "version": "1.0.67",
+          "buildVersion": "67",
+          "date": "2026-11-21T19:05:24Z",
+          "localizedDescription": "Fetch missing and Merge again, from a source's page\n\n- A media server's films and series: how many it says it has, kept as\n  it's read, beside how many are stored (\"Silo has 12,400: 600 missing\").\n- Fetch missing: the server read again with every title it gives kept and\n  added to what's stored (none taken away, one already there passed over),\n  so a big read that stops part way still brings in what it got; the\n  library is made again if anything came. No \"couldn't reach\" or resting\n  for a top-up.\n- Merge again, when most of what a source has stored isn't in the library:\n  the library made from what's stored, nothing asked of the sources.",
+          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build67/weavr-ios-1.0-build67.ipa",
+          "size": 23341523,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "1.0.66",
           "buildVersion": "66",
@@ -144,15 +153,6 @@
           "localizedDescription": "Duo: the side menu's gap at the foot the same as the strip's gap above its clock",
           "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build53/weavr-ios-1.0-build53.ipa",
           "size": 23103696,
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "1.0.52",
-          "buildVersion": "52",
-          "date": "2026-11-18T20:29:59Z",
-          "localizedDescription": "Shelf page: each folder's name on one line and its five icons beneath; the sort sorts A to Z, or Z to A when they already are (it seemed to do nothing on a shelf already in order)",
-          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build52/weavr-ios-1.0-build52.ipa",
-          "size": 23100365,
           "minOSVersion": "18.0"
         }
       ]
