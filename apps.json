@@ -13,13 +13,22 @@
       "name": "Weavr iOS",
       "bundleIdentifier": "com.weavr.app",
       "developerName": "bishop-actual",
-      "subtitle": "21 Nov 06:32 GMT · Multi-source IPTV with automatic failover",
+      "subtitle": "21 Nov 09:22 GMT · Multi-source IPTV with automatic failover",
       "localizedDescription": "Weavr merges your M3U and Xtream sources into one library, removes duplicate channels and films across providers, and fails over to another source when a stream stalls. Includes a TV guide, films and series, continue watching, Picture in Picture, AirPlay, and WeavrLink, a remote for your Weavr TVs.",
       "iconURL": "https://raw.githubusercontent.com/bishop-actual/app-repo/main/icons/weavr.png?v=e9989785",
       "tintColor": "#57A7B3",
       "category": "entertainment",
       "screenshotURLs": [],
       "versions": [
+        {
+          "version": "1.0.61",
+          "buildVersion": "61",
+          "date": "2026-11-21T09:22:20Z",
+          "localizedDescription": "Quick Library and Watched buttons, sport ready with Home, faster expired pictures, centred splash text\n\n- Library and Watched: a toggle re-marks only that title's rows (its\n  index entries and what's kept of it), not the whole 190,000-title\n  index with everything read cleared; and a title page reading from the\n  library file now redraws when the library changes, so the button shows\n  its new state at once.\n- Home's Sport row is the app's own, fetched behind the splash (\"Getting\n  today's sport\", up to 6 seconds) so it's there when Home opens; the row\n  doesn't fetch it again.\n- A Silo picture whose signature is known to have run out (its exp\n  passed) has its title asked for afresh straight away, without the\n  doomed request first; a couple more pictures load at once.\n- The splash's line wraps, centred, when it's long.",
+          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build61/weavr-ios-1.0-build61.ipa",
+          "size": 23241297,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "1.0.60",
           "buildVersion": "60",
@@ -144,15 +153,6 @@
           "localizedDescription": "Player: VLC for everything by default (every format, Picture in Picture, background audio), Silo included through the relay; Apple's player only when chosen in Settings › Playback › Player",
           "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build46/weavr-ios-1.0-build46.ipa",
           "size": 22913826,
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "1.0.45",
-          "buildVersion": "45",
-          "date": "2026-11-18T09:31:49Z",
-          "localizedDescription": "Build fix: published year worked out in steps",
-          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build45/weavr-ios-1.0-build45.ipa",
-          "size": 22913593,
           "minOSVersion": "18.0"
         }
       ]
