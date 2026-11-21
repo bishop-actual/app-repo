@@ -161,13 +161,22 @@
       "name": "Weavr tvOS",
       "bundleIdentifier": "com.weavr.app.tv",
       "developerName": "bishop-actual",
-      "subtitle": "20 Nov 15:18 GMT · Weavr on Apple TV",
+      "subtitle": "21 Nov 04:58 GMT · Weavr on Apple TV",
       "localizedDescription": "Weavr for Apple TV: your merged IPTV library, TV guide, films and series with automatic failover between sources.",
       "iconURL": "https://raw.githubusercontent.com/bishop-actual/app-repo/main/icons/weavr.png?v=e9989785",
       "tintColor": "#57A7B3",
       "category": "entertainment",
       "screenshotURLs": [],
       "versions": [
+        {
+          "version": "1.0.33",
+          "buildVersion": "33",
+          "date": "2026-11-21T04:58:05Z",
+          "localizedDescription": "Silo pictures that outlive their signature, Duo fixes, launch splash, sport cards, chips on TV\n\n- Silo's picture addresses are signed and run out (daily, some every 15\n  minutes; an expired one answers 404). Pictures are now kept by their\n  identity without the signature, so one seen once is found under any\n  later signature; an expired one with no copy has its title asked for\n  afresh from Silo, its row given the new addresses, and loads.\n- Collection covers come from Silo's collection list as it is now, not\n  the signed address kept in the shelf. The shelf page has Refresh covers.\n- Visible pictures are tried again after 2 and 8 seconds; an expired\n  signature doesn't count against the server.\n- Duo: no second search at the foot of the strip (the page's own top row\n  has it); the side menu and headers follow the window as it folds and\n  unfolds, so the menu no longer drops to the bottom after unfolding.\n- The splash waits for the library to be read and, when it has to be\n  fetched (nothing saved, or due), for that too.\n- Shelf page: A to Z sorts by name without case or accents, the whole\n  row tappable.\n- Sport cards: team colours run darker over black, so a crest in its own\n  colour stands out.\n- Apple TV: filter chips (the log's among them) ringed and lifted when\n  chosen, not swamped by the TV's white highlight.",
+          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build33/weavr-appletv-1.0-build33.ipa",
+          "size": 22157737,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "1.0.32",
           "buildVersion": "32",
@@ -292,15 +301,6 @@
           "localizedDescription": "Sport: Nations Championship, MotoGP, Super League, RFL Championship and NRL from TheSportsDB (as on the TV: next and last fifteen per league, teams to follow); 'Every competition' removed",
           "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build17/weavr-appletv-1.0-build17.ipa",
           "size": 21774900,
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "1.0.16",
-          "buildVersion": "16",
-          "date": "2026-11-18T03:20:26Z",
-          "localizedDescription": "Sport cards: the teams' own colours across the card (home one end, away the other), the sport's colour where there are no teams, and a stripe of the sport's colour down the side — Home and the Sport page alike",
-          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build16/weavr-appletv-1.0-build16.ipa",
-          "size": 21765978,
           "minOSVersion": "18.0"
         }
       ]
