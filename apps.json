@@ -161,13 +161,22 @@
       "name": "Weavr tvOS",
       "bundleIdentifier": "com.weavr.app.tv",
       "developerName": "bishop-actual",
-      "subtitle": "21 Nov 04:58 GMT · Weavr on Apple TV",
+      "subtitle": "21 Nov 06:31 GMT · Weavr on Apple TV",
       "localizedDescription": "Weavr for Apple TV: your merged IPTV library, TV guide, films and series with automatic failover between sources.",
       "iconURL": "https://raw.githubusercontent.com/bishop-actual/app-repo/main/icons/weavr.png?v=e9989785",
       "tintColor": "#57A7B3",
       "category": "entertainment",
       "screenshotURLs": [],
       "versions": [
+        {
+          "version": "1.0.34",
+          "buildVersion": "34",
+          "date": "2026-11-21T06:31:58Z",
+          "localizedDescription": "Splash says what start-up is doing\n\nThe splash line follows start-up step by step instead of always saying\n\"Loading your home\": Reading your channels, Updating your library for this\nversion (with how far, the first launch after this update), Reading your\nfilms and series, Reading the TV guide, Checking your sources (then the\nimport panel if anything's fetched), Setting out Home.",
+          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build34/weavr-appletv-1.0-build34.ipa",
+          "size": 22160115,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "1.0.33",
           "buildVersion": "33",
@@ -292,15 +301,6 @@
           "localizedDescription": "Build fix: published year worked out in steps",
           "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build19/weavr-appletv-1.0-build19.ipa",
           "size": 21833288,
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "1.0.17",
-          "buildVersion": "17",
-          "date": "2026-11-18T03:30:21Z",
-          "localizedDescription": "Sport: Nations Championship, MotoGP, Super League, RFL Championship and NRL from TheSportsDB (as on the TV: next and last fifteen per league, teams to follow); 'Every competition' removed",
-          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build17/weavr-appletv-1.0-build17.ipa",
-          "size": 21774900,
           "minOSVersion": "18.0"
         }
       ]
