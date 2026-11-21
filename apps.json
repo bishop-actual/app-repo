@@ -161,13 +161,22 @@
       "name": "Weavr tvOS",
       "bundleIdentifier": "com.weavr.app.tv",
       "developerName": "bishop-actual",
-      "subtitle": "21 Nov 15:04 GMT · Weavr on Apple TV",
+      "subtitle": "21 Nov 16:09 GMT · Weavr on Apple TV",
       "localizedDescription": "Weavr for Apple TV: your merged IPTV library, TV guide, films and series with automatic failover between sources.",
       "iconURL": "https://raw.githubusercontent.com/bishop-actual/app-repo/main/icons/weavr.png?v=e9989785",
       "tintColor": "#57A7B3",
       "category": "entertainment",
       "screenshotURLs": [],
       "versions": [
+        {
+          "version": "1.0.39",
+          "buildVersion": "39",
+          "date": "2026-11-21T16:09:20Z",
+          "localizedDescription": "Titles don't lose a copy when the library's made again; qualities asked again after a failed check\n\n- A new library's rows are numbered on from the old one's. They reused\n  the same numbers, and until the new index was read (seconds, for a big\n  library) titles kept in memory still answered for those numbers: a\n  film opened then (its details, its quality check, a Silo picture\n  renewed) could have the old library's copy written over the new one,\n  dropping a source's copy (Silo's) and its link for collections.\n- A quality check of an Xtream or Jellyfin copy that got no answer (the\n  panel busy, at its connection limit, timed out) is no longer remembered\n  as \"nothing to say\": it's asked again next time, so the copy gets its\n  quality instead of none for good.",
+          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build39/weavr-appletv-1.0-build39.ipa",
+          "size": 22233317,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "1.0.38",
           "buildVersion": "38",
@@ -292,15 +301,6 @@
           "localizedDescription": "Ko-fi: its own cup symbol (from Ko-fi's brand assets) on a white tile, in place of the drawn one",
           "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build25/weavr-appletv-1.0-build25.ipa",
           "size": 21980581,
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "1.0.24",
-          "buildVersion": "24",
-          "date": "2026-11-18T19:52:47Z",
-          "localizedDescription": "Books: title A–Z asks Silo nothing extra (no order), exactly as before sorting was asked of it",
-          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build24/weavr-appletv-1.0-build24.ipa",
-          "size": 21981542,
           "minOSVersion": "18.0"
         }
       ]
