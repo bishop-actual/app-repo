@@ -161,13 +161,22 @@
       "name": "Weavr tvOS",
       "bundleIdentifier": "com.weavr.app.tv",
       "developerName": "bishop-actual",
-      "subtitle": "22 Nov 14:08 GMT · Weavr on Apple TV",
+      "subtitle": "22 Nov 17:44 GMT · Weavr on Apple TV",
       "localizedDescription": "Weavr for Apple TV: your merged IPTV library, TV guide, films and series with automatic failover between sources.",
       "iconURL": "https://raw.githubusercontent.com/bishop-actual/app-repo/main/icons/weavr.png?v=e9989785",
       "tintColor": "#57A7B3",
       "category": "entertainment",
       "screenshotURLs": [],
       "versions": [
+        {
+          "version": "1.0.47",
+          "buildVersion": "47",
+          "date": "2026-11-22T17:44:08Z",
+          "localizedDescription": "Sources on three lines; the Duo's Search, Settings and WeavrLink full screen\n\n- Every source list (iPhone, iPad, Apple TV, the player's): the source,\n  then its pills (quality, picture, sound), then what makes it another\n  version (an edition, Silo's part and file) or a channel's provider and\n  group. The pills wrap where there are many; the iOS sheet sized to fit.\n- The Duo: Search, Settings and WeavrLink take the whole screen rather\n  than a sheet floating short of its edges with the strip cutting into\n  it. Search and Settings draw their own top row (name, Done, the search\n  field the width of the page), as the Duo's pages do; WeavrLink's TV\n  settings button sits by the switcher, out of the strip.\n- The chip layout moved to the shared code, for both apps.",
+          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build47/weavr-appletv-1.0-build47.ipa",
+          "size": 22344373,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "1.0.46",
           "buildVersion": "46",
@@ -292,15 +301,6 @@
           "localizedDescription": "Silo pictures that outlive their signature, Duo fixes, launch splash, sport cards, chips on TV\n\n- Silo's picture addresses are signed and run out (daily, some every 15\n  minutes; an expired one answers 404). Pictures are now kept by their\n  identity without the signature, so one seen once is found under any\n  later signature; an expired one with no copy has its title asked for\n  afresh from Silo, its row given the new addresses, and loads.\n- Collection covers come from Silo's collection list as it is now, not\n  the signed address kept in the shelf. The shelf page has Refresh covers.\n- Visible pictures are tried again after 2 and 8 seconds; an expired\n  signature doesn't count against the server.\n- Duo: no second search at the foot of the strip (the page's own top row\n  has it); the side menu and headers follow the window as it folds and\n  unfolds, so the menu no longer drops to the bottom after unfolding.\n- The splash waits for the library to be read and, when it has to be\n  fetched (nothing saved, or due), for that too.\n- Shelf page: A to Z sorts by name without case or accents, the whole\n  row tappable.\n- Sport cards: team colours run darker over black, so a crest in its own\n  colour stands out.\n- Apple TV: filter chips (the log's among them) ringed and lifted when\n  chosen, not swamped by the TV's white highlight.",
           "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build33/weavr-appletv-1.0-build33.ipa",
           "size": 22157737,
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "1.0.32",
-          "buildVersion": "32",
-          "date": "2026-11-20T15:18:37Z",
-          "localizedDescription": "Pictures kept on disk, whatever the server says, and folder posters remembered\n\n- Every picture is saved to disk as it comes and shown from there on later\n  launches, even with the server busy or unreachable, as the TV app's\n  image cache does. Before, the system's cache kept only what a server\n  allowed, and Silo's own pictures (collection covers among them) were\n  fetched again each launch. A copy two weeks old is shown and quietly\n  fetched afresh; past the limit (600 MB, 250 MB on Apple TV) the\n  longest-unrefreshed go first. The old cache's room is given back.\n- Each shelf folder's first four posters are remembered, so a folder\n  without a picture of its own shows its square at once.",
-          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build32/weavr-appletv-1.0-build32.ipa",
-          "size": 22089319,
           "minOSVersion": "18.0"
         }
       ]
