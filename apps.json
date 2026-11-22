@@ -161,13 +161,22 @@
       "name": "Weavr tvOS",
       "bundleIdentifier": "com.weavr.app.tv",
       "developerName": "bishop-actual",
-      "subtitle": "22 Nov 07:29 GMT · Weavr on Apple TV",
+      "subtitle": "22 Nov 08:31 GMT · Weavr on Apple TV",
       "localizedDescription": "Weavr for Apple TV: your merged IPTV library, TV guide, films and series with automatic failover between sources.",
       "iconURL": "https://raw.githubusercontent.com/bishop-actual/app-repo/main/icons/weavr.png?v=e9989785",
       "tintColor": "#57A7B3",
       "category": "entertainment",
       "screenshotURLs": [],
       "versions": [
+        {
+          "version": "1.0.45",
+          "buildVersion": "45",
+          "date": "2026-11-22T08:31:28Z",
+          "localizedDescription": "Blur unwatched episodes, for every show or one show at a time\n\n- Settings > Playback > Films & series: Blur unwatched episodes. Pictures\n  of episodes not watched (nor started) are blurred on a show's page, so\n  they give nothing away; watched and started ones show as they are.\n- Each show can choose for itself: the \"...\" by its season (iPhone, iPad)\n  or Hide spoilers / Spoilers hidden by its buttons (Apple TV). A show's\n  choice that matches the setting for every show is no choice of its own:\n  it follows that setting from then on. Kept per profile.",
+          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build45/weavr-appletv-1.0-build45.ipa",
+          "size": 22326585,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "1.0.44",
           "buildVersion": "44",
@@ -292,15 +301,6 @@
           "localizedDescription": "Server imports: Jellyfin and Emby read page by page, and failed pages tried again\n\n- Jellyfin and Emby: each page of films or series is made into titles as\n  it arrives, rather than the server's raw answer for the whole library\n  being held until the end (too much for an Apple TV with a big library).\n  Progress shows as it reads, as Silo's does.\n- Jellyfin, Emby and Silo: a page that fails is tried twice more before\n  the read gives up, so one slow answer among hundreds doesn't lose it.\n- The log says why a page failed: the HTTP code or network error, and\n  which of Jellyfin's routes it was on.",
           "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build31/weavr-appletv-1.0-build31.ipa",
           "size": 22062862,
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "1.0.30",
-          "buildVersion": "30",
-          "date": "2026-11-19T18:52:44Z",
-          "localizedDescription": "Very big servers on the Apple TV: each kind (films, then series) kept on disk the moment it's read, a few thousand titles to a file, never as one document (160,000 films made one bigger than the TV could hold, and it died writing it); a refresh cut short reads only what it hadn't kept; Silo's stretches let go as they're joined, and each source's titles once they're in the merge, so a big server isn't held twice",
-          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build30/weavr-appletv-1.0-build30.ipa",
-          "size": 22011254,
           "minOSVersion": "18.0"
         }
       ]
