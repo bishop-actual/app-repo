@@ -13,13 +13,22 @@
       "name": "Weavr iOS",
       "bundleIdentifier": "com.weavr.app",
       "developerName": "bishop-actual",
-      "subtitle": "22 Nov 14:08 GMT · Multi-source IPTV with automatic failover",
+      "subtitle": "22 Nov 17:44 GMT · Multi-source IPTV with automatic failover",
       "localizedDescription": "Weavr merges your M3U and Xtream sources into one library, removes duplicate channels and films across providers, and fails over to another source when a stream stalls. Includes a TV guide, films and series, continue watching, Picture in Picture, AirPlay, and WeavrLink, a remote for your Weavr TVs.",
       "iconURL": "https://raw.githubusercontent.com/bishop-actual/app-repo/main/icons/weavr.png?v=e9989785",
       "tintColor": "#57A7B3",
       "category": "entertainment",
       "screenshotURLs": [],
       "versions": [
+        {
+          "version": "1.0.74",
+          "buildVersion": "74",
+          "date": "2026-11-22T17:44:18Z",
+          "localizedDescription": "Sources on three lines; the Duo's Search, Settings and WeavrLink full screen\n\n- Every source list (iPhone, iPad, Apple TV, the player's): the source,\n  then its pills (quality, picture, sound), then what makes it another\n  version (an edition, Silo's part and file) or a channel's provider and\n  group. The pills wrap where there are many; the iOS sheet sized to fit.\n- The Duo: Search, Settings and WeavrLink take the whole screen rather\n  than a sheet floating short of its edges with the strip cutting into\n  it. Search and Settings draw their own top row (name, Done, the search\n  field the width of the page), as the Duo's pages do; WeavrLink's TV\n  settings button sits by the switcher, out of the strip.\n- The chip layout moved to the shared code, for both apps.",
+          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build74/weavr-ios-1.0-build74.ipa",
+          "size": 23424829,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "1.0.73",
           "buildVersion": "73",
@@ -144,15 +153,6 @@
           "localizedDescription": "Splash says what start-up is doing\n\nThe splash line follows start-up step by step instead of always saying\n\"Loading your home\": Reading your channels, Updating your library for this\nversion (with how far, the first launch after this update), Reading your\nfilms and series, Reading the TV guide, Checking your sources (then the\nimport panel if anything's fetched), Setting out Home.",
           "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build60/weavr-ios-1.0-build60.ipa",
           "size": 23236543,
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "1.0.59",
-          "buildVersion": "59",
-          "date": "2026-11-21T04:58:43Z",
-          "localizedDescription": "Silo pictures that outlive their signature, Duo fixes, launch splash, sport cards, chips on TV\n\n- Silo's picture addresses are signed and run out (daily, some every 15\n  minutes; an expired one answers 404). Pictures are now kept by their\n  identity without the signature, so one seen once is found under any\n  later signature; an expired one with no copy has its title asked for\n  afresh from Silo, its row given the new addresses, and loads.\n- Collection covers come from Silo's collection list as it is now, not\n  the signed address kept in the shelf. The shelf page has Refresh covers.\n- Visible pictures are tried again after 2 and 8 seconds; an expired\n  signature doesn't count against the server.\n- Duo: no second search at the foot of the strip (the page's own top row\n  has it); the side menu and headers follow the window as it folds and\n  unfolds, so the menu no longer drops to the bottom after unfolding.\n- The splash waits for the library to be read and, when it has to be\n  fetched (nothing saved, or due), for that too.\n- Shelf page: A to Z sorts by name without case or accents, the whole\n  row tappable.\n- Sport cards: team colours run darker over black, so a crest in its own\n  colour stands out.\n- Apple TV: filter chips (the log's among them) ringed and lifted when\n  chosen, not swamped by the TV's white highlight.",
-          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build59/weavr-ios-1.0-build59.ipa",
-          "size": 23233427,
           "minOSVersion": "18.0"
         }
       ]
