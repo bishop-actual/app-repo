@@ -161,13 +161,22 @@
       "name": "Weavr tvOS",
       "bundleIdentifier": "com.weavr.app.tv",
       "developerName": "bishop-actual",
-      "subtitle": "22 Nov 17:44 GMT · Weavr on Apple TV",
+      "subtitle": "22 Nov 19:33 GMT · Weavr on Apple TV",
       "localizedDescription": "Weavr for Apple TV: your merged IPTV library, TV guide, films and series with automatic failover between sources.",
       "iconURL": "https://raw.githubusercontent.com/bishop-actual/app-repo/main/icons/weavr.png?v=e9989785",
       "tintColor": "#57A7B3",
       "category": "entertainment",
       "screenshotURLs": [],
       "versions": [
+        {
+          "version": "1.0.49",
+          "buildVersion": "49",
+          "date": "2026-11-22T19:33:09Z",
+          "localizedDescription": "Grid build fixes: argument order, the circuit's own point type, board map",
+          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build49/weavr-appletv-1.0-build49.ipa",
+          "size": 22706845,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "1.0.47",
           "buildVersion": "47",
@@ -292,15 +301,6 @@
           "localizedDescription": "Splash says what start-up is doing\n\nThe splash line follows start-up step by step instead of always saying\n\"Loading your home\": Reading your channels, Updating your library for this\nversion (with how far, the first launch after this update), Reading your\nfilms and series, Reading the TV guide, Checking your sources (then the\nimport panel if anything's fetched), Setting out Home.",
           "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build34/weavr-appletv-1.0-build34.ipa",
           "size": 22160115,
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "1.0.33",
-          "buildVersion": "33",
-          "date": "2026-11-21T04:58:05Z",
-          "localizedDescription": "Silo pictures that outlive their signature, Duo fixes, launch splash, sport cards, chips on TV\n\n- Silo's picture addresses are signed and run out (daily, some every 15\n  minutes; an expired one answers 404). Pictures are now kept by their\n  identity without the signature, so one seen once is found under any\n  later signature; an expired one with no copy has its title asked for\n  afresh from Silo, its row given the new addresses, and loads.\n- Collection covers come from Silo's collection list as it is now, not\n  the signed address kept in the shelf. The shelf page has Refresh covers.\n- Visible pictures are tried again after 2 and 8 seconds; an expired\n  signature doesn't count against the server.\n- Duo: no second search at the foot of the strip (the page's own top row\n  has it); the side menu and headers follow the window as it folds and\n  unfolds, so the menu no longer drops to the bottom after unfolding.\n- The splash waits for the library to be read and, when it has to be\n  fetched (nothing saved, or due), for that too.\n- Shelf page: A to Z sorts by name without case or accents, the whole\n  row tappable.\n- Sport cards: team colours run darker over black, so a crest in its own\n  colour stands out.\n- Apple TV: filter chips (the log's among them) ringed and lifted when\n  chosen, not swamped by the TV's white highlight.",
-          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build33/weavr-appletv-1.0-build33.ipa",
-          "size": 22157737,
           "minOSVersion": "18.0"
         }
       ]
