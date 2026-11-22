@@ -161,13 +161,22 @@
       "name": "Weavr tvOS",
       "bundleIdentifier": "com.weavr.app.tv",
       "developerName": "bishop-actual",
-      "subtitle": "22 Nov 06:06 GMT · Weavr on Apple TV",
+      "subtitle": "22 Nov 07:29 GMT · Weavr on Apple TV",
       "localizedDescription": "Weavr for Apple TV: your merged IPTV library, TV guide, films and series with automatic failover between sources.",
       "iconURL": "https://raw.githubusercontent.com/bishop-actual/app-repo/main/icons/weavr.png?v=e9989785",
       "tintColor": "#57A7B3",
       "category": "entertainment",
       "screenshotURLs": [],
       "versions": [
+        {
+          "version": "1.0.44",
+          "buildVersion": "44",
+          "date": "2026-11-22T07:29:31Z",
+          "localizedDescription": "Shows open on season 1, not the specials\n\nA show with a season 0 (specials) opened on it, and Play started its first\nspecial: what's up next was the first unwatched episode in order, and the\nspecials come first. Up next now goes by the show's own seasons, with the\nspecials only when it has nothing else; the page opens on that season (else\nthe first numbered one), and season 0 stays in the list to go back to.",
+          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build44/weavr-appletv-1.0-build44.ipa",
+          "size": 22314829,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "1.0.43",
           "buildVersion": "43",
@@ -292,15 +301,6 @@
           "localizedDescription": "Very big servers on the Apple TV: each kind (films, then series) kept on disk the moment it's read, a few thousand titles to a file, never as one document (160,000 films made one bigger than the TV could hold, and it died writing it); a refresh cut short reads only what it hadn't kept; Silo's stretches let go as they're joined, and each source's titles once they're in the merge, so a big server isn't held twice",
           "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build30/weavr-appletv-1.0-build30.ipa",
           "size": 22011254,
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "1.0.29",
-          "buildVersion": "29",
-          "date": "2026-11-19T17:54:19Z",
-          "localizedDescription": "Sport: teams can be picked from any competition, not just the built-in ones — the extra competitions followed whole are listed under Teams, and More competitions… lists every one ESPN carries (searchable); a team ticked remembers its competition, so that competition's games are fetched; ticking teams no longer stops leagues followed whole from being fetched",
-          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build29/weavr-appletv-1.0-build29.ipa",
-          "size": 22010621,
           "minOSVersion": "18.0"
         }
       ]
