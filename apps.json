@@ -13,13 +13,22 @@
       "name": "Weavr iOS",
       "bundleIdentifier": "com.weavr.app",
       "developerName": "bishop-actual",
-      "subtitle": "22 Nov 07:29 GMT · Multi-source IPTV with automatic failover",
+      "subtitle": "22 Nov 08:28 GMT · Multi-source IPTV with automatic failover",
       "localizedDescription": "Weavr merges your M3U and Xtream sources into one library, removes duplicate channels and films across providers, and fails over to another source when a stream stalls. Includes a TV guide, films and series, continue watching, Picture in Picture, AirPlay, and WeavrLink, a remote for your Weavr TVs.",
       "iconURL": "https://raw.githubusercontent.com/bishop-actual/app-repo/main/icons/weavr.png?v=e9989785",
       "tintColor": "#57A7B3",
       "category": "entertainment",
       "screenshotURLs": [],
       "versions": [
+        {
+          "version": "1.0.71",
+          "buildVersion": "71",
+          "date": "2026-11-22T08:28:03Z",
+          "localizedDescription": "A film's cuts are one film, each cut shown on its copies\n\nAs Silo's own apps and the TV app do it: Gladiator is one film, and its\nDirector's Cut is picked in its source list, with its own qualities.\n- Silo's versions show their edition (\"Extended\", \"Director's Cut\") and\n  any part (\"Part 1 of 2\") on their row's second line.\n- Xtream films: a cut named in the panel's title (\"Gladiator (Director's\n  Cut)\", \"Aliens Special Edition\", \"Apocalypse Now: Redux\") is taken off the\n  film's title, so it's one film with the plain release, and kept on its\n  copy's second line instead. Only where it's plainly a cut (in brackets,\n  after a dash or colon, or a cut's full name at the end): \"Uncut Gems\"\n  stays as it is. In effect from each panel's next read.\n- The source list never folds two cuts into one row, whatever their\n  quality.",
+          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build71/weavr-ios-1.0-build71.ipa",
+          "size": 23392820,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "1.0.70",
           "buildVersion": "70",
@@ -144,15 +153,6 @@
           "localizedDescription": "Server imports: Jellyfin and Emby read page by page, and failed pages tried again\n\n- Jellyfin and Emby: each page of films or series is made into titles as\n  it arrives, rather than the server's raw answer for the whole library\n  being held until the end (too much for an Apple TV with a big library).\n  Progress shows as it reads, as Silo's does.\n- Jellyfin, Emby and Silo: a page that fails is tried twice more before\n  the read gives up, so one slow answer among hundreds doesn't lose it.\n- The log says why a page failed: the HTTP code or network error, and\n  which of Jellyfin's routes it was on.",
           "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build57/weavr-ios-1.0-build57.ipa",
           "size": 23132483,
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "1.0.56",
-          "buildVersion": "56",
-          "date": "2026-11-19T18:49:56Z",
-          "localizedDescription": "Very big servers on the Apple TV: each kind (films, then series) kept on disk the moment it's read, a few thousand titles to a file, never as one document (160,000 films made one bigger than the TV could hold, and it died writing it); a refresh cut short reads only what it hadn't kept; Silo's stretches let go as they're joined, and each source's titles once they're in the merge, so a big server isn't held twice",
-          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build56/weavr-ios-1.0-build56.ipa",
-          "size": 23123279,
           "minOSVersion": "18.0"
         }
       ]
