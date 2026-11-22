@@ -161,13 +161,22 @@
       "name": "Weavr tvOS",
       "bundleIdentifier": "com.weavr.app.tv",
       "developerName": "bishop-actual",
-      "subtitle": "21 Nov 20:16 GMT · Weavr on Apple TV",
+      "subtitle": "22 Nov 06:06 GMT · Weavr on Apple TV",
       "localizedDescription": "Weavr for Apple TV: your merged IPTV library, TV guide, films and series with automatic failover between sources.",
       "iconURL": "https://raw.githubusercontent.com/bishop-actual/app-repo/main/icons/weavr.png?v=e9989785",
       "tintColor": "#57A7B3",
       "category": "entertainment",
       "screenshotURLs": [],
       "versions": [
+        {
+          "version": "1.0.43",
+          "buildVersion": "43",
+          "date": "2026-11-22T06:06:33Z",
+          "localizedDescription": "Apple TV: no gap in the sport row, no getting stuck in a game, nothing playing on after Back\n\n- Home's sport row (and the Sport page's events): each game once. A game\n  in two of the leagues followed came twice, and two cards with one id\n  left a card-wide gap in the row.\n- A channel picked for a game plays once its list has closed: shown while\n  the list was still closing, the player didn't appear on the Apple TV,\n  the game played on unseen and nothing else would open.\n- The player's page closed some other way than its own Close or Back (the\n  Apple TV's Menu pressed with a button focused, which the system takes)\n  stops what's playing, rather than leaving it playing behind the menus;\n  not when it's gone to the little window.",
+          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build43/weavr-appletv-1.0-build43.ipa",
+          "size": 22309768,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "1.0.42",
           "buildVersion": "42",
@@ -292,15 +301,6 @@
           "localizedDescription": "Sport: teams can be picked from any competition, not just the built-in ones — the extra competitions followed whole are listed under Teams, and More competitions… lists every one ESPN carries (searchable); a team ticked remembers its competition, so that competition's games are fetched; ticking teams no longer stops leagues followed whole from being fetched",
           "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build29/weavr-appletv-1.0-build29.ipa",
           "size": 22010621,
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "1.0.28",
-          "buildVersion": "28",
-          "date": "2026-11-19T15:58:22Z",
-          "localizedDescription": "Sport cards: one size for every card, nearer square (200 × 172 on the phone, 400 × 340 on the TV) — both teams always shown, one above the other, and a race or tournament the same size, with the sport's icon beside its name; league and time at the top, venue and channels at the foot",
-          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build28/weavr-appletv-1.0-build28.ipa",
-          "size": 21994350,
           "minOSVersion": "18.0"
         }
       ]
