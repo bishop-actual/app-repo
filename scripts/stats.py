@@ -5,8 +5,9 @@ GitHub keeps one running total per release file and no history, so each run
 appends the totals that changed to stats/history.csv. From those snapshots
 this works out, per build: downloads in the last 24 hours and 7 days, and how
 many it got while it was the newest build of its platform. Downloads through
-the Android "newest" link (weavr-android-latest) are credited to whichever
-Android build was newest when they happened.
+the Android "newest" links (weavr-android-latest for builds from main,
+weavr-android-dev-latest for dev) are credited to whichever build of that
+channel was newest when they happened.
 
 Writes STATS.md (to read on GitHub) and stats/stats.json.
 
@@ -26,13 +27,19 @@ from zoneinfo import ZoneInfo
 
 LOCAL_TZ = ZoneInfo("Europe/London")
 HISTORY = "stats/history.csv"
-LATEST_ANDROID = "weavr-android.apk"  # the file on the weavr-android-latest release
-
 PLATFORMS = [  # tag prefix, label
     ("weavr-ios-", "iOS"),
     ("weavr-appletv-", "tvOS"),
     ("weavr-android-", "Android"),
 ]
+DEV_ANDROID = "Android dev"  # Android builds from dev: tags end in -dev
+
+# Each Android channel's never-changing "newest" link: its release, and the
+# file on it whose downloads are credited to that channel's newest build.
+NEWEST_LINKS = {
+    "Android": ("weavr-android-latest", "weavr-android.apk"),
+    DEV_ANDROID: ("weavr-android-dev-latest", "weavr-android-dev.apk"),
+}
 
 
 def fetch_releases(repo, token):
@@ -72,11 +79,13 @@ def builds_from(releases):
     """One entry per build, oldest first, with its platform and publish time."""
     builds = []
     for r in releases:
-        if r.get("draft") or r["tag_name"] == "weavr-android-latest":
-            continue
         tag = r["tag_name"]
+        if r.get("draft") or tag in {t for t, _ in NEWEST_LINKS.values()}:
+            continue
         label = next((l for p, l in PLATFORMS if tag.startswith(p)), "Other")
-        m = re.search(r"-(\d[\w.]*)-build(\d+)$", tag)
+        if label == "Android" and tag.endswith("-dev"):
+            label = DEV_ANDROID
+        m = re.search(r"-(\d[\w.]*)-build(\d+)(-dev)?$", tag)
         version = f"{m.group(1)}.{m.group(2)}" if m else tag
         if tag == "weavr-ios-1.0-build9":
             version = "1.0"  # published before versions carried the build number
@@ -119,6 +128,20 @@ def append_history(hist, counts, now):
                 hist.setdefault(name, []).append((now, count))
 
 
+def running_total(series):
+    """A newest-build link's file is replaced with each new build, and GitHub
+    starts its count again from 0. Turn its snapshots into a total that only
+    goes up: a drop means a new file, whose count is all new downloads.
+    Downloads between the last snapshot and the replacement (under an hour)
+    are lost."""
+    out, total, prev = [], 0, 0
+    for t, c in series:
+        total += c - prev if c >= prev else c
+        prev = c
+        out.append((t, total))
+    return out
+
+
 def count_at(series, t, published):
     """A file's total at time t: its last snapshot at or before t. Before it was
     published it had none. Before the first snapshot of an older file the total
@@ -159,7 +182,15 @@ def main():
         for b, nxt in zip(blist, blist[1:] + [None]):
             b["superseded"] = nxt["published"] if nxt else None
 
-    latest_series = hist.get(LATEST_ANDROID, [])
+    # A link made after the stats began had no downloads before it was made.
+    created = {r["tag_name"]: parse_time(r["published_at"]) for r in releases}
+    start = _history_start()
+    link_series = {}
+    for p, (tag, f) in NEWEST_LINKS.items():
+        series = hist.get(f, [])
+        if tag in created and created[tag] > start and series:
+            series = [(created[tag], 0)] + series
+        link_series[p] = running_total(series)
     for b in builds:
         series = hist.get(b["file"], [])
         end = b["superseded"] or now
@@ -170,9 +201,10 @@ def main():
             before, a2 = count_at(series, start, b["published"])
             b[k] = b["total"] - before
             b["approx"] |= a2 and start > b["published"]
-        if b["platform"] == "Android":
+        if b["platform"] in NEWEST_LINKS:
             # Credit the "newest" link's downloads to the build that was newest.
             pub = b["published"]
+            latest_series = link_series[b["platform"]]
             lo = lambda t: count_at(latest_series, max(t, pub), dt.datetime.min.replace(tzinfo=dt.timezone.utc))[0]
             via_link = lo(end) - lo(pub)
             b["via_latest"] = via_link
@@ -189,7 +221,7 @@ def main():
 
     # Downloads through the newest-build link before the history began can't be
     # put against a build; they're shown on their own.
-    pre_link = latest_series[0][1] if latest_series else 0
+    pre_link = {p: (s[0][1] if s else 0) for p, s in link_series.items()}
 
     write_markdown(builds, now, pre_link)
     with open("stats/stats.json", "w") as f:
@@ -204,7 +236,7 @@ def main():
 
 
 def write_markdown(builds, now, pre_link):
-    plats = [l for _, l in PLATFORMS] + (["Other"] if any(b["platform"] == "Other" for b in builds) else [])
+    plats = [l for _, l in PLATFORMS] + [DEV_ANDROID] + (["Other"] if any(b["platform"] == "Other" for b in builds) else [])
     L = ["# Download stats", "",
          f"Updated {fmt_time(now)}, every hour. Counts are GitHub's downloads of each "
          "release file: a reinstall or an update in Feather counts again, and there is "
@@ -218,7 +250,7 @@ def write_markdown(builds, now, pre_link):
         if not bl:
             continue
         n = bl[-1]
-        extra = pre_link if p == "Android" else 0
+        extra = pre_link.get(p, 0)
         L.append(f"| {p} | {n['version']} | {fmt_time(n['published'])} | "
                  f"{sum(b['24h'] for b in bl)} | {sum(b['7d'] for b in bl)} | {sum(b['total'] for b in bl) + extra} |")
 
@@ -247,11 +279,11 @@ def write_markdown(builds, now, pre_link):
             per_day = "–" if b["per_day"] is None else f"{b['per_day']:.1f}"
             L.append(f"| {b['version']} | {fmt_time(b['published'])} | {nf} | "
                      f"{b['while_newest']}{'*' if b['approx'] else ''} | {per_day} | {b['total']} |")
-        if p == "Android":
-            L += ["", "Android totals include downloads through the newest-build link, "
-                  "credited to the build that was newest at the time."]
-            if pre_link:
-                L += ["", f"Plus {pre_link} through the newest-build link before the stats "
+        if p in NEWEST_LINKS:
+            L += ["", f"Totals include downloads through the {p} newest-build link "
+                  f"(`{NEWEST_LINKS[p][1]}`), credited to the build that was newest at the time."]
+            if pre_link.get(p):
+                L += ["", f"Plus {pre_link[p]} through that link before the stats "
                       "began, which can't be put against a build (in the overview's All time)."]
         L.append("")
 

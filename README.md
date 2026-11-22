@@ -41,12 +41,16 @@ The last 15 versions of each app are kept so you can roll back.
 
 The Android TV app's builds (bishop-actual/weavr-android-tv, the **Build
 Android APK** workflow with "Publish" ticked) are attached to releases here
-too, named `weavr-android-<version>-build<n>`, so each one has a lasting
-direct download link — handy for installing on a TV. The newest one is also
-always at
-`https://github.com/bishop-actual/app-repo/releases/download/weavr-android-latest/weavr-android.apk`
-(the `weavr-android-latest` release, updated by every build), which is the link
-to give a Downloader code. Feather can't use an APK,
+too, so each one has a lasting direct download link — handy for installing on
+a TV. There are two channels, each with a link that never changes for a
+Downloader code:
+
+| Channel | Built from | Releases | Newest build, always at |
+|---|---|---|---|
+| Stable, for everyone | `main` | `weavr-android-<version>-build<n>` | `https://github.com/bishop-actual/app-repo/releases/download/weavr-android-latest/weavr-android.apk` |
+| Dev, for testing | `dev` (or any other branch) | `weavr-android-<version>-build<n>-dev`, marked pre-release | `https://github.com/bishop-actual/app-repo/releases/download/weavr-android-dev-latest/weavr-android-dev.apk` |
+
+Feather can't use an APK,
 so the Publish workflow skips these releases and they never appear in
 `apps.json`. That workflow needs the same `APP_REPO_TOKEN` secret, set on the
 Android repo.
