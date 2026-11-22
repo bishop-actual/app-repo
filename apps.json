@@ -13,13 +13,22 @@
       "name": "Weavr iOS",
       "bundleIdentifier": "com.weavr.app",
       "developerName": "bishop-actual",
-      "subtitle": "22 Nov 06:06 GMT · Multi-source IPTV with automatic failover",
+      "subtitle": "22 Nov 07:29 GMT · Multi-source IPTV with automatic failover",
       "localizedDescription": "Weavr merges your M3U and Xtream sources into one library, removes duplicate channels and films across providers, and fails over to another source when a stream stalls. Includes a TV guide, films and series, continue watching, Picture in Picture, AirPlay, and WeavrLink, a remote for your Weavr TVs.",
       "iconURL": "https://raw.githubusercontent.com/bishop-actual/app-repo/main/icons/weavr.png?v=e9989785",
       "tintColor": "#57A7B3",
       "category": "entertainment",
       "screenshotURLs": [],
       "versions": [
+        {
+          "version": "1.0.70",
+          "buildVersion": "70",
+          "date": "2026-11-22T07:29:45Z",
+          "localizedDescription": "Shows open on season 1, not the specials\n\nA show with a season 0 (specials) opened on it, and Play started its first\nspecial: what's up next was the first unwatched episode in order, and the\nspecials come first. Up next now goes by the show's own seasons, with the\nspecials only when it has nothing else; the page opens on that season (else\nthe first numbered one), and season 0 stays in the list to go back to.",
+          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build70/weavr-ios-1.0-build70.ipa",
+          "size": 23386921,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "1.0.69",
           "buildVersion": "69",
@@ -144,15 +153,6 @@
           "localizedDescription": "Very big servers on the Apple TV: each kind (films, then series) kept on disk the moment it's read, a few thousand titles to a file, never as one document (160,000 films made one bigger than the TV could hold, and it died writing it); a refresh cut short reads only what it hadn't kept; Silo's stretches let go as they're joined, and each source's titles once they're in the merge, so a big server isn't held twice",
           "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build56/weavr-ios-1.0-build56.ipa",
           "size": 23123279,
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "1.0.55",
-          "buildVersion": "55",
-          "date": "2026-11-19T17:54:33Z",
-          "localizedDescription": "Sport: teams can be picked from any competition, not just the built-in ones — the extra competitions followed whole are listed under Teams, and More competitions… lists every one ESPN carries (searchable); a team ticked remembers its competition, so that competition's games are fetched; ticking teams no longer stops leagues followed whole from being fetched",
-          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build55/weavr-ios-1.0-build55.ipa",
-          "size": 23121965,
           "minOSVersion": "18.0"
         }
       ]
