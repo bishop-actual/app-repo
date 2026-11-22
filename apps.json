@@ -161,13 +161,22 @@
       "name": "Weavr tvOS",
       "bundleIdentifier": "com.weavr.app.tv",
       "developerName": "bishop-actual",
-      "subtitle": "22 Nov 08:31 GMT · Weavr on Apple TV",
+      "subtitle": "22 Nov 14:08 GMT · Weavr on Apple TV",
       "localizedDescription": "Weavr for Apple TV: your merged IPTV library, TV guide, films and series with automatic failover between sources.",
       "iconURL": "https://raw.githubusercontent.com/bishop-actual/app-repo/main/icons/weavr.png?v=e9989785",
       "tintColor": "#57A7B3",
       "category": "entertainment",
       "screenshotURLs": [],
       "versions": [
+        {
+          "version": "1.0.46",
+          "buildVersion": "46",
+          "date": "2026-11-22T14:08:21Z",
+          "localizedDescription": "Silo plays as the TV app does\n\n- Asked as the TV app asks: its features (playback_plan_v3 only) and its\n  list of what it plays, word for word (the original, a progressive copy\n  or HLS; MKV, DTS, TrueHD and the rest); only the device named as it is.\n- One player for it all, as the TV app: VLC, through the relay that adds\n  the sign-in. Apple's player only for Dolby Vision (Settings) or where\n  Apple's player alone is chosen; no sniffing first.\n- A title's best version in Silo's own order within a resolution.\n- The keep-alive every 15 seconds, as the TV app.\n- A session that started but won't play: Silo asked why while it's still\n  open, logged, then closed. The log says who played it, how long Silo\n  took and how it's sent.",
+          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build46/weavr-appletv-1.0-build46.ipa",
+          "size": 22342366,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "1.0.45",
           "buildVersion": "45",
@@ -292,15 +301,6 @@
           "localizedDescription": "Pictures kept on disk, whatever the server says, and folder posters remembered\n\n- Every picture is saved to disk as it comes and shown from there on later\n  launches, even with the server busy or unreachable, as the TV app's\n  image cache does. Before, the system's cache kept only what a server\n  allowed, and Silo's own pictures (collection covers among them) were\n  fetched again each launch. A copy two weeks old is shown and quietly\n  fetched afresh; past the limit (600 MB, 250 MB on Apple TV) the\n  longest-unrefreshed go first. The old cache's room is given back.\n- Each shelf folder's first four posters are remembered, so a folder\n  without a picture of its own shows its square at once.",
           "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build32/weavr-appletv-1.0-build32.ipa",
           "size": 22089319,
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "1.0.31",
-          "buildVersion": "31",
-          "date": "2026-11-20T07:26:44Z",
-          "localizedDescription": "Server imports: Jellyfin and Emby read page by page, and failed pages tried again\n\n- Jellyfin and Emby: each page of films or series is made into titles as\n  it arrives, rather than the server's raw answer for the whole library\n  being held until the end (too much for an Apple TV with a big library).\n  Progress shows as it reads, as Silo's does.\n- Jellyfin, Emby and Silo: a page that fails is tried twice more before\n  the read gives up, so one slow answer among hundreds doesn't lose it.\n- The log says why a page failed: the HTTP code or network error, and\n  which of Jellyfin's routes it was on.",
-          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build31/weavr-appletv-1.0-build31.ipa",
-          "size": 22062862,
           "minOSVersion": "18.0"
         }
       ]
