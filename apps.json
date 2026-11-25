@@ -161,13 +161,22 @@
       "name": "Weavr tvOS",
       "bundleIdentifier": "com.weavr.app.tv",
       "developerName": "bishop-actual",
-      "subtitle": "22 Nov 19:33 GMT · Weavr on Apple TV",
+      "subtitle": "25 Nov 18:58 GMT · Weavr on Apple TV",
       "localizedDescription": "Weavr for Apple TV: your merged IPTV library, TV guide, films and series with automatic failover between sources.",
       "iconURL": "https://raw.githubusercontent.com/bishop-actual/app-repo/main/icons/weavr.png?v=e9989785",
       "tintColor": "#57A7B3",
       "category": "entertainment",
       "screenshotURLs": [],
       "versions": [
+        {
+          "version": "1.0.53",
+          "buildVersion": "53",
+          "date": "2026-11-25T18:58:46Z",
+          "localizedDescription": "ThreadPlayer, Weavr's own player (Settings > Playback > Player): every format, Dolby Vision 5, 7 and 8 (with frame rate and range matching), DTS and TrueHD to 7.1, styled ASS subtitles, AV1, Picture in Picture. Also: series pages check only the next episodes' quality, gentler on providers.",
+          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build53/weavr-appletv-1.0-build53.ipa",
+          "size": 31300644,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "1.0.49",
           "buildVersion": "49",
@@ -292,15 +301,6 @@
           "localizedDescription": "Quick Library and Watched buttons, sport ready with Home, faster expired pictures, centred splash text\n\n- Library and Watched: a toggle re-marks only that title's rows (its\n  index entries and what's kept of it), not the whole 190,000-title\n  index with everything read cleared; and a title page reading from the\n  library file now redraws when the library changes, so the button shows\n  its new state at once.\n- Home's Sport row is the app's own, fetched behind the splash (\"Getting\n  today's sport\", up to 6 seconds) so it's there when Home opens; the row\n  doesn't fetch it again.\n- A Silo picture whose signature is known to have run out (its exp\n  passed) has its title asked for afresh straight away, without the\n  doomed request first; a couple more pictures load at once.\n- The splash's line wraps, centred, when it's long.",
           "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build35/weavr-appletv-1.0-build35.ipa",
           "size": 22166614,
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "1.0.34",
-          "buildVersion": "34",
-          "date": "2026-11-21T06:31:58Z",
-          "localizedDescription": "Splash says what start-up is doing\n\nThe splash line follows start-up step by step instead of always saying\n\"Loading your home\": Reading your channels, Updating your library for this\nversion (with how far, the first launch after this update), Reading your\nfilms and series, Reading the TV guide, Checking your sources (then the\nimport panel if anything's fetched), Setting out Home.",
-          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build34/weavr-appletv-1.0-build34.ipa",
-          "size": 22160115,
           "minOSVersion": "18.0"
         }
       ]
