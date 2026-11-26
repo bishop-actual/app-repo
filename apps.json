@@ -161,13 +161,22 @@
       "name": "Weavr tvOS",
       "bundleIdentifier": "com.weavr.app.tv",
       "developerName": "bishop-actual",
-      "subtitle": "25 Nov 18:58 GMT · Weavr on Apple TV",
+      "subtitle": "26 Nov 04:24 GMT · Weavr on Apple TV",
       "localizedDescription": "Weavr for Apple TV: your merged IPTV library, TV guide, films and series with automatic failover between sources.",
       "iconURL": "https://raw.githubusercontent.com/bishop-actual/app-repo/main/icons/weavr.png?v=e9989785",
       "tintColor": "#57A7B3",
       "category": "entertainment",
       "screenshotURLs": [],
       "versions": [
+        {
+          "version": "1.0.54",
+          "buildVersion": "54",
+          "date": "2026-11-26T04:24:22Z",
+          "localizedDescription": "Log: the app not responding noted as it happens; pages noted on the TV\n\n- A watchdog on the main thread (both apps): stuck 4 s or more is noted\n  with the memory in use, again every 10 s while it lasts; responding\n  again after 8 s or more is a \"Stopped responding for N s\" line with\n  what it was doing. Paused while the app's in the background\n- A run that ended stuck says so at the next start (\"stopped responding\n  and was ended\"), with what was on screen before it; the end message\n  says tvOS on the TV, not iOS\n- Noted as they open: the TV's menu pages, and Settings > Sport's pages,\n  so a stall there shows where it was",
+          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build54/weavr-appletv-1.0-build54.ipa",
+          "size": 31331220,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "1.0.53",
           "buildVersion": "53",
@@ -292,15 +301,6 @@
           "localizedDescription": "Home's Sport row there from the start\n\nThe row fetched yesterday to a week ahead, one request per competition per\nday, every launch (kept only in memory): often longer than the splash\nwaited, so it popped in after Home opened.\n- Home's row fetches only yesterday, today and tomorrow (it shows what's\n  live or on in the next day).\n- Its last fixtures are kept between launches (a few hours) and shown at\n  once, then fetched afresh behind; with none kept, the splash waits up\n  to 8 seconds for them.",
           "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build36/weavr-appletv-1.0-build36.ipa",
           "size": 22172522,
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "1.0.35",
-          "buildVersion": "35",
-          "date": "2026-11-21T09:22:11Z",
-          "localizedDescription": "Quick Library and Watched buttons, sport ready with Home, faster expired pictures, centred splash text\n\n- Library and Watched: a toggle re-marks only that title's rows (its\n  index entries and what's kept of it), not the whole 190,000-title\n  index with everything read cleared; and a title page reading from the\n  library file now redraws when the library changes, so the button shows\n  its new state at once.\n- Home's Sport row is the app's own, fetched behind the splash (\"Getting\n  today's sport\", up to 6 seconds) so it's there when Home opens; the row\n  doesn't fetch it again.\n- A Silo picture whose signature is known to have run out (its exp\n  passed) has its title asked for afresh straight away, without the\n  doomed request first; a couple more pictures load at once.\n- The splash's line wraps, centred, when it's long.",
-          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build35/weavr-appletv-1.0-build35.ipa",
-          "size": 22166614,
           "minOSVersion": "18.0"
         }
       ]
