@@ -161,13 +161,22 @@
       "name": "Weavr tvOS",
       "bundleIdentifier": "com.weavr.app.tv",
       "developerName": "bishop-actual",
-      "subtitle": "26 Nov 13:07 GMT · Weavr on Apple TV",
+      "subtitle": "26 Nov 16:06 GMT · Weavr on Apple TV",
       "localizedDescription": "Weavr for Apple TV: your merged IPTV library, TV guide, films and series with automatic failover between sources.",
       "iconURL": "https://raw.githubusercontent.com/bishop-actual/app-repo/main/icons/weavr.png?v=e9989785",
       "tintColor": "#57A7B3",
       "category": "entertainment",
       "screenshotURLs": [],
       "versions": [
+        {
+          "version": "1.0.60",
+          "buildVersion": "60",
+          "date": "2026-11-26T16:06:44Z",
+          "localizedDescription": "Folders: locked ones blurred under a padlock; a name on the tile only when asked\n\n- A locked folder shows its own face (its picture, posters, logo or\n  genre) under a heavy blur with a padlock over it, not a blank tile\n- Show its name on the folder: a switch for each folder (in Edit folder,\n  and in the phone's editor for a TV's folders), off unless switched on —\n  the picture alone. A folder with nothing to show yet has its name all\n  the same; a genre's face keeps the name it's drawn with",
+          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build60/weavr-appletv-1.0-build60.ipa",
+          "size": 31476543,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "1.0.59",
           "buildVersion": "59",
@@ -292,15 +301,6 @@
           "localizedDescription": "Fetch missing and Merge again, from a source's page\n\n- A media server's films and series: how many it says it has, kept as\n  it's read, beside how many are stored (\"Silo has 12,400: 600 missing\").\n- Fetch missing: the server read again with every title it gives kept and\n  added to what's stored (none taken away, one already there passed over),\n  so a big read that stops part way still brings in what it got; the\n  library is made again if anything came. No \"couldn't reach\" or resting\n  for a top-up.\n- Merge again, when most of what a source has stored isn't in the library:\n  the library made from what's stored, nothing asked of the sources.",
           "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build41/weavr-appletv-1.0-build41.ipa",
           "size": 22267996,
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "1.0.40",
-          "buildVersion": "40",
-          "date": "2026-11-21T17:25:40Z",
-          "localizedDescription": "A source's films and series as stored, on its own page\n\nSettings > Sources > a source (on Apple TV, the source's menu > What's\nstored): its films and series as its last complete read gave them, when\nthat was, and how many titles in the library carry it, so what's meant to\nbe there and what is can be seen side by side. A kind never read whole,\nor read but with nothing from it in the library, shows in red.",
-          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build40/weavr-appletv-1.0-build40.ipa",
-          "size": 22256027,
           "minOSVersion": "18.0"
         }
       ]
