@@ -13,13 +13,22 @@
       "name": "Weavr iOS",
       "bundleIdentifier": "com.weavr.app",
       "developerName": "bishop-actual",
-      "subtitle": "26 Nov 05:34 GMT · Multi-source IPTV with automatic failover",
+      "subtitle": "26 Nov 06:45 GMT · Multi-source IPTV with automatic failover",
       "localizedDescription": "Weavr merges your M3U and Xtream sources into one library, removes duplicate channels and films across providers, and fails over to another source when a stream stalls. Includes a TV guide, films and series, continue watching, Picture in Picture, AirPlay, and WeavrLink, a remote for your Weavr TVs.",
       "iconURL": "https://raw.githubusercontent.com/bishop-actual/app-repo/main/icons/weavr.png?v=e9989785",
       "tintColor": "#57A7B3",
       "category": "entertainment",
       "screenshotURLs": [],
       "versions": [
+        {
+          "version": "1.0.84",
+          "buildVersion": "84",
+          "date": "2026-11-26T06:45:51Z",
+          "localizedDescription": "Silo collections: every group back; only a true double (same id and name) kept once\n\nKept once on its id alone, the libraries' collections could all be taken\nfor your own when Silo's list of yours carries them too: filed under one\nlibrary's name (Movies) and asked for as yours. Now only one listed in\nboth with the same id and name is kept once — the library's, read as a\nlibrary's (one of your own then asked for as yours), in the group your\nlist files it in where that's one of Silo's. Shelf folders pointed at your\nown copy are pointed back at the collection as Silo lists it. The log\nsays each group and how many.",
+          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build84/weavr-ios-1.0-build84.ipa",
+          "size": 32276464,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "1.0.83",
           "buildVersion": "83",
@@ -144,15 +153,6 @@
           "localizedDescription": "Titles don't lose a copy when the library's made again; qualities asked again after a failed check\n\n- A new library's rows are numbered on from the old one's. They reused\n  the same numbers, and until the new index was read (seconds, for a big\n  library) titles kept in memory still answered for those numbers: a\n  film opened then (its details, its quality check, a Silo picture\n  renewed) could have the old library's copy written over the new one,\n  dropping a source's copy (Silo's) and its link for collections.\n- A quality check of an Xtream or Jellyfin copy that got no answer (the\n  panel busy, at its connection limit, timed out) is no longer remembered\n  as \"nothing to say\": it's asked again next time, so the copy gets its\n  quality instead of none for good.",
           "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build65/weavr-ios-1.0-build65.ipa",
           "size": 23309962,
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "1.0.64",
-          "buildVersion": "64",
-          "date": "2026-11-21T15:04:22Z",
-          "localizedDescription": "Merging a big library no longer runs the phone out of memory\n\nThe merge (and bringing the old saved library in, and taking a source\nout) runs as one long job, and each title read from the library file is\nparsed with JSONSerialization, which leaves its objects for an\nautorelease pool to free. Nothing drained one until the whole job ended,\nso every title parsed and written stayed in memory: with a big Xtream\nlist and Silo, iOS ended the app part way through \"Merging films and\nseries\".\n- Each merge batch, each saved piece brought in, each title of a source\n  taken out, and each write of raw or merged titles now lets go of what\n  it parsed and encoded as soon as it's done.\n- Each merge batch notes how far it's got and the memory in use, so a\n  run cut short says where in the log.",
-          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build64/weavr-ios-1.0-build64.ipa",
-          "size": 23299968,
           "minOSVersion": "18.0"
         }
       ]
