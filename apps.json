@@ -13,13 +13,22 @@
       "name": "Weavr iOS",
       "bundleIdentifier": "com.weavr.app",
       "developerName": "bishop-actual",
-      "subtitle": "25 Nov 18:59 GMT · Multi-source IPTV with automatic failover",
+      "subtitle": "26 Nov 04:24 GMT · Multi-source IPTV with automatic failover",
       "localizedDescription": "Weavr merges your M3U and Xtream sources into one library, removes duplicate channels and films across providers, and fails over to another source when a stream stalls. Includes a TV guide, films and series, continue watching, Picture in Picture, AirPlay, and WeavrLink, a remote for your Weavr TVs.",
       "iconURL": "https://raw.githubusercontent.com/bishop-actual/app-repo/main/icons/weavr.png?v=e9989785",
       "tintColor": "#57A7B3",
       "category": "entertainment",
       "screenshotURLs": [],
       "versions": [
+        {
+          "version": "1.0.81",
+          "buildVersion": "81",
+          "date": "2026-11-26T04:24:09Z",
+          "localizedDescription": "Log: the app not responding noted as it happens; pages noted on the TV\n\n- A watchdog on the main thread (both apps): stuck 4 s or more is noted\n  with the memory in use, again every 10 s while it lasts; responding\n  again after 8 s or more is a \"Stopped responding for N s\" line with\n  what it was doing. Paused while the app's in the background\n- A run that ended stuck says so at the next start (\"stopped responding\n  and was ended\"), with what was on screen before it; the end message\n  says tvOS on the TV, not iOS\n- Noted as they open: the TV's menu pages, and Settings > Sport's pages,\n  so a stall there shows where it was",
+          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build81/weavr-ios-1.0-build81.ipa",
+          "size": 32165266,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "1.0.80",
           "buildVersion": "80",
@@ -144,15 +153,6 @@
           "localizedDescription": "Silo: VLC takes over the same session, never two at once; why it failed, logged\n\nWhen Apple's player turned down Silo's original, a second Silo session was\nasked for VLC while the first was still being closed in the background;\nSilo can refuse that (one stream at a time), and the title moved on to the\nnext source.\n- Silo's original file: VLC plays the same session, no second one.\n- Silo's copy for Apple's player (Dolby Vision): that session is closed,\n  and waited for, before the original's asked for.\n- The log says why Silo wouldn't start, and when VLC couldn't play it\n  either, before the next source is tried.",
           "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build63/weavr-ios-1.0-build63.ipa",
           "size": 23253743,
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "1.0.62",
-          "buildVersion": "62",
-          "date": "2026-11-21T11:20:33Z",
-          "localizedDescription": "Home's Sport row there from the start\n\nThe row fetched yesterday to a week ahead, one request per competition per\nday, every launch (kept only in memory): often longer than the splash\nwaited, so it popped in after Home opened.\n- Home's row fetches only yesterday, today and tomorrow (it shows what's\n  live or on in the next day).\n- Its last fixtures are kept between launches (a few hours) and shown at\n  once, then fetched afresh behind; with none kept, the splash waits up\n  to 8 seconds for them.",
-          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build62/weavr-ios-1.0-build62.ipa",
-          "size": 23249846,
           "minOSVersion": "18.0"
         }
       ]
