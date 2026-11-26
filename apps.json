@@ -161,13 +161,22 @@
       "name": "Weavr tvOS",
       "bundleIdentifier": "com.weavr.app.tv",
       "developerName": "bishop-actual",
-      "subtitle": "26 Nov 04:24 GMT · Weavr on Apple TV",
+      "subtitle": "26 Nov 05:33 GMT · Weavr on Apple TV",
       "localizedDescription": "Weavr for Apple TV: your merged IPTV library, TV guide, films and series with automatic failover between sources.",
       "iconURL": "https://raw.githubusercontent.com/bishop-actual/app-repo/main/icons/weavr.png?v=e9989785",
       "tintColor": "#57A7B3",
       "category": "entertainment",
       "screenshotURLs": [],
       "versions": [
+        {
+          "version": "1.0.56",
+          "buildVersion": "56",
+          "date": "2026-11-26T05:33:58Z",
+          "localizedDescription": "ThreadPlayer: the opened line's name no longer clashes with the demuxer it opened",
+          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build56/weavr-appletv-1.0-build56.ipa",
+          "size": 31439497,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "1.0.54",
           "buildVersion": "54",
@@ -292,15 +301,6 @@
           "localizedDescription": "Silo: VLC takes over the same session, never two at once; why it failed, logged\n\nWhen Apple's player turned down Silo's original, a second Silo session was\nasked for VLC while the first was still being closed in the background;\nSilo can refuse that (one stream at a time), and the title moved on to the\nnext source.\n- Silo's original file: VLC plays the same session, no second one.\n- Silo's copy for Apple's player (Dolby Vision): that session is closed,\n  and waited for, before the original's asked for.\n- The log says why Silo wouldn't start, and when VLC couldn't play it\n  either, before the next source is tried.",
           "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build37/weavr-appletv-1.0-build37.ipa",
           "size": 22178311,
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "1.0.36",
-          "buildVersion": "36",
-          "date": "2026-11-21T11:20:16Z",
-          "localizedDescription": "Home's Sport row there from the start\n\nThe row fetched yesterday to a week ahead, one request per competition per\nday, every launch (kept only in memory): often longer than the splash\nwaited, so it popped in after Home opened.\n- Home's row fetches only yesterday, today and tomorrow (it shows what's\n  live or on in the next day).\n- Its last fixtures are kept between launches (a few hours) and shown at\n  once, then fetched afresh behind; with none kept, the splash waits up\n  to 8 seconds for them.",
-          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build36/weavr-appletv-1.0-build36.ipa",
-          "size": 22172522,
           "minOSVersion": "18.0"
         }
       ]
