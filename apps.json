@@ -161,13 +161,22 @@
       "name": "Weavr tvOS",
       "bundleIdentifier": "com.weavr.app.tv",
       "developerName": "bishop-actual",
-      "subtitle": "26 Nov 05:33 GMT · Weavr on Apple TV",
+      "subtitle": "26 Nov 06:46 GMT · Weavr on Apple TV",
       "localizedDescription": "Weavr for Apple TV: your merged IPTV library, TV guide, films and series with automatic failover between sources.",
       "iconURL": "https://raw.githubusercontent.com/bishop-actual/app-repo/main/icons/weavr.png?v=e9989785",
       "tintColor": "#57A7B3",
       "category": "entertainment",
       "screenshotURLs": [],
       "versions": [
+        {
+          "version": "1.0.57",
+          "buildVersion": "57",
+          "date": "2026-11-26T06:46:02Z",
+          "localizedDescription": "Silo collections: every group back; only a true double (same id and name) kept once\n\nKept once on its id alone, the libraries' collections could all be taken\nfor your own when Silo's list of yours carries them too: filed under one\nlibrary's name (Movies) and asked for as yours. Now only one listed in\nboth with the same id and name is kept once — the library's, read as a\nlibrary's (one of your own then asked for as yours), in the group your\nlist files it in where that's one of Silo's. Shelf folders pointed at your\nown copy are pointed back at the collection as Silo lists it. The log\nsays each group and how many.",
+          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build57/weavr-appletv-1.0-build57.ipa",
+          "size": 31442266,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "1.0.56",
           "buildVersion": "56",
@@ -292,15 +301,6 @@
           "localizedDescription": "Merging a big library no longer runs the phone out of memory\n\nThe merge (and bringing the old saved library in, and taking a source\nout) runs as one long job, and each title read from the library file is\nparsed with JSONSerialization, which leaves its objects for an\nautorelease pool to free. Nothing drained one until the whole job ended,\nso every title parsed and written stayed in memory: with a big Xtream\nlist and Silo, iOS ended the app part way through \"Merging films and\nseries\".\n- Each merge batch, each saved piece brought in, each title of a source\n  taken out, and each write of raw or merged titles now lets go of what\n  it parsed and encoded as soon as it's done.\n- Each merge batch notes how far it's got and the memory in use, so a\n  run cut short says where in the log.",
           "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build38/weavr-appletv-1.0-build38.ipa",
           "size": 22223809,
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "1.0.37",
-          "buildVersion": "37",
-          "date": "2026-11-21T13:26:15Z",
-          "localizedDescription": "Silo: VLC takes over the same session, never two at once; why it failed, logged\n\nWhen Apple's player turned down Silo's original, a second Silo session was\nasked for VLC while the first was still being closed in the background;\nSilo can refuse that (one stream at a time), and the title moved on to the\nnext source.\n- Silo's original file: VLC plays the same session, no second one.\n- Silo's copy for Apple's player (Dolby Vision): that session is closed,\n  and waited for, before the original's asked for.\n- The log says why Silo wouldn't start, and when VLC couldn't play it\n  either, before the next source is tried.",
-          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build37/weavr-appletv-1.0-build37.ipa",
-          "size": 22178311,
           "minOSVersion": "18.0"
         }
       ]
