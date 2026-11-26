@@ -13,13 +13,22 @@
       "name": "Weavr iOS",
       "bundleIdentifier": "com.weavr.app",
       "developerName": "bishop-actual",
-      "subtitle": "26 Nov 04:24 GMT · Multi-source IPTV with automatic failover",
+      "subtitle": "26 Nov 05:34 GMT · Multi-source IPTV with automatic failover",
       "localizedDescription": "Weavr merges your M3U and Xtream sources into one library, removes duplicate channels and films across providers, and fails over to another source when a stream stalls. Includes a TV guide, films and series, continue watching, Picture in Picture, AirPlay, and WeavrLink, a remote for your Weavr TVs.",
       "iconURL": "https://raw.githubusercontent.com/bishop-actual/app-repo/main/icons/weavr.png?v=e9989785",
       "tintColor": "#57A7B3",
       "category": "entertainment",
       "screenshotURLs": [],
       "versions": [
+        {
+          "version": "1.0.83",
+          "buildVersion": "83",
+          "date": "2026-11-26T05:34:34Z",
+          "localizedDescription": "ThreadPlayer: the opened line's name no longer clashes with the demuxer it opened",
+          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build83/weavr-ios-1.0-build83.ipa",
+          "size": 32275167,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "1.0.81",
           "buildVersion": "81",
@@ -144,15 +153,6 @@
           "localizedDescription": "Merging a big library no longer runs the phone out of memory\n\nThe merge (and bringing the old saved library in, and taking a source\nout) runs as one long job, and each title read from the library file is\nparsed with JSONSerialization, which leaves its objects for an\nautorelease pool to free. Nothing drained one until the whole job ended,\nso every title parsed and written stayed in memory: with a big Xtream\nlist and Silo, iOS ended the app part way through \"Merging films and\nseries\".\n- Each merge batch, each saved piece brought in, each title of a source\n  taken out, and each write of raw or merged titles now lets go of what\n  it parsed and encoded as soon as it's done.\n- Each merge batch notes how far it's got and the memory in use, so a\n  run cut short says where in the log.",
           "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build64/weavr-ios-1.0-build64.ipa",
           "size": 23299968,
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "1.0.63",
-          "buildVersion": "63",
-          "date": "2026-11-21T13:26:32Z",
-          "localizedDescription": "Silo: VLC takes over the same session, never two at once; why it failed, logged\n\nWhen Apple's player turned down Silo's original, a second Silo session was\nasked for VLC while the first was still being closed in the background;\nSilo can refuse that (one stream at a time), and the title moved on to the\nnext source.\n- Silo's original file: VLC plays the same session, no second one.\n- Silo's copy for Apple's player (Dolby Vision): that session is closed,\n  and waited for, before the original's asked for.\n- The log says why Silo wouldn't start, and when VLC couldn't play it\n  either, before the next source is tried.",
-          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build63/weavr-ios-1.0-build63.ipa",
-          "size": 23253743,
           "minOSVersion": "18.0"
         }
       ]
