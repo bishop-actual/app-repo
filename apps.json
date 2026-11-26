@@ -13,13 +13,22 @@
       "name": "Weavr iOS",
       "bundleIdentifier": "com.weavr.app",
       "developerName": "bishop-actual",
-      "subtitle": "26 Nov 13:08 GMT · Multi-source IPTV with automatic failover",
+      "subtitle": "26 Nov 16:06 GMT · Multi-source IPTV with automatic failover",
       "localizedDescription": "Weavr merges your M3U and Xtream sources into one library, removes duplicate channels and films across providers, and fails over to another source when a stream stalls. Includes a TV guide, films and series, continue watching, Picture in Picture, AirPlay, and WeavrLink, a remote for your Weavr TVs.",
       "iconURL": "https://raw.githubusercontent.com/bishop-actual/app-repo/main/icons/weavr.png?v=e9989785",
       "tintColor": "#57A7B3",
       "category": "entertainment",
       "screenshotURLs": [],
       "versions": [
+        {
+          "version": "1.0.87",
+          "buildVersion": "87",
+          "date": "2026-11-26T16:06:56Z",
+          "localizedDescription": "Folders: locked ones blurred under a padlock; a name on the tile only when asked\n\n- A locked folder shows its own face (its picture, posters, logo or\n  genre) under a heavy blur with a padlock over it, not a blank tile\n- Show its name on the folder: a switch for each folder (in Edit folder,\n  and in the phone's editor for a TV's folders), off unless switched on —\n  the picture alone. A folder with nothing to show yet has its name all\n  the same; a genre's face keeps the name it's drawn with",
+          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build87/weavr-ios-1.0-build87.ipa",
+          "size": 32339669,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "1.0.86",
           "buildVersion": "86",
@@ -144,15 +153,6 @@
           "localizedDescription": "Silo's big reads complete instead of failing for good; a short read keeps what it brought\n\nSilo's series read kept \"not coming back whole\", so its stored list was\nnever replaced: 95,989 shows stored against Silo's 84,904 now, the extra\nbeing shows Silo has since removed or moved to new ids (VisionQuest's\nseries-tvdb-426606 answering 404).\n- A stretch of the list that hasn't met the next stretch's first title\n  where expected (Silo's list changes as it's read, and its seek needn't\n  land exactly) reads on, up to three times its length, rather than\n  failing the whole read after two extra pages.\n- A read that still doesn't come back whole keeps what it brought that\n  isn't stored (new titles, moved ids) and takes nothing away; the\n  library's made again for them. It was all thrown away.\n- The count shown while reading is what's kept, every stretch's first page\n  included: a whole read now reaches Silo's total rather than ending\n  about 2,000 short.",
           "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build68/weavr-ios-1.0-build68.ipa",
           "size": 23363144,
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "1.0.67",
-          "buildVersion": "67",
-          "date": "2026-11-21T19:05:24Z",
-          "localizedDescription": "Fetch missing and Merge again, from a source's page\n\n- A media server's films and series: how many it says it has, kept as\n  it's read, beside how many are stored (\"Silo has 12,400: 600 missing\").\n- Fetch missing: the server read again with every title it gives kept and\n  added to what's stored (none taken away, one already there passed over),\n  so a big read that stops part way still brings in what it got; the\n  library is made again if anything came. No \"couldn't reach\" or resting\n  for a top-up.\n- Merge again, when most of what a source has stored isn't in the library:\n  the library made from what's stored, nothing asked of the sources.",
-          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build67/weavr-ios-1.0-build67.ipa",
-          "size": 23341523,
           "minOSVersion": "18.0"
         }
       ]
