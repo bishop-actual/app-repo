@@ -161,13 +161,22 @@
       "name": "Weavr tvOS",
       "bundleIdentifier": "com.weavr.app.tv",
       "developerName": "bishop-actual",
-      "subtitle": "26 Nov 06:46 GMT · Weavr on Apple TV",
+      "subtitle": "26 Nov 11:45 GMT · Weavr on Apple TV",
       "localizedDescription": "Weavr for Apple TV: your merged IPTV library, TV guide, films and series with automatic failover between sources.",
       "iconURL": "https://raw.githubusercontent.com/bishop-actual/app-repo/main/icons/weavr.png?v=e9989785",
       "tintColor": "#57A7B3",
       "category": "entertainment",
       "screenshotURLs": [],
       "versions": [
+        {
+          "version": "1.0.58",
+          "buildVersion": "58",
+          "date": "2026-11-26T11:45:36Z",
+          "localizedDescription": "Sport tiles near-square, as every tile in the app\n\nThe game cards' corners as the posters' (16 to the tiles' 3), and their\nLIVE and channel badges shaped as a poster's badges.",
+          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build58/weavr-appletv-1.0-build58.ipa",
+          "size": 31447018,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "1.0.57",
           "buildVersion": "57",
@@ -292,15 +301,6 @@
           "localizedDescription": "Titles don't lose a copy when the library's made again; qualities asked again after a failed check\n\n- A new library's rows are numbered on from the old one's. They reused\n  the same numbers, and until the new index was read (seconds, for a big\n  library) titles kept in memory still answered for those numbers: a\n  film opened then (its details, its quality check, a Silo picture\n  renewed) could have the old library's copy written over the new one,\n  dropping a source's copy (Silo's) and its link for collections.\n- A quality check of an Xtream or Jellyfin copy that got no answer (the\n  panel busy, at its connection limit, timed out) is no longer remembered\n  as \"nothing to say\": it's asked again next time, so the copy gets its\n  quality instead of none for good.",
           "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build39/weavr-appletv-1.0-build39.ipa",
           "size": 22233317,
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "1.0.38",
-          "buildVersion": "38",
-          "date": "2026-11-21T15:04:10Z",
-          "localizedDescription": "Merging a big library no longer runs the phone out of memory\n\nThe merge (and bringing the old saved library in, and taking a source\nout) runs as one long job, and each title read from the library file is\nparsed with JSONSerialization, which leaves its objects for an\nautorelease pool to free. Nothing drained one until the whole job ended,\nso every title parsed and written stayed in memory: with a big Xtream\nlist and Silo, iOS ended the app part way through \"Merging films and\nseries\".\n- Each merge batch, each saved piece brought in, each title of a source\n  taken out, and each write of raw or merged titles now lets go of what\n  it parsed and encoded as soon as it's done.\n- Each merge batch notes how far it's got and the memory in use, so a\n  run cut short says where in the log.",
-          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build38/weavr-appletv-1.0-build38.ipa",
-          "size": 22223809,
           "minOSVersion": "18.0"
         }
       ]
