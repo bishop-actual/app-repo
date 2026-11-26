@@ -13,13 +13,22 @@
       "name": "Weavr iOS",
       "bundleIdentifier": "com.weavr.app",
       "developerName": "bishop-actual",
-      "subtitle": "26 Nov 06:45 GMT · Multi-source IPTV with automatic failover",
+      "subtitle": "26 Nov 11:45 GMT · Multi-source IPTV with automatic failover",
       "localizedDescription": "Weavr merges your M3U and Xtream sources into one library, removes duplicate channels and films across providers, and fails over to another source when a stream stalls. Includes a TV guide, films and series, continue watching, Picture in Picture, AirPlay, and WeavrLink, a remote for your Weavr TVs.",
       "iconURL": "https://raw.githubusercontent.com/bishop-actual/app-repo/main/icons/weavr.png?v=e9989785",
       "tintColor": "#57A7B3",
       "category": "entertainment",
       "screenshotURLs": [],
       "versions": [
+        {
+          "version": "1.0.85",
+          "buildVersion": "85",
+          "date": "2026-11-26T11:45:14Z",
+          "localizedDescription": "Sport tiles near-square, as every tile in the app\n\nThe game cards' corners as the posters' (16 to the tiles' 3), and their\nLIVE and channel badges shaped as a poster's badges.",
+          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build85/weavr-ios-1.0-build85.ipa",
+          "size": 32282187,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "1.0.84",
           "buildVersion": "84",
@@ -144,15 +153,6 @@
           "localizedDescription": "A source's films and series as stored, on its own page\n\nSettings > Sources > a source (on Apple TV, the source's menu > What's\nstored): its films and series as its last complete read gave them, when\nthat was, and how many titles in the library carry it, so what's meant to\nbe there and what is can be seen side by side. A kind never read whole,\nor read but with nothing from it in the library, shows in red.",
           "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build66/weavr-ios-1.0-build66.ipa",
           "size": 23328402,
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "1.0.65",
-          "buildVersion": "65",
-          "date": "2026-11-21T16:09:42Z",
-          "localizedDescription": "Titles don't lose a copy when the library's made again; qualities asked again after a failed check\n\n- A new library's rows are numbered on from the old one's. They reused\n  the same numbers, and until the new index was read (seconds, for a big\n  library) titles kept in memory still answered for those numbers: a\n  film opened then (its details, its quality check, a Silo picture\n  renewed) could have the old library's copy written over the new one,\n  dropping a source's copy (Silo's) and its link for collections.\n- A quality check of an Xtream or Jellyfin copy that got no answer (the\n  panel busy, at its connection limit, timed out) is no longer remembered\n  as \"nothing to say\": it's asked again next time, so the copy gets its\n  quality instead of none for good.",
-          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build65/weavr-ios-1.0-build65.ipa",
-          "size": 23309962,
           "minOSVersion": "18.0"
         }
       ]
