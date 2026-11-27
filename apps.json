@@ -161,13 +161,22 @@
       "name": "Weavr tvOS",
       "bundleIdentifier": "com.weavr.app.tv",
       "developerName": "bishop-actual",
-      "subtitle": "27 Nov 07:02 GMT · Weavr on Apple TV",
+      "subtitle": "27 Nov 12:21 GMT · Weavr on Apple TV",
       "localizedDescription": "Weavr for Apple TV: your merged IPTV library, TV guide, films and series with automatic failover between sources.",
       "iconURL": "https://raw.githubusercontent.com/bishop-actual/app-repo/main/icons/weavr.png?v=e9989785",
       "tintColor": "#57A7B3",
       "category": "entertainment",
       "screenshotURLs": [],
       "versions": [
+        {
+          "version": "1.0.64",
+          "buildVersion": "64",
+          "date": "2026-11-27T12:21:36Z",
+          "localizedDescription": "Library sync: its counts named LibrarySyncCount\n\nLibraryMerge was already the name of the source-merging job, so the\nbuild couldn't tell the two apart.",
+          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build64/weavr-appletv-1.0-build64.ipa",
+          "size": 31529983,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "1.0.62",
           "buildVersion": "62",
@@ -292,15 +301,6 @@
           "localizedDescription": "Shows open on season 1, not the specials\n\nA show with a season 0 (specials) opened on it, and Play started its first\nspecial: what's up next was the first unwatched episode in order, and the\nspecials come first. Up next now goes by the show's own seasons, with the\nspecials only when it has nothing else; the page opens on that season (else\nthe first numbered one), and season 0 stays in the list to go back to.",
           "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build44/weavr-appletv-1.0-build44.ipa",
           "size": 22314829,
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "1.0.43",
-          "buildVersion": "43",
-          "date": "2026-11-22T06:06:33Z",
-          "localizedDescription": "Apple TV: no gap in the sport row, no getting stuck in a game, nothing playing on after Back\n\n- Home's sport row (and the Sport page's events): each game once. A game\n  in two of the leagues followed came twice, and two cards with one id\n  left a card-wide gap in the row.\n- A channel picked for a game plays once its list has closed: shown while\n  the list was still closing, the player didn't appear on the Apple TV,\n  the game played on unseen and nothing else would open.\n- The player's page closed some other way than its own Close or Back (the\n  Apple TV's Menu pressed with a button focused, which the system takes)\n  stops what's playing, rather than leaving it playing behind the menus;\n  not when it's gone to the little window.",
-          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build43/weavr-appletv-1.0-build43.ipa",
-          "size": 22309768,
           "minOSVersion": "18.0"
         }
       ]
