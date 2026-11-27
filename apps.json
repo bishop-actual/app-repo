@@ -13,13 +13,22 @@
       "name": "Weavr iOS",
       "bundleIdentifier": "com.weavr.app",
       "developerName": "bishop-actual",
-      "subtitle": "27 Nov 05:51 GMT · Multi-source IPTV with automatic failover",
+      "subtitle": "27 Nov 07:02 GMT · Multi-source IPTV with automatic failover",
       "localizedDescription": "Weavr merges your M3U and Xtream sources into one library, removes duplicate channels and films across providers, and fails over to another source when a stream stalls. Includes a TV guide, films and series, continue watching, Picture in Picture, AirPlay, and WeavrLink, a remote for your Weavr TVs.",
       "iconURL": "https://raw.githubusercontent.com/bishop-actual/app-repo/main/icons/weavr.png?v=e9989785",
       "tintColor": "#57A7B3",
       "category": "entertainment",
       "screenshotURLs": [],
       "versions": [
+        {
+          "version": "1.0.89",
+          "buildVersion": "89",
+          "date": "2026-11-27T07:02:16Z",
+          "localizedDescription": "WeavrLink: the remote restyled, smoother and more polished\n\n- WeavrLink as the page's title; the TV in its own card under it (its\n  name, a dot and \"Connected\"), tap it to switch TVs; TV settings, the\n  guide, Library sync and the rest under the ... button\n- What's playing in one card: its picture full width (a poster or a\n  channel's logo whole on a blur of itself), the title, the episode or\n  programme, the source in a pill, and a scrubber with a white thumb\n  that grows as it's held (a live channel: how far into the programme,\n  start and end times)\n- The transport as plain glyphs either side of one big accent play\n  button, the play and pause swapping with an animation: films back to\n  the start, 10 seconds either way, stop; live the channel before and\n  after, stop and refresh\n- Volume on the same slider; Guide, Library, Reload, Song and Sleep as\n  round buttons beneath\n- Sources, Up next (Details for a film), Stream, Library and Search in\n  an inset tab bar whose selection slides across: the sources numbered,\n  best first, the one in use ringed and marked Active, tap to switch;\n  the stream's health right there rather than in a sheet; the guide's\n  programme on now marked and its progress shown\n- Soft cards with continuous corners throughout, buttons that press\n  down, and a light tap under the finger; the pairing page to match",
+          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build89/weavr-ios-1.0-build89.ipa",
+          "size": 32453375,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "1.0.88",
           "buildVersion": "88",
@@ -144,15 +153,6 @@
           "localizedDescription": "Shows open on season 1, not the specials\n\nA show with a season 0 (specials) opened on it, and Play started its first\nspecial: what's up next was the first unwatched episode in order, and the\nspecials come first. Up next now goes by the show's own seasons, with the\nspecials only when it has nothing else; the page opens on that season (else\nthe first numbered one), and season 0 stays in the list to go back to.",
           "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build70/weavr-ios-1.0-build70.ipa",
           "size": 23386921,
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "1.0.69",
-          "buildVersion": "69",
-          "date": "2026-11-22T06:06:53Z",
-          "localizedDescription": "Apple TV: no gap in the sport row, no getting stuck in a game, nothing playing on after Back\n\n- Home's sport row (and the Sport page's events): each game once. A game\n  in two of the leagues followed came twice, and two cards with one id\n  left a card-wide gap in the row.\n- A channel picked for a game plays once its list has closed: shown while\n  the list was still closing, the player didn't appear on the Apple TV,\n  the game played on unseen and nothing else would open.\n- The player's page closed some other way than its own Close or Back (the\n  Apple TV's Menu pressed with a button focused, which the system takes)\n  stops what's playing, rather than leaving it playing behind the menus;\n  not when it's gone to the little window.",
-          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build69/weavr-ios-1.0-build69.ipa",
-          "size": 23386038,
           "minOSVersion": "18.0"
         }
       ]
