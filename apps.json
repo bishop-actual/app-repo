@@ -161,13 +161,22 @@
       "name": "Weavr tvOS",
       "bundleIdentifier": "com.weavr.app.tv",
       "developerName": "bishop-actual",
-      "subtitle": "26 Nov 16:06 GMT · Weavr on Apple TV",
+      "subtitle": "27 Nov 05:50 GMT · Weavr on Apple TV",
       "localizedDescription": "Weavr for Apple TV: your merged IPTV library, TV guide, films and series with automatic failover between sources.",
       "iconURL": "https://raw.githubusercontent.com/bishop-actual/app-repo/main/icons/weavr.png?v=e9989785",
       "tintColor": "#57A7B3",
       "category": "entertainment",
       "screenshotURLs": [],
       "versions": [
+        {
+          "version": "1.0.61",
+          "buildVersion": "61",
+          "date": "2026-11-27T05:50:53Z",
+          "localizedDescription": "WeavrLink: sync the Library between phone and TV, both ways, adding only\n\n- Sync Library with the TV (the phone's TV settings, and the TV menu on\n  the remote): the phone's Library goes to the TV, which adds what it\n  hasn't got and sends its own back, which the phone adds likewise —\n  both end up with the same, nothing taken away from either\n- What's synced: Library channels, films and series; films, series and\n  episodes watched; where you'd got to in each (the later of the two);\n  the watchlist. For the profile in use on each\n- Says how many came in each way (a toast, and the log); the TV says so\n  on screen too",
+          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build61/weavr-appletv-1.0-build61.ipa",
+          "size": 31527325,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "1.0.60",
           "buildVersion": "60",
@@ -292,15 +301,6 @@
           "localizedDescription": "Silo's big reads complete instead of failing for good; a short read keeps what it brought\n\nSilo's series read kept \"not coming back whole\", so its stored list was\nnever replaced: 95,989 shows stored against Silo's 84,904 now, the extra\nbeing shows Silo has since removed or moved to new ids (VisionQuest's\nseries-tvdb-426606 answering 404).\n- A stretch of the list that hasn't met the next stretch's first title\n  where expected (Silo's list changes as it's read, and its seek needn't\n  land exactly) reads on, up to three times its length, rather than\n  failing the whole read after two extra pages.\n- A read that still doesn't come back whole keeps what it brought that\n  isn't stored (new titles, moved ids) and takes nothing away; the\n  library's made again for them. It was all thrown away.\n- The count shown while reading is what's kept, every stretch's first page\n  included: a whole read now reaches Silo's total rather than ending\n  about 2,000 short.",
           "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build42/weavr-appletv-1.0-build42.ipa",
           "size": 22291328,
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "1.0.41",
-          "buildVersion": "41",
-          "date": "2026-11-21T19:05:09Z",
-          "localizedDescription": "Fetch missing and Merge again, from a source's page\n\n- A media server's films and series: how many it says it has, kept as\n  it's read, beside how many are stored (\"Silo has 12,400: 600 missing\").\n- Fetch missing: the server read again with every title it gives kept and\n  added to what's stored (none taken away, one already there passed over),\n  so a big read that stops part way still brings in what it got; the\n  library is made again if anything came. No \"couldn't reach\" or resting\n  for a top-up.\n- Merge again, when most of what a source has stored isn't in the library:\n  the library made from what's stored, nothing asked of the sources.",
-          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build41/weavr-appletv-1.0-build41.ipa",
-          "size": 22267996,
           "minOSVersion": "18.0"
         }
       ]
