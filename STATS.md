@@ -1,35 +1,32 @@
 # Download stats
 
-Updated 27 Nov 13:20 GMT, every hour. Counts are GitHub's downloads of each release file: a reinstall or an update in Feather counts again, and there is no per-device or per-person breakdown.
+Updated 27 Nov 14:21 GMT, every hour. Counts are GitHub's downloads of each release file: a reinstall or an update in Feather counts again, and there is no per-device or per-person breakdown.
 
 ## Overview
 
 | Platform | Newest build | Published | Last 24h | Last 7 days | All time |
 |---|---|---|--:|--:|--:|
-| iOS | 1.0.91 | 27 Nov 12:21 GMT | 20 | 118 | 251 |
-| tvOS | 1.0.64 | 27 Nov 12:21 GMT | 11 | 73 | 147 |
+| iOS | 1.0.91 | 27 Nov 12:21 GMT | 18 | 119 | 252 |
+| tvOS | 1.0.64 | 27 Nov 12:21 GMT | 10 | 72 | 147 |
 | Android | 1.0.477 | 26 Nov 11:33 GMT | 3 | 15 | 55 |
-| Android dev | 1.0.480 | 27 Nov 12:34 GMT | 5 | 7 | 7 |
+| Android dev | 1.0.480 | 27 Nov 12:34 GMT | 4 | 7 | 7 |
 
 ## Last 24 hours
 
 | Build | Published | Downloads |
 |---|---|--:|
 | iOS 1.0.87 | 26 Nov 16:06 GMT | 6 |
+| iOS 1.0.91 | 27 Nov 12:21 GMT | 4 |
 | Android 1.0.477 | 26 Nov 11:33 GMT | 3 |
 | tvOS 1.0.61 | 27 Nov 05:50 GMT | 3 |
 | iOS 1.0.88 | 27 Nov 05:50 GMT | 3 |
 | iOS 1.0.89 | 27 Nov 07:02 GMT | 3 |
 | tvOS 1.0.64 | 27 Nov 12:21 GMT | 3 |
-| iOS 1.0.91 | 27 Nov 12:21 GMT | 3 |
-| iOS 1.0.85 | 26 Nov 11:45 GMT | 2 |
-| Android dev 1.0.478 | 26 Nov 13:02 GMT | 2* |
-| iOS 1.0.86 | 26 Nov 13:07 GMT | 2* |
+| iOS 1.0.86 | 26 Nov 13:07 GMT | 2 |
 | tvOS 1.0.60 | 26 Nov 16:06 GMT | 2 |
 | Android dev 1.0.479 | 26 Nov 18:14 GMT | 2 |
 | tvOS 1.0.62 | 27 Nov 07:01 GMT | 2 |
-| iOS 1.0.84 | 26 Nov 06:45 GMT | 1 |
-| tvOS 1.0.58 | 26 Nov 11:45 GMT | 1 |
+| Android dev 1.0.478 | 26 Nov 13:02 GMT | 1 |
 | Android dev 1.0.480 | 27 Nov 12:34 GMT | 1 |
 
 ## Last 7 days
@@ -59,6 +56,7 @@ Updated 27 Nov 13:20 GMT, every hour. Counts are GitHub's downloads of each rele
 | Android 1.0.476 | 26 Nov 04:45 GMT | 4 |
 | iOS 1.0.84 | 26 Nov 06:45 GMT | 4 |
 | Android 1.0.477 | 26 Nov 11:33 GMT | 4 |
+| iOS 1.0.91 | 27 Nov 12:21 GMT | 4 |
 | tvOS 1.0.33 | 21 Nov 04:57 GMT | 3 |
 | iOS 1.0.62 | 21 Nov 11:20 GMT | 3 |
 | tvOS 1.0.38 | 21 Nov 15:04 GMT | 3 |
@@ -72,13 +70,12 @@ Updated 27 Nov 13:20 GMT, every hour. Counts are GitHub's downloads of each rele
 | tvOS 1.0.53 | 25 Nov 18:58 GMT | 3 |
 | iOS 1.0.83 | 26 Nov 05:34 GMT | 3 |
 | tvOS 1.0.58 | 26 Nov 11:45 GMT | 3 |
-| Android dev 1.0.478 | 26 Nov 13:02 GMT | 3* |
-| iOS 1.0.86 | 26 Nov 13:07 GMT | 3* |
+| Android dev 1.0.478 | 26 Nov 13:02 GMT | 3 |
+| iOS 1.0.86 | 26 Nov 13:07 GMT | 3 |
 | tvOS 1.0.61 | 27 Nov 05:50 GMT | 3 |
 | iOS 1.0.88 | 27 Nov 05:50 GMT | 3 |
 | iOS 1.0.89 | 27 Nov 07:02 GMT | 3 |
 | tvOS 1.0.64 | 27 Nov 12:21 GMT | 3 |
-| iOS 1.0.91 | 27 Nov 12:21 GMT | 3 |
 | tvOS 1.0.34 | 21 Nov 06:31 GMT | 2 |
 | tvOS 1.0.35 | 21 Nov 09:22 GMT | 2 |
 | iOS 1.0.61 | 21 Nov 09:22 GMT | 2 |
@@ -92,11 +89,10 @@ Updated 27 Nov 13:20 GMT, every hour. Counts are GitHub's downloads of each rele
 | tvOS 1.0.54 | 26 Nov 04:24 GMT | 2 |
 | tvOS 1.0.56 | 26 Nov 05:33 GMT | 2 |
 | tvOS 1.0.57 | 26 Nov 06:45 GMT | 2 |
-| tvOS 1.0.59 | 26 Nov 13:07 GMT | 2* |
+| tvOS 1.0.59 | 26 Nov 13:07 GMT | 2 |
 | tvOS 1.0.60 | 26 Nov 16:06 GMT | 2 |
 | Android dev 1.0.479 | 26 Nov 18:14 GMT | 2 |
 | tvOS 1.0.62 | 27 Nov 07:01 GMT | 2 |
-| tvOS 1.0.31 | 20 Nov 07:26 GMT | 1 |
 | iOS 1.0.57 | 20 Nov 07:26 GMT | 1 |
 | Android dev 1.0.475 | 25 Nov 17:39 GMT | 1 |
 | Android dev 1.0.480 | 27 Nov 12:34 GMT | 1 |
@@ -109,15 +105,15 @@ Newest first. **Newest for** is how long it was the newest build of its platform
 
 | Build | Published | Newest for | While newest | Per day | All time |
 |---|---|---|--:|--:|--:|
-| 1.0.91 | 27 Nov 12:21 GMT | 58m (now) | 3 | – | 3 |
+| 1.0.91 | 27 Nov 12:21 GMT | 2h (now) | 4 | – | 4 |
 | 1.0.89 | 27 Nov 07:02 GMT | 5h | 3 | – | 3 |
 | 1.0.88 | 27 Nov 05:50 GMT | 1h | 2 | – | 3 |
 | 1.0.87 | 26 Nov 16:06 GMT | 14h | 6 | – | 6 |
-| 1.0.86 | 26 Nov 13:07 GMT | 3h | 3* | 3.0 | 3 |
-| 1.0.85 | 26 Nov 11:45 GMT | 1h | 3 | 4.7 | 5 |
-| 1.0.84 | 26 Nov 06:45 GMT | 5h | 2 | 3.1 | 4 |
-| 1.0.83 | 26 Nov 05:34 GMT | 1h | 2 | 2.3 | 3 |
-| 1.0.81 | 26 Nov 04:24 GMT | 1h | 3 | 2.9 | 4 |
+| 1.0.86 | 26 Nov 13:07 GMT | 3h | 3 | 2.9 | 3 |
+| 1.0.85 | 26 Nov 11:45 GMT | 1h | 3 | 4.5 | 5 |
+| 1.0.84 | 26 Nov 06:45 GMT | 5h | 2 | 3.0 | 4 |
+| 1.0.83 | 26 Nov 05:34 GMT | 1h | 2 | 2.2 | 3 |
+| 1.0.81 | 26 Nov 04:24 GMT | 1h | 3 | 2.8 | 4 |
 | 1.0.80 | 25 Nov 18:59 GMT | 9h | 5 | 2.8 | 5 |
 | 1.0.76 | 22 Nov 19:33 GMT | 3d | 13 | 2.7 | 13 |
 | 1.0.74 | 22 Nov 17:44 GMT | 2h | 3 | 0.6 | 3 |
@@ -176,17 +172,17 @@ Newest first. **Newest for** is how long it was the newest build of its platform
 
 | Build | Published | Newest for | While newest | Per day | All time |
 |---|---|---|--:|--:|--:|
-| 1.0.64 | 27 Nov 12:21 GMT | 59m (now) | 3 | – | 3 |
+| 1.0.64 | 27 Nov 12:21 GMT | 2h (now) | 3 | – | 3 |
 | 1.0.62 | 27 Nov 07:01 GMT | 5h | 2 | – | 2 |
 | 1.0.61 | 27 Nov 05:50 GMT | 1h | 2 | – | 3 |
 | 1.0.60 | 26 Nov 16:06 GMT | 14h | 2 | – | 2 |
-| 1.0.59 | 26 Nov 13:07 GMT | 3h | 2* | 2.0 | 2 |
-| 1.0.58 | 26 Nov 11:45 GMT | 1h | 2 | 2.8 | 3 |
-| 1.0.57 | 26 Nov 06:45 GMT | 5h | 2 | 1.6 | 2 |
+| 1.0.59 | 26 Nov 13:07 GMT | 3h | 2 | 1.9 | 2 |
+| 1.0.58 | 26 Nov 11:45 GMT | 1h | 2 | 2.7 | 3 |
+| 1.0.57 | 26 Nov 06:45 GMT | 5h | 2 | 1.5 | 2 |
 | 1.0.56 | 26 Nov 05:33 GMT | 1h | 2 | 1.5 | 2 |
-| 1.0.54 | 26 Nov 04:24 GMT | 1h | 2 | 1.5 | 2 |
+| 1.0.54 | 26 Nov 04:24 GMT | 1h | 2 | 1.4 | 2 |
 | 1.0.53 | 25 Nov 18:58 GMT | 9h | 3 | 1.7 | 3 |
-| 1.0.49 | 22 Nov 19:33 GMT | 3d | 5 | 1.1 | 5 |
+| 1.0.49 | 22 Nov 19:33 GMT | 3d | 5 | 1.0 | 5 |
 | 1.0.47 | 22 Nov 17:43 GMT | 2h | 2 | 0.4 | 2 |
 | 1.0.46 | 22 Nov 14:08 GMT | 4h | 3 | 0.6 | 3 |
 | 1.0.45 | 22 Nov 08:31 GMT | 6h | 2 | 0.6 | 3 |
@@ -233,7 +229,7 @@ Newest first. **Newest for** is how long it was the newest build of its platform
 
 | Build | Published | Newest for | While newest | Per day | All time |
 |---|---|---|--:|--:|--:|
-| 1.0.477 | 26 Nov 11:33 GMT | 26h (now) | 4 | 3.7 | 4 |
+| 1.0.477 | 26 Nov 11:33 GMT | 27h (now) | 4 | 3.6 | 4 |
 | 1.0.476 | 26 Nov 04:45 GMT | 7h | 4 | 2.9 | 4 |
 | 1.0.473 | 21 Nov 09:26 GMT | 5d | 7 | 1.1 | 7 |
 | 1.0.472 | 20 Nov 07:00 GMT | 26h | 5 | 0.7 | 5 |
@@ -253,9 +249,9 @@ Plus 9 through that link before the stats began, which can't be put against a bu
 
 | Build | Published | Newest for | While newest | Per day | All time |
 |---|---|---|--:|--:|--:|
-| 1.0.480 | 27 Nov 12:34 GMT | 46m (now) | 1 | – | 1 |
+| 1.0.480 | 27 Nov 12:34 GMT | 2h (now) | 1 | – | 1 |
 | 1.0.479 | 26 Nov 18:14 GMT | 18h | 2 | – | 2 |
-| 1.0.478 | 26 Nov 13:02 GMT | 5h | 3* | 3.0 | 3 |
+| 1.0.478 | 26 Nov 13:02 GMT | 5h | 3 | 2.8 | 3 |
 | 1.0.475 | 25 Nov 17:39 GMT | 19h | 1 | 0.5 | 1 |
 
 Totals include downloads through the Android dev newest-build link (`weavr-android-dev.apk`), credited to the build that was newest at the time.
