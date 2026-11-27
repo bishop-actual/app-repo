@@ -13,13 +13,22 @@
       "name": "Weavr iOS",
       "bundleIdentifier": "com.weavr.app",
       "developerName": "bishop-actual",
-      "subtitle": "26 Nov 16:06 GMT · Multi-source IPTV with automatic failover",
+      "subtitle": "27 Nov 05:51 GMT · Multi-source IPTV with automatic failover",
       "localizedDescription": "Weavr merges your M3U and Xtream sources into one library, removes duplicate channels and films across providers, and fails over to another source when a stream stalls. Includes a TV guide, films and series, continue watching, Picture in Picture, AirPlay, and WeavrLink, a remote for your Weavr TVs.",
       "iconURL": "https://raw.githubusercontent.com/bishop-actual/app-repo/main/icons/weavr.png?v=e9989785",
       "tintColor": "#57A7B3",
       "category": "entertainment",
       "screenshotURLs": [],
       "versions": [
+        {
+          "version": "1.0.88",
+          "buildVersion": "88",
+          "date": "2026-11-27T05:51:05Z",
+          "localizedDescription": "WeavrLink: sync the Library between phone and TV, both ways, adding only\n\n- Sync Library with the TV (the phone's TV settings, and the TV menu on\n  the remote): the phone's Library goes to the TV, which adds what it\n  hasn't got and sends its own back, which the phone adds likewise —\n  both end up with the same, nothing taken away from either\n- What's synced: Library channels, films and series; films, series and\n  episodes watched; where you'd got to in each (the later of the two);\n  the watchlist. For the profile in use on each\n- Says how many came in each way (a toast, and the log); the TV says so\n  on screen too",
+          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build88/weavr-ios-1.0-build88.ipa",
+          "size": 32391660,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "1.0.87",
           "buildVersion": "87",
@@ -144,15 +153,6 @@
           "localizedDescription": "Apple TV: no gap in the sport row, no getting stuck in a game, nothing playing on after Back\n\n- Home's sport row (and the Sport page's events): each game once. A game\n  in two of the leagues followed came twice, and two cards with one id\n  left a card-wide gap in the row.\n- A channel picked for a game plays once its list has closed: shown while\n  the list was still closing, the player didn't appear on the Apple TV,\n  the game played on unseen and nothing else would open.\n- The player's page closed some other way than its own Close or Back (the\n  Apple TV's Menu pressed with a button focused, which the system takes)\n  stops what's playing, rather than leaving it playing behind the menus;\n  not when it's gone to the little window.",
           "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build69/weavr-ios-1.0-build69.ipa",
           "size": 23386038,
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "1.0.68",
-          "buildVersion": "68",
-          "date": "2026-11-21T20:16:34Z",
-          "localizedDescription": "Silo's big reads complete instead of failing for good; a short read keeps what it brought\n\nSilo's series read kept \"not coming back whole\", so its stored list was\nnever replaced: 95,989 shows stored against Silo's 84,904 now, the extra\nbeing shows Silo has since removed or moved to new ids (VisionQuest's\nseries-tvdb-426606 answering 404).\n- A stretch of the list that hasn't met the next stretch's first title\n  where expected (Silo's list changes as it's read, and its seek needn't\n  land exactly) reads on, up to three times its length, rather than\n  failing the whole read after two extra pages.\n- A read that still doesn't come back whole keeps what it brought that\n  isn't stored (new titles, moved ids) and takes nothing away; the\n  library's made again for them. It was all thrown away.\n- The count shown while reading is what's kept, every stretch's first page\n  included: a whole read now reaches Silo's total rather than ending\n  about 2,000 short.",
-          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-ios-1.0-build68/weavr-ios-1.0-build68.ipa",
-          "size": 23363144,
           "minOSVersion": "18.0"
         }
       ]
