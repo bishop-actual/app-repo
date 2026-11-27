@@ -161,13 +161,22 @@
       "name": "Weavr tvOS",
       "bundleIdentifier": "com.weavr.app.tv",
       "developerName": "bishop-actual",
-      "subtitle": "27 Nov 12:21 GMT · Weavr on Apple TV",
+      "subtitle": "27 Nov 15:06 GMT · Weavr on Apple TV",
       "localizedDescription": "Weavr for Apple TV: your merged IPTV library, TV guide, films and series with automatic failover between sources.",
       "iconURL": "https://raw.githubusercontent.com/bishop-actual/app-repo/main/icons/weavr.png?v=e9989785",
       "tintColor": "#57A7B3",
       "category": "entertainment",
       "screenshotURLs": [],
       "versions": [
+        {
+          "version": "1.0.65",
+          "buildVersion": "65",
+          "date": "2026-11-27T15:06:18Z",
+          "localizedDescription": "Sport: followed teams read from their own schedules; the page opens at once\n\n- A team followed asked for every league of its sport, every day of the\n  week: a football club was 14 competitions x 9 days, over a hundred\n  requests, and the page waited on all of them. Each team's games now\n  come from ESPN's schedule for it: a football club's in every\n  competition at once (league, cups, Europe) in two requests, another\n  sport's season in one\n- A team ESPN keeps no schedule for (rugby, a team from TheSportsDB): the\n  competition it was ticked from, not the whole sport\n- A team's game today also reads that competition's scoreboard for\n  today, for the live score and clock\n- The Sport page keeps what it last read and shows it at once on opening,\n  read afresh behind it, as Home's row does\n- Leagues ticked whole are asked as before; a game found both ways shows\n  once",
+          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build65/weavr-appletv-1.0-build65.ipa",
+          "size": 31554367,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "1.0.64",
           "buildVersion": "64",
@@ -292,15 +301,6 @@
           "localizedDescription": "Blur unwatched episodes, for every show or one show at a time\n\n- Settings > Playback > Films & series: Blur unwatched episodes. Pictures\n  of episodes not watched (nor started) are blurred on a show's page, so\n  they give nothing away; watched and started ones show as they are.\n- Each show can choose for itself: the \"...\" by its season (iPhone, iPad)\n  or Hide spoilers / Spoilers hidden by its buttons (Apple TV). A show's\n  choice that matches the setting for every show is no choice of its own:\n  it follows that setting from then on. Kept per profile.",
           "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build45/weavr-appletv-1.0-build45.ipa",
           "size": 22326585,
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "1.0.44",
-          "buildVersion": "44",
-          "date": "2026-11-22T07:29:31Z",
-          "localizedDescription": "Shows open on season 1, not the specials\n\nA show with a season 0 (specials) opened on it, and Play started its first\nspecial: what's up next was the first unwatched episode in order, and the\nspecials come first. Up next now goes by the show's own seasons, with the\nspecials only when it has nothing else; the page opens on that season (else\nthe first numbered one), and season 0 stays in the list to go back to.",
-          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build44/weavr-appletv-1.0-build44.ipa",
-          "size": 22314829,
           "minOSVersion": "18.0"
         }
       ]
