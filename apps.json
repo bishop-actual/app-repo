@@ -161,13 +161,22 @@
       "name": "Weavr tvOS",
       "bundleIdentifier": "com.weavr.app.tv",
       "developerName": "bishop-actual",
-      "subtitle": "27 Nov 05:50 GMT · Weavr on Apple TV",
+      "subtitle": "27 Nov 07:02 GMT · Weavr on Apple TV",
       "localizedDescription": "Weavr for Apple TV: your merged IPTV library, TV guide, films and series with automatic failover between sources.",
       "iconURL": "https://raw.githubusercontent.com/bishop-actual/app-repo/main/icons/weavr.png?v=e9989785",
       "tintColor": "#57A7B3",
       "category": "entertainment",
       "screenshotURLs": [],
       "versions": [
+        {
+          "version": "1.0.62",
+          "buildVersion": "62",
+          "date": "2026-11-27T07:02:03Z",
+          "localizedDescription": "WeavrLink: the remote restyled, smoother and more polished\n\n- WeavrLink as the page's title; the TV in its own card under it (its\n  name, a dot and \"Connected\"), tap it to switch TVs; TV settings, the\n  guide, Library sync and the rest under the ... button\n- What's playing in one card: its picture full width (a poster or a\n  channel's logo whole on a blur of itself), the title, the episode or\n  programme, the source in a pill, and a scrubber with a white thumb\n  that grows as it's held (a live channel: how far into the programme,\n  start and end times)\n- The transport as plain glyphs either side of one big accent play\n  button, the play and pause swapping with an animation: films back to\n  the start, 10 seconds either way, stop; live the channel before and\n  after, stop and refresh\n- Volume on the same slider; Guide, Library, Reload, Song and Sleep as\n  round buttons beneath\n- Sources, Up next (Details for a film), Stream, Library and Search in\n  an inset tab bar whose selection slides across: the sources numbered,\n  best first, the one in use ringed and marked Active, tap to switch;\n  the stream's health right there rather than in a sheet; the guide's\n  programme on now marked and its progress shown\n- Soft cards with continuous corners throughout, buttons that press\n  down, and a light tap under the finger; the pairing page to match",
+          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build62/weavr-appletv-1.0-build62.ipa",
+          "size": 31527326,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "1.0.61",
           "buildVersion": "61",
@@ -292,15 +301,6 @@
           "localizedDescription": "Apple TV: no gap in the sport row, no getting stuck in a game, nothing playing on after Back\n\n- Home's sport row (and the Sport page's events): each game once. A game\n  in two of the leagues followed came twice, and two cards with one id\n  left a card-wide gap in the row.\n- A channel picked for a game plays once its list has closed: shown while\n  the list was still closing, the player didn't appear on the Apple TV,\n  the game played on unseen and nothing else would open.\n- The player's page closed some other way than its own Close or Back (the\n  Apple TV's Menu pressed with a button focused, which the system takes)\n  stops what's playing, rather than leaving it playing behind the menus;\n  not when it's gone to the little window.",
           "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build43/weavr-appletv-1.0-build43.ipa",
           "size": 22309768,
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "1.0.42",
-          "buildVersion": "42",
-          "date": "2026-11-21T20:16:47Z",
-          "localizedDescription": "Silo's big reads complete instead of failing for good; a short read keeps what it brought\n\nSilo's series read kept \"not coming back whole\", so its stored list was\nnever replaced: 95,989 shows stored against Silo's 84,904 now, the extra\nbeing shows Silo has since removed or moved to new ids (VisionQuest's\nseries-tvdb-426606 answering 404).\n- A stretch of the list that hasn't met the next stretch's first title\n  where expected (Silo's list changes as it's read, and its seek needn't\n  land exactly) reads on, up to three times its length, rather than\n  failing the whole read after two extra pages.\n- A read that still doesn't come back whole keeps what it brought that\n  isn't stored (new titles, moved ids) and takes nothing away; the\n  library's made again for them. It was all thrown away.\n- The count shown while reading is what's kept, every stretch's first page\n  included: a whole read now reaches Silo's total rather than ending\n  about 2,000 short.",
-          "downloadURL": "https://github.com/bishop-actual/app-repo/releases/download/weavr-appletv-1.0-build42/weavr-appletv-1.0-build42.ipa",
-          "size": 22291328,
           "minOSVersion": "18.0"
         }
       ]
